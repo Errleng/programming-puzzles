@@ -1,0 +1,4 @@
+/home/raideye/Documents/Code/CCC/build-CCC-Desktop-Default/CMakeFiles/rebuild_cache.dir
+/home/raideye/Documents/Code/CCC/build-CCC-Desktop-Default/CMakeFiles/CCC.dir
+/home/raideye/Documents/Code/CCC/build-CCC-Desktop-Default/CMakeFiles/edit_cache.dir
+/home/raideye/Documents/Code/CCC/build-CCC-Desktop-Default/CMakeFiles/CCC_autogen.dir

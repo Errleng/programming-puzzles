@@ -1,0 +1,1 @@
+/usr/bin/g++    -rdynamic CMakeFiles/CCC.dir/main.cpp.o CMakeFiles/CCC.dir/CCC_autogen/mocs_compilation.cpp.o  -o CCC /usr/lib/libQt5Core.so.5.10.0 

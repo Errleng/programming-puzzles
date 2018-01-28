@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/closeye/Documents/Bitbucket/challenges/kdevelop/CCC/main.cpp
+iostream
+-
+string
+-
+sstream
+-
+vector
+-
+bits/stdc++.h
+-
+

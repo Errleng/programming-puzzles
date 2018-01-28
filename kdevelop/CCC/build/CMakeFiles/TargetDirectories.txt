@@ -1,0 +1,7 @@
+/home/closeye/Documents/Bitbucket/challenges/kdevelop/CCC/build/CMakeFiles/install.dir
+/home/closeye/Documents/Bitbucket/challenges/kdevelop/CCC/build/CMakeFiles/list_install_components.dir
+/home/closeye/Documents/Bitbucket/challenges/kdevelop/CCC/build/CMakeFiles/rebuild_cache.dir
+/home/closeye/Documents/Bitbucket/challenges/kdevelop/CCC/build/CMakeFiles/ccc.dir
+/home/closeye/Documents/Bitbucket/challenges/kdevelop/CCC/build/CMakeFiles/install/strip.dir
+/home/closeye/Documents/Bitbucket/challenges/kdevelop/CCC/build/CMakeFiles/install/local.dir
+/home/closeye/Documents/Bitbucket/challenges/kdevelop/CCC/build/CMakeFiles/edit_cache.dir

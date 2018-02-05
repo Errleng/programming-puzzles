@@ -6,6 +6,18 @@
 #include <algorithm>
 using namespace std;
 
+int problem1() {
+  int multipleSum = 0;
+  int number1 = 3;
+  int number2 = 5;
+  for (int i = 0; i < 1000; i++) {
+    if (i%number1 == 0 || i%number2 == 0){
+      multipleSum += i;
+    }
+  }
+  cout << "Sum " << multipleSum << endl;
+}
+
 string commaNumber(int n) {
   string stringNum = to_string(n);
   int position = stringNum.length()-3;
@@ -26,17 +38,17 @@ vector<int> fibonacciEven(int n, int limit) {
   int b = 2;
   int c = 0;
   while (b < limit) {
-    c = a;
-    a = b;
-    b = c + b;
     if (b % 2 == 0 && b < limit) {
       evenNums.push_back(b);
-    }
+    }   c = a;
+    a = b;
+    b = c + b;
   }
   return evenNums;
 }
 
 string problem2() { //Sum of even Fibonacci numbers less than 4000000
+  cout << "This function computes the sum of all even Fibonacci terms under 4 million" << endl;
   vector<int> evenTerms = fibonacciEven(5, 4000000);
   int termsSum = 0;
   for (int i = 0; i < evenTerms.size(); i++){
@@ -105,6 +117,7 @@ long long largestPrimeFactor(long long n) {
 }
 
 int problem3() {
+  cout << "This function finds the greatest prime factor of a number" << endl;
   long long numberToFactor = 600851475143;
   //vector<long> primeNumbers = sieve_Eratosthenes(numberToFactor); 
   //vector<int> primeFactors = primeFactorize(numberToFactor, primeNumbers);
@@ -146,6 +159,7 @@ vector<int> palindromeProducts(int start, int end) {
 }
 
 int problem4() {
+  cout << "This function finds the greatest palindrome product in a range" << endl;
   vector<int> palindromeNumbers = palindromeProducts(900, 1000);
   int largestPalindromeNumber = *max_element(palindromeNumbers.begin(), palindromeNumbers.end());
   cout  << "Largest palindrome number is " << largestPalindromeNumber << endl;
@@ -187,6 +201,7 @@ int LCM(vector<int> numbers) {
 }
 
 int problem5(){
+  cout << "This function finds the lowest common multiple of many numbers" << endl;
   vector<int> numberRange;
   int length = 20;
   for (int i = 1; i <= length; i++){

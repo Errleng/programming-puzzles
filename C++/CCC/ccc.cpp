@@ -37,22 +37,35 @@ int highTide() {
   vector<int> inputs = {10, 50, 40, 7, 3, 110, 90, 2};
   vector<int> highs;
   vector<int> lows;
+  std::cin >> inputNumber;
+  for (int i=0;i<inputNumber;i++)
+    std::cin >> inputs[i];
+  sort(inputs.begin(), inputs.end());
   for (int i=0; i<inputs.size(); i++){
-    if (i%2 != 0){
-      highs.push_back(inputs[i]);
-    }
-    else {
+    if (i < inputs.size()/2) {
       lows.push_back(inputs[i]);
     }
+    else{
+      highs.push_back(inputs[i]);
+    }
   }
-  for(int i=0; i<highs.size(); i++){
-    cout << highs[i] << " " << flush;
+  sort(highs.begin(), highs.end());
+  sort(lows.begin(), lows.end(), greater<int>());
+  int j = 0;
+  int k = 0;
+  for(int i=0; i<inputs.size(); i++){
+    if (i%2 == 0){
+      inputs[i] = lows[j];
+      j++;
+    }
+    else{
+      inputs[i] = highs[k];
+      k++;
+    }
   }
-  cout << "HIGHS" << endl;
-  for(int i=0; i<lows.size(); i++){
-    cout << lows[i] << " " << flush;
+  for(int i=0; i<inputs.size(); i++){
+    cout << inputs[i] << " " << flush;
   }
-  cout << "LOWS" << endl;
 }
 
 int main() {

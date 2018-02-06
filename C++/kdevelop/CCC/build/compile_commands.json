@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/closeye/Documents/Bitbucket/challenges/kdevelop/CCC/build",
-  "command": "/usr/bin/c++     -std=c++11 -g   -o CMakeFiles/ccc.dir/main.cpp.o -c /home/closeye/Documents/Bitbucket/challenges/kdevelop/CCC/main.cpp",
-  "file": "/home/closeye/Documents/Bitbucket/challenges/kdevelop/CCC/main.cpp"
-}
-]

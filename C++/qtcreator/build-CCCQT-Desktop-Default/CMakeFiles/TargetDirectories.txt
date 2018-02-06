@@ -1,4 +1,0 @@
-/home/raideye/Documents/Code/challenges/C++/qtcreator/build-CCCQT-Desktop-Default/CMakeFiles/rebuild_cache.dir
-/home/raideye/Documents/Code/challenges/C++/qtcreator/build-CCCQT-Desktop-Default/CMakeFiles/CCCQT.dir
-/home/raideye/Documents/Code/challenges/C++/qtcreator/build-CCCQT-Desktop-Default/CMakeFiles/edit_cache.dir
-/home/raideye/Documents/Code/challenges/C++/qtcreator/build-CCCQT-Desktop-Default/CMakeFiles/CCCQT_autogen.dir

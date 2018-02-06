@@ -3,6 +3,7 @@
 #include <sstream>
 #include <vector>
 #include <bits/stdc++.h>
+using namespace std;
 
 //Waterloo CCC 2016 Junior Questions
 int J1(){
@@ -66,46 +67,26 @@ bool J2(){
 
 std::string J3(){
 	//J3: Hidden Palindrome
-	std::string word;
-	std::vector<std::string> palindromes;
-	std::cin >> word;
-	for (int i = 0; i < word.length(); i++){
-		int length = i;
-		if (i > word.length()/2){
-			length = word.length() - i;
-		}
-		for (int j = 0; j < (length); j++){
-			std::string palindrome(1, word[i]);
-			bool foundPalindrome = true;
-			int n = 1;
-			while (foundPalindrome){
-				if (word[i-n] == word[i+n]){
-					palindrome.insert(0, 1, word[i-n]);
-					palindrome += word[i+n];
-					palindromes.push_back(palindrome);
-//                    std::cout << "Palindrome: " << palindrome << " at index: " << i << std::endl;
-				}
-				else{
-					foundPalindrome = false;
-				}
-//                std::cout << "n: " << n << " i: " << i << std::endl;
-				if (n < i/2 + 1){
-					n++;
-				}
-				else{
-					foundPalindrome = false;
-					j = length;
-				}
-			}
-		}
-	}
-	std::string longestString;
-	for (int i = 0; i < palindromes.size(); i++){
-		if (palindromes[i].length() > longestString.length()){
-			longestString = palindromes[i];
-		}
-	}
-	return longestString;
+    string word;
+    vector<string> palindromes;
+    cin >> word;
+    for (int i=1; i<word.length(); i++){
+        string palindrome;
+        int n = 1;
+        while (word[i-n]==word[i+n]){
+            palindrome.insert(0, 1, word[i-n]);
+            palindrome += word[i+n];
+            palindromes.push_back(palindrome);
+            n++;
+        }
+    }
+    string longestPalindrome;
+    for (int i=0; i<palindromes.size(); i++){
+        if (palindromes[i].length() > longestPalindrome.length()){
+            longestPalindrome = palindromes[i];
+    }
+    cout << longestPalindrome.length() << endl;
+    return longestPalindrome;
 }
 
 bool isPalindrome(std::string string){ //For fast check
@@ -151,7 +132,7 @@ std::string J4(){
 	minutes = (startMinutes + travelTime)%60;
 	std::string finalTime;
 	if (hours < 10){
-		finalTime = std::to_string(hours) + ":";
+		finalTime = std::to_string(hours) += ":";
 		if (minutes < 10){
 			finalTime += "0" + std::to_string(minutes);
 		}
@@ -536,7 +517,8 @@ std::vector<long> S5() {
 
 int main(int argc, char *argv[])
 {
-	std::cout << "Program Start" << std::endl;
-  std::cout << J3() << std::endl;
+    std::cout << "Program Start" << std::endl;
+    int maximumSize = J3();
+    std::cout << "The largest possible rice ball has a size of " << maximumSize << std::endl;
 	return 0;
 }

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/raideye/Documents/Code/challenges/C++/qtcreator/CCCQT/main.cpp
+iostream
+-
+string
+-
+sstream
+-
+vector
+-
+bits/stdc++.h
+-
+
+/home/raideye/Documents/Code/challenges/C++/qtcreator/build-CCCQT-Desktop-Default/CCCQT_autogen/mocs_compilation.cpp
+

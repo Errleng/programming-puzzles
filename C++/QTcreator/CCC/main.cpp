@@ -11,7 +11,6 @@ int J1(){
     //J1: Tournament Selection
     int playerGroup = 0;
     int winCount = 0;
-
     for (int i = 0; i < 6; i++){
         char input;
         std::cin >> input;

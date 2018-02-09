@@ -1,3 +1,6 @@
+#CCC 2017
+
+#Find arithmetic sequences in the format of HH:MM during a specific time range
 def J4():
     duration = input()
     dayMinutes = 24 * 60
@@ -9,7 +12,6 @@ def J4():
     loopMinutes = 0
     daySequenceCount = 0
     for i in xrange(dayMinutes):
-        arithmeticSequence = True
         strMins = ""
         if loopMinutes >= 60:
             loopMinutes -= 60

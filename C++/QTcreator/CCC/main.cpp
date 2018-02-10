@@ -399,60 +399,76 @@ int S3() {
     }
 }
 
+bool solve(int l, int r, int **dp, int balls[]){
+  if (dp[l][r] != -1){
+    string value = "False";
+    if (dp[l][r] == 1) {
+      value = "True";
+    }
+    // cout << "Occupied spot " << value << " " << l << " " << r << endl;
+    return dp[l][r];
+  }
+  else {
+    // cout << "Unoccupied " << l << " " << r << endl;
+  }
+  // int count = 0;
+  for (int i=l;i<r;i++){
+    if (solve(l,i,dp,balls)&&solve(i+1,r,dp,balls)){
+      // count += 1;
+      // cout << "First Loop: " << count << endl;
+      if (balls[i+1]-balls[l]==balls[r+1]-balls[i+1]){
+        return dp[l][r] = true;
+      }
+    }
+  }
+  // count = 0;
+  for (int i=l;i<r;i++){
+    for (int j=i;j<r;j++){
+      for (int k=j;k<r;k++){
+        if (balls[j+1]-balls[l]==balls[r+1]-balls[k+1]){
+          // count += 1;
+          // cout << count << " " << i << " " << j << " " << k << " " << r << endl;
+          if (solve(l,j,dp,balls)&&solve(j+1,k,dp,balls)&&solve(k+1,r,dp,balls)){
+            return dp[l][r] = true;
+          }
+        }
+      }
+    }
+  }
+  return dp[l][r] = false;
+}
+
 int S4() {
     int riceballNumber;
-    int operationCount = 1;
-    std::string input;
-    std::cin >> riceballNumber;
-    std::vector<int>sizes;
-    std::cin.ignore();
-    getline(std::cin, input);
-    std::stringstream stream(input);
-    for (int size; stream >> size;){
-        sizes.push_back(size);
+    int answer = 0;
+    int maximumInput = 400;
+    int **dp;
+    dp = new int *[maximumInput];
+    for (int i=0; i<maximumInput; i++){
+        dp[i] = new int[maximumInput];
     }
-    if (sizes.size() > riceballNumber) {
-        cout << "Input exceeds number of rice balls" << std::endl;
-        return 0;
+    int riceballs[maximumInput];
+    scanf("%d", &riceballNumber);
+    memset(dp, -1, sizeof(dp));
+    for (int i=0; i<riceballNumber; i++){
+        dp[i][i] = true;
     }
-    while (operationCount > 0) {
-        operationCount = 0;
-        for (int i = 0; i < sizes.size(); i++) {
-            if (1 < i && i + 1 < sizes.size()) {
-                if (sizes[i - 1] == sizes[i + 1]) {
-                    if (sizes[i] == sizes[i-1] && sizes[i - 2] == sizes[i] + sizes[i - 1]) {
-                        cout << "Skipped trio for duo of " << sizes[i] << " " << sizes[i - 1] << " at " << i << std::endl;
-                        sizes[i] += sizes[i + 1];
-                        sizes.erase(sizes.begin() + (i + 1));
-                        i--;
-                        operationCount++;
-                    }
-                    else {
-                        cout << "Trio of " << sizes[i - 1] << " " << sizes[i] << " " << sizes[i + 1] << " at " << i << std::endl;
-                        sizes[i] = sizes[i] + sizes[i + 1] + sizes[i - 1];
-                        sizes.erase(sizes.begin() + (i - 1));
-                        sizes.erase(sizes.begin() + i);
-                        i--;
-                        operationCount++;
-                    }
-                }
-                if (i + 1 < sizes.size() && sizes[i] == sizes[i + 1] && sizes[i] != sizes[i + 2]) {
-                    cout << "Duo of " << sizes[i] << " " << sizes[i + 1] << " at " << i << std::endl;
-                    sizes[i] += sizes[i + 1];
-                    sizes.erase(sizes.begin() + (i +  1));
-                    i--;
-                    operationCount++;
-                }
-                for (int k = 0; k < sizes.size(); k++) {
-                    cout << sizes[k] << " " << std::flush;
-                }
-                cout << "\n";
+    for (int i=1; i<=riceballNumber; i++){
+        scanf("%d", &riceballs[i]);
+    }
+    for (int i=2; i<=riceballNumber; i++){
+        riceballs[i] += riceballs[i-1];
+    }
+    solve(0, riceballNumber-1, dp, riceballs);
+    for (int i=0; i<riceballNumber; i++){
+        for (int j=0; i<riceballNumber; j++){
+            if (dp[i][j] == true){
+                answer = max(answer, riceballs[j+1] - riceballs[i]);
             }
         }
     }
-    cout << "\n";
-    int maximumSize = *max_element(sizes.begin(), sizes.end()); //Get value from iterator by dereferencing it
-    return maximumSize;
+    printf("%d", answer);
+    return answer;
 }
 
 std::vector<long> S5() {
@@ -606,7 +622,7 @@ int main(int argc, char *argv[])
 {
     cout << "Program Start" << std::endl;
     chrono::high_resolution_clock::time_point start = chrono::high_resolution_clock::now();
-    S5();
+    S4();
     chrono::high_resolution_clock::time_point end = chrono::high_resolution_clock::now();
     auto runTime = chrono::duration_cast<chrono::milliseconds>(end - start).count();
     cout << "\nExecution took " << runTime << " miliseconds" << endl;

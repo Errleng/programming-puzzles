@@ -14,22 +14,22 @@ def set_solution(startIndex, endIndex, ballCount):
 	solutionList[startIndex][endIndex] = ballCount
 
 
-def check_range_solution(startIndex, endIndex):
+def possible_combine_range(startIndex, endIndex): #Check if a solution has been found for a range
 	global riceballNumber
 	global riceballList
-	if startIndex == endIndex:
+	if startIndex == endIndex: #A single index wide (single number) is always a possible solution
 		return True
 	else:
-		return solutionList[startIndex][endIndex] != -1
+		return solutionList[startIndex][endIndex] != -1 #Returns True if there is already a solution there. Returns false if there is -1
 
 
-def range_count(startIndex, endIndex):
+def range_count(startIndex, endIndex): #Returns number of rice balls in a range
 	global riceballNumber
 	global riceballList
 	if startIndex == endIndex:
-		return riceballList[startIndex]
+		return riceballList[startIndex] #Returns a rice ball size if the range is one index wide
 	else:
-		return solutionList[startIndex][endIndex]
+		return solutionList[startIndex][endIndex] #Returns an already known solution or -1
 
 
 def search_two(firstStartIndex, lastEndIndex): #Looks for two blocks that can be combined with equal number of rice balls
@@ -37,9 +37,9 @@ def search_two(firstStartIndex, lastEndIndex): #Looks for two blocks that can be
 	global riceballList
 	for lastStartIndex in range(firstStartIndex + 1, lastEndIndex + 1):
 		firstEndIndex = lastStartIndex - 1
-		if check_range_solution(firstStartIndex, firstEndIndex) == False:
+		if possible_combine_range(firstStartIndex, firstEndIndex) == False:
 			continue
-		if check_range_solution(lastStartIndex, lastEndIndex) == False:
+		if possible_combine_range(lastStartIndex, lastEndIndex) == False:
 			continue
 		firstCount = range_count(firstStartIndex, firstEndIndex)
 		lastCount = range_count(lastStartIndex, lastEndIndex)
@@ -56,7 +56,7 @@ def search_three(firstStartIndex, lastEndIndex):
 	global riceballList
 	for middleStartIndex in range(firstStartIndex + 1, lastEndIndex):
 		firstEndIndex = middleStartIndex - 1
-		if check_range_solution(firstStartIndex, firstEndIndex) == False:
+		if possible_combine_range(firstStartIndex, firstEndIndex) == False:
 			continue
 		firstCount = range_count(firstStartIndex, firstEndIndex)
 		for lastStartIndex in range(middleStartIndex + 1, lastEndIndex + 1):

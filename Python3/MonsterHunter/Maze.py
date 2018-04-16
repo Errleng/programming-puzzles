@@ -18,7 +18,6 @@ class Trapper(object):
         self.passable_tiles = [' ', 'N', 'F', 'P']
         self.maze = [list(x) for x in re.split(r'\n', map) if len(x) > 0]
         print("Maze length:", len(self.maze), "Row length:", len(self.maze[0]))
-        print(self.maze)
         self.display_maze = copy.deepcopy(self.maze)
         self.size = len(self.maze)
         self.visited = [[False for x in range(self.size)] for y in range(self.size)]
@@ -76,7 +75,7 @@ class Trapper(object):
                     monster_pos = (i, j)
         print("Monster starts at", monster_pos[0] + 1, monster_pos[1] + 1)
         self.MapOut(monster_pos)
-        time.sleep(2)
+        # time.sleep(2)
         # self.BFS(self.nodes[0])
 
         self.ResetVisited()
@@ -228,22 +227,22 @@ class Trapper(object):
             # time.sleep(0.01)
 
         self.ResetVisited()
-        node_positions = [x.pos for x in self.nodes]
-        node_adjacents = [x.adjacent_nodes for x in self.nodes]
-        node_parents = [x.parent for x in self.nodes]
+        # node_positions = [x.pos for x in self.nodes]
+        # node_adjacents = [x.adjacent_nodes for x in self.nodes]
+        # node_parents = [x.parent for x in self.nodes]
 
-        passable_tile_count = 0
-        impassable_node_count = 0
-        same_nodes = 0
-        adjacent_nodes = 0
-        null_parent_nodes = 0
+        # passable_tile_count = 0
+        # impassable_node_count = 0
+        # same_nodes = 0
+        # adjacent_nodes = 0
+        # null_parent_nodes = 0
 
-        for i in range(len(self.maze)):
-            for j in range(len(self.maze[i])):
-                if self.IsPassable((i, j)):
-                    if (i,j) not in node_positions:
-                        impassable_node_count += 1
-                    passable_tile_count += 1
+        # for i in range(len(self.maze)):
+        #     for j in range(len(self.maze[i])):
+        #         if self.IsPassable((i, j)):
+        #             if (i,j) not in node_positions:
+        #                 impassable_node_count += 1
+        #             passable_tile_count += 1
 
         # for i in range(len(self.nodes)):
         #     for j in range(len(self.nodes)):
@@ -251,31 +250,31 @@ class Trapper(object):
         #             print("FOUND SAME NODES!")
         #             same_nodes += 1
 
-        for i in range(len(node_adjacents)):
-            for j in range(len(node_adjacents[i])):
-                if len(node_adjacents[i][j].adjacent_nodes) < 1:
-                    adjacent_nodes += 1
-                    # self.ChangeTile(node_adjacents[i][j].pos, '#')
+        # for i in range(len(node_adjacents)):
+        #     for j in range(len(node_adjacents[i])):
+        #         if len(node_adjacents[i][j].adjacent_nodes) < 1:
+        #             adjacent_nodes += 1
+        #             # self.ChangeTile(node_adjacents[i][j].pos, '#')
+        #
+        # for i in range(len(node_parents)):
+        #     if node_parents[i] is None:
+        #         null_parent_nodes += 1
 
-        for i in range(len(node_parents)):
-            if node_parents[i] is None:
-                null_parent_nodes += 1
+        # self.PrintDisplay()
 
-        self.PrintDisplay()
-
-        unique_nodes = set(node_positions)
-        print("Unique nodes:", len(unique_nodes), "Total nodes:", len(node_positions))
-        print("Same nodes:", same_nodes)
-        print("Adjacent nodes:", adjacent_nodes)
-        print("Nodes not passable?:", impassable_node_count)
-        print("Nodes queued:", queued_nodes)
-        print("Nodes with null parent:", null_parent_nodes)
-
-        print("Completed node-map of maze")
-        print("Passable tiles:", passable_tile_count, "Nodes:", len(self.nodes))
+        # unique_nodes = set(node_positions)
+        # print("Unique nodes:", len(unique_nodes), "Total nodes:", len(node_positions))
+        # print("Same nodes:", same_nodes)
+        # print("Adjacent nodes:", adjacent_nodes)
+        # print("Nodes not passable?:", impassable_node_count)
+        # print("Nodes queued:", queued_nodes)
+        # print("Nodes with null parent:", null_parent_nodes)
+        #
+        # print("Completed node-map of maze")
+        # print("Passable tiles:", passable_tile_count, "Nodes:", len(self.nodes))
 
 def main():
-    map_string = open(os.path.join(os.path.dirname(sys.argv[0]), "map3.txt"), "r").read()
+    map_string = open(os.path.join(os.path.dirname(sys.argv[0]), "map4.txt"), "r").read()
     test = Trapper(map_string)
     test.PrintMaze()
     test.PrintDisplay()

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="DMOJ"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\Applications\;CMake Files\..\..\..\..\..\..\Applications\Qt\;CMake Files\..\..\..\..\..\..\Applications\Qt\5.10.1\;CMake Files\..\..\..\..\..\..\Applications\Qt\5.10.1\mingw53_32\;CMake Files\..\..\..\..\..\..\Applications\Qt\5.10.1\mingw53_32\lib\;CMake Files\..\..\..\..\..\..\Applications\Qt\5.10.1\mingw53_32\lib\cmake\;CMake Files\..\..\..\..\..\..\Applications\Qt\5.10.1\mingw53_32\lib\cmake\Qt5Core\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DMOJ">
+				<Option output="D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/DMOJ.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_NO_DEBUG"/>
+					<Add directory="D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default"/>
+					<Add directory="D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ"/>
+					<Add directory="D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/DMOJ_autogen/include"/>
+					<Add directory="D:/Applications/Qt/5.10.1/mingw53_32/include"/>
+					<Add directory="D:/Applications/Qt/5.10.1/mingw53_32/include/QtCore"/>
+					<Add directory="D:/Applications/Qt/5.10.1/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="D:/Applications/Qt/Tools/mingw530_32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/include"/>
+					<Add directory="D:/Applications/Qt/Tools/mingw530_32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/include-fixed"/>
+					<Add directory="D:/Applications/Qt/Tools/mingw530_32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="D:/Applications/Qt/Tools/mingw530_32/lib/gcc/../../i686-w64-mingw32/include/c++"/>
+					<Add directory="D:/Applications/Qt/Tools/mingw530_32/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32"/>
+					<Add directory="D:/Applications/Qt/Tools/mingw530_32/lib/gcc/../../i686-w64-mingw32/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 DMOJ"/>
+					<CompileFile command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DMOJ/fast">
+				<Option output="D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/DMOJ.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_NO_DEBUG"/>
+					<Add directory="D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default"/>
+					<Add directory="D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ"/>
+					<Add directory="D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/DMOJ_autogen/include"/>
+					<Add directory="D:/Applications/Qt/5.10.1/mingw53_32/include"/>
+					<Add directory="D:/Applications/Qt/5.10.1/mingw53_32/include/QtCore"/>
+					<Add directory="D:/Applications/Qt/5.10.1/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="D:/Applications/Qt/Tools/mingw530_32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/include"/>
+					<Add directory="D:/Applications/Qt/Tools/mingw530_32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/include-fixed"/>
+					<Add directory="D:/Applications/Qt/Tools/mingw530_32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="D:/Applications/Qt/Tools/mingw530_32/lib/gcc/../../i686-w64-mingw32/include/c++"/>
+					<Add directory="D:/Applications/Qt/Tools/mingw530_32/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32"/>
+					<Add directory="D:/Applications/Qt/Tools/mingw530_32/lib/gcc/../../i686-w64-mingw32/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 DMOJ/fast"/>
+					<CompileFile command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DMOJ_autogen">
+				<Option working_dir="D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 DMOJ_autogen"/>
+					<CompileFile command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Applications/Qt/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/main.cpp">
+			<Option target="DMOJ"/>
+		</Unit>
+		<Unit filename="D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/DMOJ_autogen/mocs_compilation.cpp">
+			<Option target="DMOJ"/>
+		</Unit>
+		<Unit filename="D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/../../../../../../Applications/Qt/5.10.1/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\Applications\Qt\5.10.1\mingw53_32\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/../../../../../../Applications/Qt/5.10.1/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\Applications\Qt\5.10.1\mingw53_32\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/../../../../../../Applications/Qt/5.10.1/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\Applications\Qt\5.10.1\mingw53_32\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/../../../../../../Applications/Qt/5.10.1/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\Applications\Qt\5.10.1\mingw53_32\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/../../../../../../Applications/Qt/5.10.1/mingw53_32/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\Applications\Qt\5.10.1\mingw53_32\lib\cmake\Qt5Core\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

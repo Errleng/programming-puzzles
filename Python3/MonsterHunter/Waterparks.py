@@ -102,12 +102,13 @@ def S4_2007_Original():
         for j in range(len(nodes[i].children)-1, -1, -1):
             print(j, "dst:", path_counts[nodes[i].children[j].data-1], end=" ")
             path_counts[i] += path_counts[nodes[i].children[j].data-1]
+            print("\ni:", i, path_counts[i])
         print("\n" + str(path_counts))
     print(path_counts[0])
 
 start_time = time.time()
 
-S4_2007_Original()
+S4_2007_Smartie()
 
 end_time = time.time()
 print("Took", end_time - start_time, "seconds to run")

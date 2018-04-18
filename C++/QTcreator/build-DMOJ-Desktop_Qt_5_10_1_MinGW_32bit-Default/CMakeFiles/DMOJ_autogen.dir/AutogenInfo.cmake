@@ -10,7 +10,7 @@ set(AM_CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE "")
 set(AM_BUILD_DIR "D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/DMOJ_autogen")
 set(AM_INCLUDE_DIR "include")
 # Files
-set(AM_SOURCES "D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/main.cpp")
+set(AM_SOURCES "D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/completed.cpp;D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/main.cpp;D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/wip.cpp")
 set(AM_HEADERS "")
 set(AM_SETTINGS_FILE "D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/CMakeFiles/DMOJ_autogen.dir/AutogenOldSettings.txt")
 # Qt

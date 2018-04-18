@@ -5,7 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/DMOJ_autogen/mocs_compilation.cpp" "D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/CMakeFiles/DMOJ.dir/DMOJ_autogen/mocs_compilation.cpp.obj"
+  "D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/completed.cpp" "D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/CMakeFiles/DMOJ.dir/completed.cpp.obj"
   "D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/main.cpp" "D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/CMakeFiles/DMOJ.dir/main.cpp.obj"
+  "D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/wip.cpp" "D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/CMakeFiles/DMOJ.dir/wip.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

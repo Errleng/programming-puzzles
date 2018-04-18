@@ -56,10 +56,24 @@ include CMakeFiles/DMOJ.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/DMOJ.dir/flags.make
 
+CMakeFiles/DMOJ.dir/completed.cpp.obj: CMakeFiles/DMOJ.dir/flags.make
+CMakeFiles/DMOJ.dir/completed.cpp.obj: CMakeFiles/DMOJ.dir/includes_CXX.rsp
+CMakeFiles/DMOJ.dir/completed.cpp.obj: D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/completed.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documents\SourceTree\Challenges\C++\QTcreator\build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DMOJ.dir/completed.cpp.obj"
+	D:\Applications\Qt\Tools\mingw530_32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DMOJ.dir\completed.cpp.obj -c D:\Documents\SourceTree\Challenges\C++\QTcreator\DMOJ\completed.cpp
+
+CMakeFiles/DMOJ.dir/completed.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DMOJ.dir/completed.cpp.i"
+	D:\Applications\Qt\Tools\mingw530_32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\SourceTree\Challenges\C++\QTcreator\DMOJ\completed.cpp > CMakeFiles\DMOJ.dir\completed.cpp.i
+
+CMakeFiles/DMOJ.dir/completed.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DMOJ.dir/completed.cpp.s"
+	D:\Applications\Qt\Tools\mingw530_32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\SourceTree\Challenges\C++\QTcreator\DMOJ\completed.cpp -o CMakeFiles\DMOJ.dir\completed.cpp.s
+
 CMakeFiles/DMOJ.dir/main.cpp.obj: CMakeFiles/DMOJ.dir/flags.make
 CMakeFiles/DMOJ.dir/main.cpp.obj: CMakeFiles/DMOJ.dir/includes_CXX.rsp
 CMakeFiles/DMOJ.dir/main.cpp.obj: D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documents\SourceTree\Challenges\C++\QTcreator\build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DMOJ.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documents\SourceTree\Challenges\C++\QTcreator\build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DMOJ.dir/main.cpp.obj"
 	D:\Applications\Qt\Tools\mingw530_32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DMOJ.dir\main.cpp.obj -c D:\Documents\SourceTree\Challenges\C++\QTcreator\DMOJ\main.cpp
 
 CMakeFiles/DMOJ.dir/main.cpp.i: cmake_force
@@ -70,10 +84,24 @@ CMakeFiles/DMOJ.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DMOJ.dir/main.cpp.s"
 	D:\Applications\Qt\Tools\mingw530_32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\SourceTree\Challenges\C++\QTcreator\DMOJ\main.cpp -o CMakeFiles\DMOJ.dir\main.cpp.s
 
+CMakeFiles/DMOJ.dir/wip.cpp.obj: CMakeFiles/DMOJ.dir/flags.make
+CMakeFiles/DMOJ.dir/wip.cpp.obj: CMakeFiles/DMOJ.dir/includes_CXX.rsp
+CMakeFiles/DMOJ.dir/wip.cpp.obj: D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/wip.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documents\SourceTree\Challenges\C++\QTcreator\build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DMOJ.dir/wip.cpp.obj"
+	D:\Applications\Qt\Tools\mingw530_32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DMOJ.dir\wip.cpp.obj -c D:\Documents\SourceTree\Challenges\C++\QTcreator\DMOJ\wip.cpp
+
+CMakeFiles/DMOJ.dir/wip.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DMOJ.dir/wip.cpp.i"
+	D:\Applications\Qt\Tools\mingw530_32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\SourceTree\Challenges\C++\QTcreator\DMOJ\wip.cpp > CMakeFiles\DMOJ.dir\wip.cpp.i
+
+CMakeFiles/DMOJ.dir/wip.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DMOJ.dir/wip.cpp.s"
+	D:\Applications\Qt\Tools\mingw530_32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\SourceTree\Challenges\C++\QTcreator\DMOJ\wip.cpp -o CMakeFiles\DMOJ.dir\wip.cpp.s
+
 CMakeFiles/DMOJ.dir/DMOJ_autogen/mocs_compilation.cpp.obj: CMakeFiles/DMOJ.dir/flags.make
 CMakeFiles/DMOJ.dir/DMOJ_autogen/mocs_compilation.cpp.obj: CMakeFiles/DMOJ.dir/includes_CXX.rsp
 CMakeFiles/DMOJ.dir/DMOJ_autogen/mocs_compilation.cpp.obj: DMOJ_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documents\SourceTree\Challenges\C++\QTcreator\build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DMOJ.dir/DMOJ_autogen/mocs_compilation.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documents\SourceTree\Challenges\C++\QTcreator\build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DMOJ.dir/DMOJ_autogen/mocs_compilation.cpp.obj"
 	D:\Applications\Qt\Tools\mingw530_32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DMOJ.dir\DMOJ_autogen\mocs_compilation.cpp.obj -c D:\Documents\SourceTree\Challenges\C++\QTcreator\build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default\DMOJ_autogen\mocs_compilation.cpp
 
 CMakeFiles/DMOJ.dir/DMOJ_autogen/mocs_compilation.cpp.i: cmake_force
@@ -86,20 +114,24 @@ CMakeFiles/DMOJ.dir/DMOJ_autogen/mocs_compilation.cpp.s: cmake_force
 
 # Object files for target DMOJ
 DMOJ_OBJECTS = \
+"CMakeFiles/DMOJ.dir/completed.cpp.obj" \
 "CMakeFiles/DMOJ.dir/main.cpp.obj" \
+"CMakeFiles/DMOJ.dir/wip.cpp.obj" \
 "CMakeFiles/DMOJ.dir/DMOJ_autogen/mocs_compilation.cpp.obj"
 
 # External object files for target DMOJ
 DMOJ_EXTERNAL_OBJECTS =
 
+DMOJ.exe: CMakeFiles/DMOJ.dir/completed.cpp.obj
 DMOJ.exe: CMakeFiles/DMOJ.dir/main.cpp.obj
+DMOJ.exe: CMakeFiles/DMOJ.dir/wip.cpp.obj
 DMOJ.exe: CMakeFiles/DMOJ.dir/DMOJ_autogen/mocs_compilation.cpp.obj
 DMOJ.exe: CMakeFiles/DMOJ.dir/build.make
 DMOJ.exe: D:/Applications/Qt/5.10.1/mingw53_32/lib/libQt5Core.a
 DMOJ.exe: CMakeFiles/DMOJ.dir/linklibs.rsp
 DMOJ.exe: CMakeFiles/DMOJ.dir/objects1.rsp
 DMOJ.exe: CMakeFiles/DMOJ.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Documents\SourceTree\Challenges\C++\QTcreator\build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable DMOJ.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Documents\SourceTree\Challenges\C++\QTcreator\build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable DMOJ.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DMOJ.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

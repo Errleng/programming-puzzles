@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "DMOJ_autogen"
   "CMakeFiles/DMOJ_autogen.dir/AutogenOldSettings.cmake"
+  "CMakeFiles/DMOJ.dir/completed.cpp.obj"
   "CMakeFiles/DMOJ.dir/main.cpp.obj"
+  "CMakeFiles/DMOJ.dir/wip.cpp.obj"
   "CMakeFiles/DMOJ.dir/DMOJ_autogen/mocs_compilation.cpp.obj"
   "DMOJ.pdb"
   "DMOJ.exe"

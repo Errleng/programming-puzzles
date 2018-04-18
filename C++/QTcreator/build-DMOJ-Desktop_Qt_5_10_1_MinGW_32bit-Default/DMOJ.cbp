@@ -106,7 +106,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/completed.cpp">
+			<Option target="DMOJ"/>
+		</Unit>
 		<Unit filename="D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/main.cpp">
+			<Option target="DMOJ"/>
+		</Unit>
+		<Unit filename="D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/wip.cpp">
 			<Option target="DMOJ"/>
 		</Unit>
 		<Unit filename="D:/Documents/SourceTree/Challenges/C++/QTcreator/build-DMOJ-Desktop_Qt_5_10_1_MinGW_32bit-Default/DMOJ_autogen/mocs_compilation.cpp">

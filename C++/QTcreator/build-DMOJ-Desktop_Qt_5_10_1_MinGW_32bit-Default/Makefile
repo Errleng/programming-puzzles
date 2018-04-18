@@ -162,6 +162,33 @@ DMOJ_autogen/mocs_compilation.cpp.s:
 	$(MAKE) -f CMakeFiles\DMOJ.dir\build.make CMakeFiles/DMOJ.dir/DMOJ_autogen/mocs_compilation.cpp.s
 .PHONY : DMOJ_autogen/mocs_compilation.cpp.s
 
+completed.obj: completed.cpp.obj
+
+.PHONY : completed.obj
+
+# target to build an object file
+completed.cpp.obj:
+	$(MAKE) -f CMakeFiles\DMOJ.dir\build.make CMakeFiles/DMOJ.dir/completed.cpp.obj
+.PHONY : completed.cpp.obj
+
+completed.i: completed.cpp.i
+
+.PHONY : completed.i
+
+# target to preprocess a source file
+completed.cpp.i:
+	$(MAKE) -f CMakeFiles\DMOJ.dir\build.make CMakeFiles/DMOJ.dir/completed.cpp.i
+.PHONY : completed.cpp.i
+
+completed.s: completed.cpp.s
+
+.PHONY : completed.s
+
+# target to generate assembly for a file
+completed.cpp.s:
+	$(MAKE) -f CMakeFiles\DMOJ.dir\build.make CMakeFiles/DMOJ.dir/completed.cpp.s
+.PHONY : completed.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -189,6 +216,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\DMOJ.dir\build.make CMakeFiles/DMOJ.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+wip.obj: wip.cpp.obj
+
+.PHONY : wip.obj
+
+# target to build an object file
+wip.cpp.obj:
+	$(MAKE) -f CMakeFiles\DMOJ.dir\build.make CMakeFiles/DMOJ.dir/wip.cpp.obj
+.PHONY : wip.cpp.obj
+
+wip.i: wip.cpp.i
+
+.PHONY : wip.i
+
+# target to preprocess a source file
+wip.cpp.i:
+	$(MAKE) -f CMakeFiles\DMOJ.dir\build.make CMakeFiles/DMOJ.dir/wip.cpp.i
+.PHONY : wip.cpp.i
+
+wip.s: wip.cpp.s
+
+.PHONY : wip.s
+
+# target to generate assembly for a file
+wip.cpp.s:
+	$(MAKE) -f CMakeFiles\DMOJ.dir\build.make CMakeFiles/DMOJ.dir/wip.cpp.s
+.PHONY : wip.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -202,9 +256,15 @@ help:
 	@echo ... DMOJ_autogen/mocs_compilation.obj
 	@echo ... DMOJ_autogen/mocs_compilation.i
 	@echo ... DMOJ_autogen/mocs_compilation.s
+	@echo ... completed.obj
+	@echo ... completed.i
+	@echo ... completed.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... wip.obj
+	@echo ... wip.i
+	@echo ... wip.s
 .PHONY : help
 
 

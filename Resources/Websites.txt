@@ -1,0 +1,9 @@
+Algorithms and Data structures
+Dijkstra's Algorithm: https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/
+DFS (All Paths): https://www.geeksforgeeks.org/find-paths-given-source-destination/
+
+Disjoint Sets: https://www.geeksforgeeks.org/disjoint-set-data-structures-java-implementation/
+
+Prim's Algorithm (Minimum Spanning Tree): https://www.geeksforgeeks.org/prims-algorithm-using-priority_queue-stl/
+Kruskal & Prim (MST): https://www.hackerearth.com/practice/algorithms/graphs/minimum-spanning-tree/tutorial/
+

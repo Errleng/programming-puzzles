@@ -3,5 +3,9 @@
 
 CMakeFiles/DMOJ.dir/DMOJ_autogen/mocs_compilation.cpp.obj: DMOJ_autogen/mocs_compilation.cpp
 
+CMakeFiles/DMOJ.dir/completed.cpp.obj: D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/completed.cpp
+
 CMakeFiles/DMOJ.dir/main.cpp.obj: D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/main.cpp
+
+CMakeFiles/DMOJ.dir/wip.cpp.obj: D:/Documents/SourceTree/Challenges/C++/QTcreator/DMOJ/wip.cpp
 

@@ -79,7 +79,7 @@ void printVec(vector<T>& vec) {
 }
 
 // Convenience
-typedef pair<int, int> PII;
+typedef pair<int, int> pii;
 
 // WIP Directed Graph
 class Graph {
@@ -138,7 +138,7 @@ void S4_2009_Adjacency_List() {
     const int N = 5001;
     int costs[N];
     bool visited[N];
-    vector<PII> adj[N];
+    vector<pii> adj[N];
 
     int numCities, numRoutes, numStores;
     scanf("%d %d", &numCities, &numRoutes);
@@ -153,8 +153,8 @@ void S4_2009_Adjacency_List() {
         scanf("%d %d %d", &src, &dst, &costs);
         src -= 1;
         dst -= 1;
-        adj[src].push_back(PII(costs, dst));
-        adj[dst].push_back(PII(costs, src));
+        adj[src].push_back(pii(costs, dst));
+        adj[dst].push_back(pii(costs, src));
     }
 
     scanf("%d", &numStores);
@@ -176,7 +176,7 @@ void S4_2009_Adjacency_List() {
             }
         }
         visited[ind] = true;
-        for (PII p : adj[ind]) {
+        for (pii p : adj[ind]) {
             if (costs[ind] + p.first < costs[p.second]) {
                 costs[p.second] = costs[ind] + p.first;
             }
@@ -189,7 +189,7 @@ void S4_2009_PriorityQueue() {
     const int ARR = 5001;
     const int INF = 1000000000;
     int numCities, numRoutes, numStores;
-    vector<PII> adjacent[ARR];
+    vector<pii> adjacent[ARR];
     int costs[ARR];
     bool visited[ARR];
     int x, y, z;
@@ -199,8 +199,8 @@ void S4_2009_PriorityQueue() {
         scanf("%d %d %d", &x, &y, &z);
         x -= 1;
         y -= 1;
-        adjacent[x].push_back(PII(z, y));
-        adjacent[y].push_back(PII(z, x));
+        adjacent[x].push_back(pii(z, y));
+        adjacent[y].push_back(pii(z, x));
     }
 
     for (int i = 0; i < numCities; i++) {
@@ -208,7 +208,7 @@ void S4_2009_PriorityQueue() {
         visited[i] = false;
     }
 
-    priority_queue<PII, vector<PII>, greater<PII>> cityQueue;
+    priority_queue<pii, vector<pii>, greater<pii>> cityQueue;
 
     scanf("%d", &numStores);
     for (int i = 0; i < numStores; i++) {
@@ -222,7 +222,7 @@ void S4_2009_PriorityQueue() {
     z -= 1;
 
     while (!cityQueue.empty()) {
-        PII city = cityQueue.top();
+        pii city = cityQueue.top();
         cityQueue.pop();
         if (visited[city.second]) {
             break;
@@ -231,11 +231,11 @@ void S4_2009_PriorityQueue() {
             continue;
         }
         visited[city.second] = true;
-        for (PII p : adjacent[city.second]) {
+        for (pii p : adjacent[city.second]) {
             int combine = city.first + p.first;
             if (combine < costs[p.second]) {
                 costs[p.second] = combine;
-                cityQueue.push(PII(costs[p.second], p.second));
+                cityQueue.push(pii(costs[p.second], p.second));
             }
         }
     }
@@ -302,7 +302,7 @@ void S5_2003_MinimumSpanningTree() {
     const int LARGE = 1000000;
     int numCities, numRoads, numDests;
     int maxWeight = LARGE;
-    vector<PII> graph[MAX];
+    vector<pii> graph[MAX];
     vector<int> dests;
 
     scanf("%d %d %d", &numCities, &numRoads, &numDests);
@@ -311,8 +311,8 @@ void S5_2003_MinimumSpanningTree() {
         scanf("%d %d %d", &src, &dst, &cost);
         src -= 1;
         dst -= 1;
-        graph[src].push_back(PII(-cost, dst));
-        graph[dst].push_back(PII(-cost, src));
+        graph[src].push_back(pii(-cost, dst));
+        graph[dst].push_back(pii(-cost, src));
     }
     for (int i=0; i<numDests; i++) {
         int destination;
@@ -321,23 +321,23 @@ void S5_2003_MinimumSpanningTree() {
         dests.push_back(destination);
     }
 
-    priority_queue<PII, vector<PII>, greater<PII> > pq;
+    priority_queue<pii, vector<pii>, greater<pii> > pq;
     vector<int> weights(numCities, LARGE);
     vector<int> mst(numCities, -1);
     vector<bool> inMST(numCities, false);
 
-    pq.push(PII(0, 0));
+    pq.push(pii(0, 0));
     weights[0] = 0;
     while (!pq.empty()) {
         int ind = pq.top().second;
         pq.pop();
         inMST[ind] = true;
-        for (PII p : graph[ind]) {
+        for (pii p : graph[ind]) {
             int v = p.second;
             int w = p.first;
             if (inMST[v] == false && weights[v] > w) {
                 weights[v] = w;
-                pq.push(PII(weights[v], v));
+                pq.push(pii(weights[v], v));
                 mst[v] = ind;
             }
         }
@@ -495,4 +495,85 @@ void S4_2009() {
         }
     }
     cout << costs[dst] << endl;
+}
+
+struct Node {
+    int x, y;
+    int distance;
+};
+
+const int MAX = 20;
+
+char maze[MAX][MAX];
+bool visited[MAX][MAX];
+pii dirs[4] = {pii(-1, 0), pii(1, 0), pii(0, -1), pii(0, 1)};
+
+int cases, rows, cols;
+char tile;
+queue<Node> q;
+
+bool isPath(int x, int y) {
+    if (x>=0 && y>=0 && x<rows && y<cols && !visited[x][y] && maze[x][y] != '*') {
+        visited[x][y] = true;
+        return true;
+    }
+    return false;
+}
+
+void S3_2008() {
+    scanf("%d", &cases);
+    for (int i = 0; i < cases; i++) {
+        queue<Node>().swap(q);
+        scanf("%d", &rows);
+        scanf("%d", &cols);
+        for (int j = 0; j < rows; j++) {
+            for (int k = 0; k < cols; k++) {
+                scanf(" %c", &tile);
+                maze[j][k] = tile;
+                visited[j][k] = false;
+            }
+        }
+        Node start, next;
+        start.x = 0;
+        start.y = 0;
+        start.distance = 1;
+        q.push(start);
+        bool noPath = true;
+        while (!q.empty()) {
+            Node cur = q.front();
+            q.pop();
+            if (cur.x == (rows-1) && cur.y == (cols-1)) {
+                cout << cur.distance << endl;
+                noPath = false;
+                break;
+            }
+            if (maze[cur.x][cur.y] == '+') {
+                for (int a = 0; a < 4; a++) {
+                    next.x = cur.x + dirs[a].first;
+                    next.y = cur.y + dirs[a].second;
+                    next.distance = cur.distance + 1;
+                    if (isPath(next.x, next.y)) q.push(next);
+                }
+            }
+            if (maze[cur.x][cur.y] == '-') {
+                for (int a = 2; a < 4; a++) {
+                    next.x = cur.x + dirs[a].first;
+                    next.y = cur.y + dirs[a].second;
+                    next.distance = cur.distance + 1;
+                    if (isPath(next.x, next.y)) q.push(next);
+                }
+            }
+            if (maze[cur.x][cur.y] == '|') {
+                for (int a = 0; a < 2; a++) {
+                    next.x = cur.x + dirs[a].first;
+                    next.y = cur.y + dirs[a].second;
+                    next.distance = cur.distance + 1;
+                    if (isPath(next.x, next.y)) q.push(next);
+                }
+            }
+        }
+        if (noPath) {
+            cout << -1 << endl;
+        }
+    }
 }

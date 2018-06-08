@@ -100,22 +100,22 @@ void S3_2018() {
     }
 }
 
-map<int, long long> memo;
-
-long long recursion(int n) {
-    long long ans = memo[n];
-    if (ans) {
-        return memo[n];
-    }
-    if (n == 1) {
-        return 1;
-    }
-    for (int i = 2; i <= n;) {
-        long long p = n/i;
-        long long times = n % i == 0 ? i : n / p;
-        ans += (times - i + 1) * recursion(p);
-        i = times + 1;
-    }
-    memo[n] = ans;
-    return ans;
-}
+//map<int, long long> memo;
+//
+//long long recursion(int n) {
+//    long long ans = memo[n];
+//    if (ans) {
+//        return memo[n];
+//    }
+//    if (n == 1) {
+//        return 1;
+//    }
+//    for (int i = 2; i <= n;) {
+//        long long p = n/i;
+//        long long times = n % i == 0 ? i : n / p;
+//        ans += (times - i + 1) * recursion(p);
+//        i = times + 1;
+//    }
+//    memo[n] = ans;
+//    return ans;
+//}

@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/DMOJ.dir/completed.cpp.o CMakeFiles/DMOJ.dir/main.cpp.o CMakeFiles/DMOJ.dir/wip.cpp.o  -o DMOJ.exe -Wl,--out-implib,libDMOJ.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

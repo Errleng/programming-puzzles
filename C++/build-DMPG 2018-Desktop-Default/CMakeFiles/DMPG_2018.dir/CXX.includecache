@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/aisae/Documents/Sourcetree/Challenges/C++/DMPG 2018/main.cpp
+iostream
+-
+cmath
+-
+string
+-
+vector
+-
+

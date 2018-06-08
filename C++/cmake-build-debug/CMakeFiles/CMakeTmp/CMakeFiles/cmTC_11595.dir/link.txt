@@ -1,0 +1,1 @@
+/usr/bin/c++.exe    -Wl,--enable-auto-import -v CMakeFiles/cmTC_11595.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_11595.exe -Wl,--out-implib,libcmTC_11595.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

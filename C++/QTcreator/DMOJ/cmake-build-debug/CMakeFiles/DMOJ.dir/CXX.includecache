@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/aisae/Documents/Sourcetree/Challenges/C++/QTcreator/DMOJ/completed.cpp
+chrono
+-
+iostream
+-
+vector
+-
+string
+-
+sstream
+-
+queue
+-
+cmath
+-
+algorithm
+-
+memory
+-
+
+/cygdrive/c/Users/aisae/Documents/Sourcetree/Challenges/C++/QTcreator/DMOJ/main.cpp
+chrono
+-
+bits/stdc++.h
+-
+
+/cygdrive/c/Users/aisae/Documents/Sourcetree/Challenges/C++/QTcreator/DMOJ/wip.cpp
+iostream
+-
+vector
+-
+queue
+-
+string
+-
+bits/stdc++.h
+-
+

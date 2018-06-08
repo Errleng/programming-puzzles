@@ -12,9 +12,30 @@ using namespace std::chrono;
 typedef std::pair<int,int> pii;
 using namespace std;
 
-using namespace std;
 typedef pair<int,int> pii;
+map<int, long long> memo;
+int N;
+long long recursion(int n) {
+    long long ans = memo[n];
+    if (ans) {
+        return memo[n];
+    }
+    if (n == 1) {
+        return 1;
+    }
+    for (int i = 1; i <= sqrt(N); i++) {
+        ans += (n/i - n/(i+1)) * recursion(i);
+        if (i >= 2 && n/i > sqrt(N)) {
+            ans += recursion(n/i);
+        }
+    }
+    memo[n] = ans;
+    return ans;
+}
+
 int main() {
+    N = 10;
+    cout << recursion(N) << endl;
 }
 
 //int main(int argc, char *argv[])

@@ -1,0 +1,4 @@
+C:\Users\aisae\.CLion2018.1\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/aisae/Documents/Sourcetree/Challenges/C++/QTcreator/DMOJ
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /cygdrive/c/Users/aisae/Documents/Sourcetree/Challenges/C++/QTcreator/DMOJ/cmake-build-debug

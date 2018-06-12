@@ -1,0 +1,11 @@
+{"compile":[
+["c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\fibonacci.c", "C:\\Users\\aisae\\Documents\\Dependencies\\mingw64\\bin\\gcc.exe -c  -w -mno-ms-bitfields  -IC:\\Users\\aisae\\Documents\\Dependencies\\nim-0.18.0\\lib -o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\fibonacci.o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\fibonacci.c"],
+["c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_math.c", "C:\\Users\\aisae\\Documents\\Dependencies\\mingw64\\bin\\gcc.exe -c  -w -mno-ms-bitfields  -IC:\\Users\\aisae\\Documents\\Dependencies\\nim-0.18.0\\lib -o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_math.o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_math.c"]
+],
+"link":[
+"c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\fibonacci.o",
+"c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_system.o",
+"c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_math.o"
+],
+"linkcmd": "C:\\Users\\aisae\\Documents\\Dependencies\\mingw64\\bin\\gcc.exe   -o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\fibonacci.exe  c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\fibonacci.o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_system.o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_math.o    "
+}

@@ -1,0 +1,10 @@
+{"compile":[
+["d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\tempCodeRunnerFile.c", "D:\\Documents\\Code\\mingw64\\bin\\gcc.exe -c  -w -mno-ms-bitfields  -ID:\\Documents\\Code\\nim-0.18.0\\lib -o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\tempCodeRunnerFile.o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\tempCodeRunnerFile.c"],
+["d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_system.c", "D:\\Documents\\Code\\mingw64\\bin\\gcc.exe -c  -w -mno-ms-bitfields  -ID:\\Documents\\Code\\nim-0.18.0\\lib -o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_system.o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_system.c"]
+],
+"link":[
+"d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\tempCodeRunnerFile.o",
+"d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_system.o"
+],
+"linkcmd": "D:\\Documents\\Code\\mingw64\\bin\\gcc.exe   -o d:\\Documents\\SourceTree\\Challenges\\Nim\\tempCodeRunnerFile.exe  d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\tempCodeRunnerFile.o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_system.o    "
+}

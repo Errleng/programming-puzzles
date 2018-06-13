@@ -3,11 +3,12 @@
 /* The generated code is subject to the original license. */
 /* Compiled for: Windows, amd64, gcc */
 /* Command for C compiler:
-   C:\Users\aisae\Documents\Dependencies\mingw64\bin\gcc.exe -c  -w -mno-ms-bitfields  -IC:\Users\aisae\Documents\Dependencies\nim-0.18.0\lib -o c:\Users\aisae\Documents\Sourcetree\Challenges\Nim\nimcache\stdlib_math.o c:\Users\aisae\Documents\Sourcetree\Challenges\Nim\nimcache\stdlib_math.c */
+   D:\Documents\Code\mingw64\bin\gcc.exe -c  -w -mno-ms-bitfields -DWIN32_LEAN_AND_MEAN  -ID:\Documents\Code\nim-0.18.0\lib -o d:\Documents\SourceTree\Challenges\Nim\nimcache\stdlib_math.o d:\Documents\SourceTree\Challenges\Nim\nimcache\stdlib_math.c */
 #define NIM_NEW_MANGLING_RULES
 #define NIM_INTBITS 64
 
 #include "nimbase.h"
+#include <math.h>
 #undef LANGUAGE_C
 #undef MIPSEB
 #undef MIPSEL
@@ -20,7 +21,22 @@
 #undef near
 #undef powerpc
 #undef unix
+typedef struct NimStringDesc NimStringDesc;
+typedef struct TGenericSeq TGenericSeq;
+typedef struct tyTuple_1v9bKyksXWMsm0vNwmZ4EuQ tyTuple_1v9bKyksXWMsm0vNwmZ4EuQ;
 typedef NU8 tyEnum_FloatClass_pPga1yW9b8J9cwNnm9b1aPRnA;
+struct TGenericSeq {
+NI len;
+NI reserved;
+};
+struct NimStringDesc {
+  TGenericSeq Sup;
+NIM_CHAR data[SEQ_DECL_SIZE];
+};
+struct tyTuple_1v9bKyksXWMsm0vNwmZ4EuQ {
+NI Field0;
+NI Field1;
+};
 N_LIB_PRIVATE N_NIMCALL(NI, binom_TP1l1uTkkFkPa6yon2PyGg)(NI n, NI k);
 N_NIMCALL(NI, mulInt)(NI a, NI b);
 static N_INLINE(NI, subInt)(NI a, NI b);
@@ -36,7 +52,12 @@ N_LIB_PRIVATE N_NIMCALL(tyEnum_FloatClass_pPga1yW9b8J9cwNnm9b1aPRnA, classify_rf
 N_LIB_PRIVATE N_NIMCALL(NIM_BOOL, isPowerOfTwo_M0Db9b9cHxuUgw2ZF0P8utPg)(NI x);
 N_LIB_PRIVATE N_NIMCALL(NI, nextPowerOfTwo_gcitR3TEXHJ3GR9bmwIvtRA)(NI x);
 N_LIB_PRIVATE N_NIMCALL(NI, countBits32_hJyETcwTUJpi9clvlrTbRyA)(NI32 n);
+N_LIB_PRIVATE N_NIMCALL(void, failedAssertImpl_aDmpBTs9cPuXp0Mp9cfiNeyA)(NimStringDesc* msg);
+static N_INLINE(void, stareq__tk9bwZBdb9bO9baUcUN2AX89bQmath)(NI* x, NI y);
+static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
+N_NOINLINE(void, raiseRangeError)(NI64 val);
 extern TFrame* framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw;
+STRING_LITERAL(TM_YqBQIdfvZX5pt75kDBsDLg_11, "\012T(0) <= y ", 11);
 
 static N_INLINE(NI, subInt)(NI a, NI b) {
 	NI result;
@@ -305,6 +326,109 @@ N_LIB_PRIVATE N_NIMCALL(NI, countBits32_hJyETcwTUJpi9clvlrTbRyA)(NI32 n) {
 	v = (NI32)((NU32)(v) - (NU32)((NI32)((NI32)((NU32)(v) >> (NU32)(((NI32) 1))) & ((NI32) 1431655765))));
 	v = (NI32)((NU32)((NI32)(v & ((NI32) 858993459))) + (NU32)((NI32)((NI32)((NU32)(v) >> (NU32)(((NI32) 2))) & ((NI32) 858993459))));
 	result = ((NI) ((NI32)((NU32)((NI32)((NU32)((NI32)((NI32)((NU32)(v) + (NU32)((NI32)((NU32)(v) >> (NU32)(((NI32) 4))))) & ((NI32) 252645135))) * (NU32)(((NI32) 16843009)))) >> (NU32)(((NI32) 24)))));
+	return result;
+}
+
+N_LIB_PRIVATE N_NIMCALL(NF, round_FL9bhksfuQsfLDCxRHuknsg)(NF x, NI places) {
+	NF result;
+	result = (NF)0;
+	{
+		if (!(places == ((NI) 0))) goto LA3_;
+		result = round(x);
+	}
+	goto LA1_;
+	LA3_: ;
+	{
+		NF mult;
+		NF T6_;
+		mult = pow(1.0000000000000000e+001, ((NF) (places)));
+		T6_ = (NF)0;
+		T6_ = round(((NF)(x) * (NF)(mult)));
+		result = ((NF)(T6_) / (NF)(mult));
+	}
+	LA1_: ;
+	return result;
+}
+
+static N_INLINE(void, stareq__tk9bwZBdb9bO9baUcUN2AX89bQmath)(NI* x, NI y) {
+	NI TM_YqBQIdfvZX5pt75kDBsDLg_12;
+	nimfr_("*=", "system.nim");
+	nimln_(3695, "system.nim");
+	TM_YqBQIdfvZX5pt75kDBsDLg_12 = mulInt((*x), y);
+	(*x) = (NI)(TM_YqBQIdfvZX5pt75kDBsDLg_12);
+	popFrame();
+}
+
+static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
+	NI result;
+{	result = (NI)0;
+	{
+		NIM_BOOL T3_;
+		T3_ = (NIM_BOOL)0;
+		T3_ = (a <= i);
+		if (!(T3_)) goto LA4_;
+		T3_ = (i <= b);
+		LA4_: ;
+		if (!T3_) goto LA5_;
+		result = i;
+		goto BeforeRet_;
+	}
+	goto LA1_;
+	LA5_: ;
+	{
+		raiseRangeError(((NI64) (i)));
+	}
+	LA1_: ;
+	}BeforeRet_: ;
+	return result;
+}
+
+N_LIB_PRIVATE N_NIMCALL(NI, roof__quCe21GD6ES9cmTsTs9cYP7Q)(NI x, NI y) {
+	NI result;
+	tyTuple_1v9bKyksXWMsm0vNwmZ4EuQ T5_;
+	NI x_2;
+	NI y_2;
+	nimfr_("^", "math.nim");
+	result = (NI)0;
+	nimln_(433, "math.nim");
+	{
+		if (!!((((NI) 0) <= ((NI) (y))))) goto LA3_;
+		failedAssertImpl_aDmpBTs9cPuXp0Mp9cfiNeyA(((NimStringDesc*) &TM_YqBQIdfvZX5pt75kDBsDLg_11));
+	}
+	LA3_: ;
+	nimln_(436, "math.nim");
+	T5_.Field0 = x;
+	T5_.Field1 = y;
+	x_2 = T5_.Field0;
+	y_2 = T5_.Field1;
+	nimln_(437, "math.nim");
+	result = ((NI) 1);
+	{
+		nimln_(439, "math.nim");
+		while (1) {
+			nimln_(440, "math.nim");
+			{
+				nimln_(398, "system.nim");
+				nimln_(440, "math.nim");
+				if (!!(((NI)(((NI) (y_2)) & ((NI) 1)) == ((NI) 0)))) goto LA10_;
+				nimln_(441, "math.nim");
+				stareq__tk9bwZBdb9bO9baUcUN2AX89bQmath((&result), x_2);
+			}
+			LA10_: ;
+			nimln_(442, "math.nim");
+			y_2 = ((NI)chckRange((NI)((NU64)(((NI) (y_2))) >> (NU64)(((NI) 1))), ((NI) 0), ((NI) IL64(9223372036854775807))));
+			nimln_(443, "math.nim");
+			{
+				if (!(((NI) (y_2)) == ((NI) 0))) goto LA14_;
+				nimln_(444, "math.nim");
+				goto LA6;
+			}
+			LA14_: ;
+			nimln_(445, "math.nim");
+			stareq__tk9bwZBdb9bO9baUcUN2AX89bQmath((&x_2), x_2);
+		}
+	} LA6: ;
+	popFrame();
 	return result;
 }
 NIM_EXTERNC N_NOINLINE(void, stdlib_mathInit000)(void) {

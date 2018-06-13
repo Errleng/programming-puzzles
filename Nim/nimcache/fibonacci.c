@@ -3,7 +3,7 @@
 /* The generated code is subject to the original license. */
 /* Compiled for: Windows, amd64, gcc */
 /* Command for C compiler:
-   C:\Users\aisae\Documents\Dependencies\mingw64\bin\gcc.exe -c  -w -mno-ms-bitfields  -IC:\Users\aisae\Documents\Dependencies\nim-0.18.0\lib -o c:\Users\aisae\Documents\Sourcetree\Challenges\Nim\nimcache\fibonacci.o c:\Users\aisae\Documents\Sourcetree\Challenges\Nim\nimcache\fibonacci.c */
+   D:\Documents\Code\mingw64\bin\gcc.exe -c  -w -mno-ms-bitfields -DWIN32_LEAN_AND_MEAN  -ID:\Documents\Code\nim-0.18.0\lib -o d:\Documents\SourceTree\Challenges\Nim\nimcache\fibonacci.o d:\Documents\SourceTree\Challenges\Nim\nimcache\fibonacci.c */
 #define NIM_NEW_MANGLING_RULES
 #define NIM_INTBITS 64
 
@@ -24,18 +24,18 @@
 #undef unix
 typedef struct tySequence_IHUFRsFxZNv7YydiUO2esQ tySequence_IHUFRsFxZNv7YydiUO2esQ;
 typedef struct TGenericSeq TGenericSeq;
-typedef struct NimStringDesc NimStringDesc;
+typedef struct tySequence_shxop0zPIs5Ec3k71aCLuQ tySequence_shxop0zPIs5Ec3k71aCLuQ;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
+typedef struct tySequence_8Np6tlClE5az1CyqZdN19bQ tySequence_8Np6tlClE5az1CyqZdN19bQ;
+typedef struct tyTuple_1v9bKyksXWMsm0vNwmZ4EuQ tyTuple_1v9bKyksXWMsm0vNwmZ4EuQ;
+typedef struct tySequence_qwqHTkRvwhrRyENtudHQ7g tySequence_qwqHTkRvwhrRyENtudHQ7g;
+typedef struct tyObject_HSlice_x7qpDivRIi6zcMSMsudNPA tyObject_HSlice_x7qpDivRIi6zcMSMsudNPA;
+typedef struct NimStringDesc NimStringDesc;
 struct TGenericSeq {
 NI len;
 NI reserved;
 };
-struct NimStringDesc {
-  TGenericSeq Sup;
-NIM_CHAR data[SEQ_DECL_SIZE];
-};
-typedef NimStringDesc* tyArray_nHXaesL0DJZHyVS07ARPRA[1];
 typedef NU8 tyEnum_TNimKind_jIBKr1ejBgsfM33Kxw4j7A;
 typedef NU8 tySet_tyEnum_TNimTypeFlag_v8QUszD1sWlSIWZz7mC4bQ;
 typedef N_NIMCALL_PTR(void, tyProc_ojoeKfW4VYIm36I9cpDTQIg) (void* p, NI op);
@@ -59,44 +59,123 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
+struct tyTuple_1v9bKyksXWMsm0vNwmZ4EuQ {
+NI Field0;
+NI Field1;
+};
+struct tyObject_HSlice_x7qpDivRIi6zcMSMsudNPA {
+NI a;
+NI b;
+};
+struct NimStringDesc {
+  TGenericSeq Sup;
+NIM_CHAR data[SEQ_DECL_SIZE];
+};
+typedef NimStringDesc* tyArray_nHXaesL0DJZHyVS07ARPRA[1];
 struct tySequence_IHUFRsFxZNv7YydiUO2esQ {
   TGenericSeq Sup;
   NI64 data[SEQ_DECL_SIZE];
 };
-N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, prime_factorize_9btfSQmAdKV2xmhyxQPgcMw)(NI64 n);
-N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, newSeq_K4uiYKl7aEFNrk8kJo7BtQ)(NI len);
-N_NIMCALL(TGenericSeq*, incrSeqV2)(TGenericSeq* seq, NI elemSize);
+struct tySequence_shxop0zPIs5Ec3k71aCLuQ {
+  TGenericSeq Sup;
+  NIM_BOOL data[SEQ_DECL_SIZE];
+};
+struct tySequence_8Np6tlClE5az1CyqZdN19bQ {
+  TGenericSeq Sup;
+  tyTuple_1v9bKyksXWMsm0vNwmZ4EuQ data[SEQ_DECL_SIZE];
+};
+struct tySequence_qwqHTkRvwhrRyENtudHQ7g {
+  TGenericSeq Sup;
+  NI data[SEQ_DECL_SIZE];
+};
+N_LIB_PRIVATE N_NIMCALL(NIM_BOOL, is_prime_byEN1HFaxcnroJSz43B19aQ)(NI n);
+static N_INLINE(NI, modInt)(NI a, NI b);
+N_NOINLINE(void, raiseDivByZero)(void);
 static N_INLINE(NI, addInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
-N_LIB_PRIVATE N_NIMCALL(NimStringDesc*, dollar__0b4ekXvToMcMODtKTiwn1A)(tySequence_IHUFRsFxZNv7YydiUO2esQ* x);
-N_NIMCALL(void, echoBinSafe)(NimStringDesc** args, NI argsLen_0);
-static N_INLINE(NI64, modInt64)(NI64 a, NI64 b);
-N_NOINLINE(void, raiseDivByZero)(void);
-N_NOINLINE(void, raiseIndexError)(void);
-static N_INLINE(NI64, addInt64)(NI64 a, NI64 b);
-static N_INLINE(NF, slash__fu0hCFNNw3xnGgcs2KwTWgsystem)(NI x, NI y);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_LIB_PRIVATE N_NOINLINE(void, stackOverflow_II46IjNZztN9bmbxUD8dt8g)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(void, genericSeqAssign)(void* dest, void* src, TNimType* mt);
-N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, fib_seq_XazPuNBjdSNg3uZwoGbpzA)(NI64 n);
+N_LIB_PRIVATE N_NIMCALL(NI, gcd_nTfBH6Na9a6LmdRKoLN9a0uQ)(NI a, NI b);
+static N_INLINE(NI, subInt)(NI a, NI b);
+N_LIB_PRIVATE N_NIMCALL(NI, lcm_nTfBH6Na9a6LmdRKoLN9a0uQ_2)(NI a, NI b);
+N_NIMCALL(NI, mulInt)(NI a, NI b);
+static N_INLINE(NI, divInt)(NI a, NI b);
+N_LIB_PRIVATE N_NIMCALL(NI64, fib_OXmP9cx9bObwuEJXyu6BoEUA)(NI64 n);
 static N_INLINE(NI64, subInt64)(NI64 a, NI64 b);
-N_LIB_PRIVATE N_NIMCALL(NI64, pisano_period_9b9a7ssqgv9ay536xNiwlX8gA)(NI64 m);
+static N_INLINE(NI64, addInt64)(NI64 a, NI64 b);
+N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, sieve_seq_XazPuNBjdSNg3uZwoGbpzA)(NI64 n);
+N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, newSeq_K4uiYKl7aEFNrk8kJo7BtQ)(NI len);
+N_LIB_PRIVATE N_NIMCALL(tySequence_shxop0zPIs5Ec3k71aCLuQ*, newSeq_Ltn5D7x7AgJUEN0OQVkiEw)(NI len);
+N_NIMCALL(NI64, chckRange64)(NI64 i, NI64 a, NI64 b);
 N_NIMCALL(NI64, mulInt64)(NI64 a, NI64 b);
+N_NOINLINE(void, raiseIndexError)(void);
+N_NIMCALL(TGenericSeq*, incrSeqV2)(TGenericSeq* seq, NI elemSize);
+N_NIMCALL(void, genericSeqAssign)(void* dest, void* src, TNimType* mt);
+N_LIB_PRIVATE N_NIMCALL(tySequence_8Np6tlClE5az1CyqZdN19bQ*, prime_factorize_dQvuDJa3PdeNHCqbVJi01Q)(NI64 n);
+N_LIB_PRIVATE N_NIMCALL(tySequence_8Np6tlClE5az1CyqZdN19bQ*, newSeq_A0aXBoJB6T39aDpQU7Kbv9aA)(NI len);
+N_LIB_PRIVATE N_NIMCALL(tySequence_qwqHTkRvwhrRyENtudHQ7g*, newSeq_vg7LhJDfsuQYl9cZfOCH1Fw)(NI len);
+static N_INLINE(NI64, modInt64)(NI64 a, NI64 b);
+static N_INLINE(NI64, divInt64)(NI64 a, NI64 b);
+N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, fib_seq_XazPuNBjdSNg3uZwoGbpzA_2)(NI64 n);
+N_LIB_PRIVATE N_NIMCALL(NI64, pisano_period_9b9a7ssqgv9ay536xNiwlX8gA)(NI64 m);
+N_LIB_PRIVATE N_NIMCALL(NI64, pisano_period_matrix_9b9a7ssqgv9ay536xNiwlX8gA_2)(NI64 m);
+N_LIB_PRIVATE N_NIMCALL(NIM_BOOL, eqeq__wAiqF9boRmi678XkqCCmKmg)(tySequence_IHUFRsFxZNv7YydiUO2esQ* x, tySequence_IHUFRsFxZNv7YydiUO2esQ* y);
+N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, X5BX5D__U86iIndOsF9cvl9bGVLl9bHew)(NI64* s, NI sLen_0, tyObject_HSlice_x7qpDivRIi6zcMSMsudNPA x);
+static N_INLINE(tyObject_HSlice_x7qpDivRIi6zcMSMsudNPA, dotdot__vDQySKWzgnxQdUarow6k5Qtimes)(NI a, NI b);
 N_LIB_PRIVATE N_NIMCALL(NI64, fib_mod_m_tPwH6fOJ62ma2JW479bsx6A)(NI64 n, NI64 m);
 N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, fib_mod_seq_U2MJiqn86qSPWlDy4jAekA)(NI64 n, NI64 m);
-N_LIB_PRIVATE N_NIMCALL(NimStringDesc*, collectionToString_9cUgpFExghz2xc7T9aS9cYsUQ)(tySequence_IHUFRsFxZNv7YydiUO2esQ* x, NimStringDesc* prefix, NimStringDesc* separator, NimStringDesc* suffix);
-N_LIB_PRIVATE N_NIMCALL(void, addQuoted_OZ3WzoMLDLYdJ875pkutmA)(NimStringDesc** s, NI64 x);
+N_LIB_PRIVATE N_NIMCALL(NI, roof__quCe21GD6ES9cmTsTs9cYP7Q)(NI x, NI y);
+N_NIMCALL(NimStringDesc*, nimIntToStr)(NI x);
+N_NIMCALL(void, echoBinSafe)(NimStringDesc** args, NI argsLen_0);
+static N_INLINE(void, stareq__tk9bwZBdb9bO9baUcUN2AX89bQmath)(NI* x, NI y);
 static N_INLINE(void, initStackBottomWith)(void* locals);
 N_NOINLINE(void, setStackBottom)(void* theStackBottom);
 NIM_EXTERNC N_NOINLINE(void, systemInit000)(void);
 NIM_EXTERNC N_NOINLINE(void, systemDatInit000)(void);
 NIM_EXTERNC N_NOINLINE(void, stdlib_mathInit000)(void);
 NIM_EXTERNC N_NOINLINE(void, stdlib_mathDatInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_parseutilsInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_parseutilsDatInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_algorithmInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_algorithmDatInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_strutilsInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_strutilsDatInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_dynlibInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_dynlibDatInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_winleanInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_winleanDatInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_timesInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_timesDatInit000)(void);
 NIM_EXTERNC N_NOINLINE(void, NimMainModule)(void);
 NIM_EXTERNC N_NOINLINE(void, fibonacciDatInit000)(void);
 extern TFrame* framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw;
 extern TNimType NTI_IHUFRsFxZNv7YydiUO2esQ_;
+TNimType NTI_1v9bKyksXWMsm0vNwmZ4EuQ_;
+extern TNimType NTI_rR5Bzr1D5krxoo1NcNyeMA_;
+extern TNimType NTI_8Np6tlClE5az1CyqZdN19bQ_;
+NI dmoj_m_56zZueV9cJX6GESAYmBvV8Q;
+NI dmoj_pisano_period_AT9btKHo9b52QMiILOFSK7Gw;
+NI n_QCfubBUdzgyrwlImNmokzg;
+NI rem_AJbUva82LOSSFeoZiPF3bA;
+NI f_4i8inHERs9cRhOrgJQDD3pQ;
+NI s_sLu2IMVp9cAXjt3Vfd5PfjA;
+NI res_xlP9b9cPw7wdfFhQQvzPE34Q;
+NI i_MX2L9cVNa9aGuWF08moLKqzQ;
+
+static N_INLINE(NI, modInt)(NI a, NI b) {
+	NI result;
+{	result = (NI)0;
+	{
+		if (!(b == ((NI) 0))) goto LA3_;
+		raiseDivByZero();
+	}
+	LA3_: ;
+	result = (NI)(a % b);
+	goto BeforeRet_;
+	}BeforeRet_: ;
+	return result;
+}
 
 static N_INLINE(NI, addInt)(NI a, NI b) {
 	NI result;
@@ -108,40 +187,6 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 		T3_ = (((NI) 0) <= (NI)(result ^ a));
 		if (T3_) goto LA4_;
 		T3_ = (((NI) 0) <= (NI)(result ^ b));
-		LA4_: ;
-		if (!T3_) goto LA5_;
-		goto BeforeRet_;
-	}
-	LA5_: ;
-	raiseOverflow();
-	}BeforeRet_: ;
-	return result;
-}
-
-static N_INLINE(NI64, modInt64)(NI64 a, NI64 b) {
-	NI64 result;
-{	result = (NI64)0;
-	{
-		if (!(b == IL64(0))) goto LA3_;
-		raiseDivByZero();
-	}
-	LA3_: ;
-	result = (NI64)(a % b);
-	goto BeforeRet_;
-	}BeforeRet_: ;
-	return result;
-}
-
-static N_INLINE(NI64, addInt64)(NI64 a, NI64 b) {
-	NI64 result;
-{	result = (NI64)0;
-	result = (NI64)((NU64)(a) + (NU64)(b));
-	{
-		NIM_BOOL T3_;
-		T3_ = (NIM_BOOL)0;
-		T3_ = (IL64(0) <= (NI64)(result ^ a));
-		if (T3_) goto LA4_;
-		T3_ = (IL64(0) <= (NI64)(result ^ b));
 		LA4_: ;
 		if (!T3_) goto LA5_;
 		goto BeforeRet_;
@@ -179,108 +224,148 @@ static N_INLINE(void, popFrame)(void) {
 	framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw = (*framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw).prev;
 }
 
-static N_INLINE(NF, slash__fu0hCFNNw3xnGgcs2KwTWgsystem)(NI x, NI y) {
-	NF result;
-	nimfr_("/", "system.nim");
-	result = (NF)0;
-	nimln_(3498, "system.nim");
-	result = ((NF)(((double) (x))) / (NF)(((double) (y))));
-	popFrame();
-	return result;
-}
-
-N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, prime_factorize_9btfSQmAdKV2xmhyxQPgcMw)(NI64 n) {
-	tySequence_IHUFRsFxZNv7YydiUO2esQ* result;
-	tySequence_IHUFRsFxZNv7YydiUO2esQ* prime_factors;
-	NI n_sqrt;
-	NF T1_;
-	tyArray_nHXaesL0DJZHyVS07ARPRA T6_;
-	NI64 temp_n;
-	NI64 i_2;
-	nimfr_("prime_factorize", "fibonacci.nim");
-{	result = (tySequence_IHUFRsFxZNv7YydiUO2esQ*)0;
-	nimln_(5, "fibonacci.nim");
-	prime_factors = newSeq_K4uiYKl7aEFNrk8kJo7BtQ(((NI) 0));
-	nimln_(6, "fibonacci.nim");
-	T1_ = (NF)0;
-	T1_ = sqrt(((NF) (n)));
-	n_sqrt = ((NI) (T1_));
+N_LIB_PRIVATE N_NIMCALL(NIM_BOOL, is_prime_byEN1HFaxcnroJSz43B19aQ)(NI n) {
+	NIM_BOOL result;
+	nimfr_("is_prime", "fibonacci.nim");
+{	result = (NIM_BOOL)0;
 	{
 		NI i;
 		NI res;
 		i = (NI)0;
-		nimln_(2045, "system.nim");
-		res = ((NI) 0);
+		nimln_(2032, "system.nim");
+		res = ((NI) 2);
 		{
-			nimln_(2046, "system.nim");
+			nimln_(2033, "system.nim");
 			while (1) {
-				NI T5_;
-				NI TM_Vgl9cfKragMtnbvBdG1w9aow_2;
-				if (!(res <= n_sqrt)) goto LA4;
-				nimln_(2047, "system.nim");
+				NI TM_Vgl9cfKragMtnbvBdG1w9aow_3;
+				if (!(res <= n)) goto LA3;
+				nimln_(2034, "system.nim");
 				i = res;
-				nimln_(8, "fibonacci.nim");
-				prime_factors = (tySequence_IHUFRsFxZNv7YydiUO2esQ*) incrSeqV2(&(prime_factors)->Sup, sizeof(NI));
-				T5_ = prime_factors->Sup.len++;
-				prime_factors->data[T5_] = ((NI) 0);
-				nimln_(2048, "system.nim");
-				TM_Vgl9cfKragMtnbvBdG1w9aow_2 = addInt(res, ((NI) 1));
-				res = (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_2);
-			} LA4: ;
+				nimln_(7, "fibonacci.nim");
+				{
+					NI TM_Vgl9cfKragMtnbvBdG1w9aow_2;
+					TM_Vgl9cfKragMtnbvBdG1w9aow_2 = modInt(n, i);
+					if (!((NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_2) == ((NI) 0))) goto LA6_;
+					nimln_(8, "fibonacci.nim");
+					result = NIM_FALSE;
+					goto BeforeRet_;
+				}
+				LA6_: ;
+				nimln_(2035, "system.nim");
+				TM_Vgl9cfKragMtnbvBdG1w9aow_3 = addInt(res, ((NI) 2));
+				res = (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_3);
+			} LA3: ;
 		}
 	}
-	nimln_(10, "fibonacci.nim");
-	memset((void*)T6_, 0, sizeof(T6_));
-	T6_[0] = dollar__0b4ekXvToMcMODtKTiwn1A(prime_factors);
-	echoBinSafe(T6_, 1);
+	}BeforeRet_: ;
+	popFrame();
+	return result;
+}
+
+static N_INLINE(NI, subInt)(NI a, NI b) {
+	NI result;
+{	result = (NI)0;
+	result = (NI)((NU64)(a) - (NU64)(b));
 	{
+		NIM_BOOL T3_;
+		T3_ = (NIM_BOOL)0;
+		T3_ = (((NI) 0) <= (NI)(result ^ a));
+		if (T3_) goto LA4_;
+		T3_ = (((NI) 0) <= (NI)(result ^ (NI)((NU64) ~(b))));
+		LA4_: ;
+		if (!T3_) goto LA5_;
+		goto BeforeRet_;
+	}
+	LA5_: ;
+	raiseOverflow();
+	}BeforeRet_: ;
+	return result;
+}
+
+N_LIB_PRIVATE N_NIMCALL(NI, gcd_nTfBH6Na9a6LmdRKoLN9a0uQ)(NI a, NI b) {
+	NI result;
+	NI TM_Vgl9cfKragMtnbvBdG1w9aow_5;
+	nimfr_("gcd", "fibonacci.nim");
+{	result = (NI)0;
+	nimln_(11, "fibonacci.nim");
+	{
+		NIM_BOOL T3_;
+		T3_ = (NIM_BOOL)0;
+		T3_ = (a == ((NI) 0));
+		if (T3_) goto LA4_;
+		T3_ = (b == ((NI) 0));
+		LA4_: ;
+		if (!T3_) goto LA5_;
 		nimln_(12, "fibonacci.nim");
-		while (1) {
-			NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_3;
-			NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_4;
-			TM_Vgl9cfKragMtnbvBdG1w9aow_3 = modInt64(n, IL64(2));
-			if (!((NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_3) == IL64(0))) goto LA8;
-			nimln_(13, "fibonacci.nim");
-			if ((NU)(((NI) 2)) >= (NU)(prime_factors->Sup.len)) raiseIndexError();
-			TM_Vgl9cfKragMtnbvBdG1w9aow_4 = addInt64(prime_factors->data[((NI) 2)], ((NI) 1));
-			prime_factors->data[((NI) 2)] = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_4);
-		} LA8: ;
+		result = ((NI) 0);
+		goto BeforeRet_;
 	}
-	nimln_(15, "fibonacci.nim");
-	temp_n = n;
-	i_2 = (NI64)0;
-	nimln_(17, "fibonacci.nim");
-	i_2 = IL64(3);
+	LA5_: ;
+	nimln_(13, "fibonacci.nim");
 	{
-		nimln_(18, "fibonacci.nim");
-		while (1) {
-			NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_7;
-			if (!(i_2 <= ((NI64) (n_sqrt)))) goto LA10;
-			{
-				nimln_(19, "fibonacci.nim");
-				while (1) {
-					NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_5;
-					NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_6;
-					NF T13_;
-					TM_Vgl9cfKragMtnbvBdG1w9aow_5 = modInt64(temp_n, i_2);
-					if (!((NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_5) == IL64(0))) goto LA12;
-					nimln_(20, "fibonacci.nim");
-					if ((NU)(i_2) >= (NU)(prime_factors->Sup.len)) raiseIndexError();
-					TM_Vgl9cfKragMtnbvBdG1w9aow_6 = addInt64(prime_factors->data[i_2], ((NI) 1));
-					prime_factors->data[i_2] = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_6);
-					nimln_(21, "fibonacci.nim");
-					T13_ = (NF)0;
-					T13_ = slash__fu0hCFNNw3xnGgcs2KwTWgsystem(((NI) (temp_n)), ((NI) (i_2)));
-					temp_n = ((NI64) (T13_));
-				} LA12: ;
-			}
-			nimln_(22, "fibonacci.nim");
-			TM_Vgl9cfKragMtnbvBdG1w9aow_7 = addInt64(i_2, ((NI) 2));
-			i_2 = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_7);
-		} LA10: ;
+		if (!(a == b)) goto LA9_;
+		nimln_(14, "fibonacci.nim");
+		result = a;
+		goto BeforeRet_;
 	}
-	nimln_(23, "fibonacci.nim");
-	genericSeqAssign((&result), prime_factors, (&NTI_IHUFRsFxZNv7YydiUO2esQ_));
+	LA9_: ;
+	nimln_(15, "fibonacci.nim");
+	{
+		NI TM_Vgl9cfKragMtnbvBdG1w9aow_4;
+		if (!(b < a)) goto LA13_;
+		nimln_(16, "fibonacci.nim");
+		TM_Vgl9cfKragMtnbvBdG1w9aow_4 = subInt(a, b);
+		result = gcd_nTfBH6Na9a6LmdRKoLN9a0uQ((NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_4), b);
+		goto BeforeRet_;
+	}
+	LA13_: ;
+	nimln_(17, "fibonacci.nim");
+	TM_Vgl9cfKragMtnbvBdG1w9aow_5 = subInt(b, a);
+	result = gcd_nTfBH6Na9a6LmdRKoLN9a0uQ(a, (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_5));
+	goto BeforeRet_;
+	}BeforeRet_: ;
+	popFrame();
+	return result;
+}
+
+static N_INLINE(NI, divInt)(NI a, NI b) {
+	NI result;
+{	result = (NI)0;
+	{
+		if (!(b == ((NI) 0))) goto LA3_;
+		raiseDivByZero();
+	}
+	LA3_: ;
+	{
+		NIM_BOOL T7_;
+		T7_ = (NIM_BOOL)0;
+		T7_ = (a == ((NI) (IL64(-9223372036854775807) - IL64(1))));
+		if (!(T7_)) goto LA8_;
+		T7_ = (b == ((NI) -1));
+		LA8_: ;
+		if (!T7_) goto LA9_;
+		raiseOverflow();
+	}
+	LA9_: ;
+	result = (NI)(a / b);
+	goto BeforeRet_;
+	}BeforeRet_: ;
+	return result;
+}
+
+N_LIB_PRIVATE N_NIMCALL(NI, lcm_nTfBH6Na9a6LmdRKoLN9a0uQ_2)(NI a, NI b) {
+	NI result;
+	NI TM_Vgl9cfKragMtnbvBdG1w9aow_6;
+	NI T1_;
+	NI TM_Vgl9cfKragMtnbvBdG1w9aow_7;
+	nimfr_("lcm", "fibonacci.nim");
+{	result = (NI)0;
+	nimln_(20, "fibonacci.nim");
+	TM_Vgl9cfKragMtnbvBdG1w9aow_6 = mulInt(a, b);
+	T1_ = (NI)0;
+	T1_ = gcd_nTfBH6Na9a6LmdRKoLN9a0uQ(a, b);
+	TM_Vgl9cfKragMtnbvBdG1w9aow_7 = divInt((NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_6), T1_);
+	result = (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_7);
 	goto BeforeRet_;
 	}BeforeRet_: ;
 	popFrame();
@@ -307,7 +392,379 @@ static N_INLINE(NI64, subInt64)(NI64 a, NI64 b) {
 	return result;
 }
 
-N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, fib_seq_XazPuNBjdSNg3uZwoGbpzA)(NI64 n) {
+static N_INLINE(NI64, addInt64)(NI64 a, NI64 b) {
+	NI64 result;
+{	result = (NI64)0;
+	result = (NI64)((NU64)(a) + (NU64)(b));
+	{
+		NIM_BOOL T3_;
+		T3_ = (NIM_BOOL)0;
+		T3_ = (IL64(0) <= (NI64)(result ^ a));
+		if (T3_) goto LA4_;
+		T3_ = (IL64(0) <= (NI64)(result ^ b));
+		LA4_: ;
+		if (!T3_) goto LA5_;
+		goto BeforeRet_;
+	}
+	LA5_: ;
+	raiseOverflow();
+	}BeforeRet_: ;
+	return result;
+}
+
+N_LIB_PRIVATE N_NIMCALL(NI64, fib_OXmP9cx9bObwuEJXyu6BoEUA)(NI64 n) {
+	NI64 result;
+	NI64 a;
+	NI64 b;
+	NI64 temp;
+	nimfr_("fib", "fibonacci.nim");
+{	result = (NI64)0;
+	a = (NI64)0;
+	b = (NI64)0;
+	temp = (NI64)0;
+	nimln_(24, "fibonacci.nim");
+	{
+		if (!(n == IL64(0))) goto LA3_;
+		nimln_(25, "fibonacci.nim");
+		result = IL64(0);
+		goto BeforeRet_;
+	}
+	LA3_: ;
+	nimln_(26, "fibonacci.nim");
+	a = IL64(0);
+	nimln_(27, "fibonacci.nim");
+	b = IL64(1);
+	{
+		NI64 i;
+		NI64 colontmp_;
+		NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_8;
+		NI64 res;
+		i = (NI64)0;
+		colontmp_ = (NI64)0;
+		nimln_(28, "fibonacci.nim");
+		TM_Vgl9cfKragMtnbvBdG1w9aow_8 = subInt64(n, ((NI) 1));
+		colontmp_ = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_8);
+		nimln_(2059, "system.nim");
+		res = IL64(1);
+		{
+			nimln_(2060, "system.nim");
+			while (1) {
+				NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_9;
+				NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_10;
+				if (!(res <= colontmp_)) goto LA7;
+				nimln_(2061, "system.nim");
+				i = res;
+				nimln_(29, "fibonacci.nim");
+				temp = b;
+				nimln_(30, "fibonacci.nim");
+				TM_Vgl9cfKragMtnbvBdG1w9aow_9 = addInt64(a, b);
+				b = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_9);
+				nimln_(31, "fibonacci.nim");
+				a = temp;
+				nimln_(2062, "system.nim");
+				TM_Vgl9cfKragMtnbvBdG1w9aow_10 = addInt64(res, ((NI) 1));
+				res = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_10);
+			} LA7: ;
+		}
+	}
+	nimln_(32, "fibonacci.nim");
+	result = b;
+	goto BeforeRet_;
+	}BeforeRet_: ;
+	popFrame();
+	return result;
+}
+
+N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, sieve_seq_XazPuNBjdSNg3uZwoGbpzA)(NI64 n) {
+	tySequence_IHUFRsFxZNv7YydiUO2esQ* result;
+	tySequence_IHUFRsFxZNv7YydiUO2esQ* primes;
+	tySequence_shxop0zPIs5Ec3k71aCLuQ* not_prime;
+	NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_11;
+	NI64 p;
+	nimfr_("sieve_seq", "fibonacci.nim");
+{	result = (tySequence_IHUFRsFxZNv7YydiUO2esQ*)0;
+	nimln_(35, "fibonacci.nim");
+	primes = newSeq_K4uiYKl7aEFNrk8kJo7BtQ(((NI) 0));
+	nimln_(36, "fibonacci.nim");
+	TM_Vgl9cfKragMtnbvBdG1w9aow_11 = addInt64(n, IL64(1));
+	not_prime = newSeq_Ltn5D7x7AgJUEN0OQVkiEw(((NI)chckRange64((NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_11), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	p = (NI64)0;
+	nimln_(38, "fibonacci.nim");
+	p = IL64(2);
+	{
+		nimln_(39, "fibonacci.nim");
+		while (1) {
+			NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_12;
+			NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_15;
+			TM_Vgl9cfKragMtnbvBdG1w9aow_12 = mulInt64(p, p);
+			if (!((NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_12) <= n)) goto LA2;
+			nimln_(40, "fibonacci.nim");
+			{
+				if ((NU)(p) >= (NU)(not_prime->Sup.len)) raiseIndexError();
+				if (!!(not_prime->data[p])) goto LA5_;
+				{
+					NI i;
+					NI colontmp_;
+					NI colontmp__2;
+					NI colontmp__3;
+					NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_13;
+					NI res;
+					i = (NI)0;
+					colontmp_ = (NI)0;
+					colontmp__2 = (NI)0;
+					colontmp__3 = (NI)0;
+					nimln_(41, "fibonacci.nim");
+					TM_Vgl9cfKragMtnbvBdG1w9aow_13 = mulInt64(p, IL64(2));
+					colontmp_ = ((NI) ((NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_13)));
+					colontmp__2 = ((NI) (n));
+					colontmp__3 = ((NI) (p));
+					nimln_(2032, "system.nim");
+					res = colontmp_;
+					{
+						nimln_(2033, "system.nim");
+						while (1) {
+							NI TM_Vgl9cfKragMtnbvBdG1w9aow_14;
+							if (!(res <= colontmp__2)) goto LA9;
+							nimln_(2034, "system.nim");
+							i = res;
+							if ((NU)(i) >= (NU)(not_prime->Sup.len)) raiseIndexError();
+							nimln_(42, "fibonacci.nim");
+							not_prime->data[i] = NIM_TRUE;
+							nimln_(2035, "system.nim");
+							TM_Vgl9cfKragMtnbvBdG1w9aow_14 = addInt(res, colontmp__3);
+							res = (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_14);
+						} LA9: ;
+					}
+				}
+			}
+			LA5_: ;
+			nimln_(43, "fibonacci.nim");
+			TM_Vgl9cfKragMtnbvBdG1w9aow_15 = addInt64(p, ((NI) 1));
+			p = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_15);
+		} LA2: ;
+	}
+	{
+		NI64 i_2;
+		NI64 colontmp__4;
+		NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_16;
+		NI64 res_2;
+		i_2 = (NI64)0;
+		colontmp__4 = (NI64)0;
+		nimln_(44, "fibonacci.nim");
+		TM_Vgl9cfKragMtnbvBdG1w9aow_16 = subInt64(n, ((NI) 1));
+		colontmp__4 = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_16);
+		nimln_(2059, "system.nim");
+		res_2 = IL64(2);
+		{
+			nimln_(2060, "system.nim");
+			while (1) {
+				NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_17;
+				if (!(res_2 <= colontmp__4)) goto LA12;
+				nimln_(2061, "system.nim");
+				i_2 = res_2;
+				nimln_(45, "fibonacci.nim");
+				{
+					NI T17_;
+					if ((NU)(i_2) >= (NU)(not_prime->Sup.len)) raiseIndexError();
+					if (!!(not_prime->data[i_2])) goto LA15_;
+					nimln_(46, "fibonacci.nim");
+					primes = (tySequence_IHUFRsFxZNv7YydiUO2esQ*) incrSeqV2(&(primes)->Sup, sizeof(NI64));
+					T17_ = primes->Sup.len++;
+					primes->data[T17_] = i_2;
+				}
+				LA15_: ;
+				nimln_(2062, "system.nim");
+				TM_Vgl9cfKragMtnbvBdG1w9aow_17 = addInt64(res_2, ((NI) 1));
+				res_2 = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_17);
+			} LA12: ;
+		}
+	}
+	nimln_(47, "fibonacci.nim");
+	genericSeqAssign((&result), primes, (&NTI_IHUFRsFxZNv7YydiUO2esQ_));
+	goto BeforeRet_;
+	}BeforeRet_: ;
+	popFrame();
+	return result;
+}
+
+static N_INLINE(NI64, modInt64)(NI64 a, NI64 b) {
+	NI64 result;
+{	result = (NI64)0;
+	{
+		if (!(b == IL64(0))) goto LA3_;
+		raiseDivByZero();
+	}
+	LA3_: ;
+	result = (NI64)(a % b);
+	goto BeforeRet_;
+	}BeforeRet_: ;
+	return result;
+}
+
+static N_INLINE(NI64, divInt64)(NI64 a, NI64 b) {
+	NI64 result;
+{	result = (NI64)0;
+	{
+		if (!(b == IL64(0))) goto LA3_;
+		raiseDivByZero();
+	}
+	LA3_: ;
+	{
+		NIM_BOOL T7_;
+		T7_ = (NIM_BOOL)0;
+		T7_ = (a == (IL64(-9223372036854775807) - IL64(1)));
+		if (!(T7_)) goto LA8_;
+		T7_ = (b == IL64(-1));
+		LA8_: ;
+		if (!T7_) goto LA9_;
+		raiseOverflow();
+	}
+	LA9_: ;
+	result = (NI64)(a / b);
+	goto BeforeRet_;
+	}BeforeRet_: ;
+	return result;
+}
+
+N_LIB_PRIVATE N_NIMCALL(tySequence_8Np6tlClE5az1CyqZdN19bQ*, prime_factorize_dQvuDJa3PdeNHCqbVJi01Q)(NI64 n) {
+	tySequence_8Np6tlClE5az1CyqZdN19bQ* result;
+	tySequence_8Np6tlClE5az1CyqZdN19bQ* prime_factors;
+	tySequence_qwqHTkRvwhrRyENtudHQ7g* is_prime;
+	NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_19;
+	NI64 a;
+	nimfr_("prime_factorize", "fibonacci.nim");
+{	result = (tySequence_8Np6tlClE5az1CyqZdN19bQ*)0;
+	nimln_(50, "fibonacci.nim");
+	prime_factors = newSeq_A0aXBoJB6T39aDpQU7Kbv9aA(((NI) 0));
+	nimln_(51, "fibonacci.nim");
+	TM_Vgl9cfKragMtnbvBdG1w9aow_19 = addInt64(n, IL64(1));
+	is_prime = newSeq_vg7LhJDfsuQYl9cZfOCH1Fw(((NI)chckRange64((NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_19), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	nimln_(52, "fibonacci.nim");
+	a = n;
+	{
+		nimln_(53, "fibonacci.nim");
+		while (1) {
+			NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_20;
+			NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_21;
+			NI TM_Vgl9cfKragMtnbvBdG1w9aow_22;
+			TM_Vgl9cfKragMtnbvBdG1w9aow_20 = modInt64(a, IL64(2));
+			if (!((NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_20) == IL64(0))) goto LA2;
+			nimln_(54, "fibonacci.nim");
+			TM_Vgl9cfKragMtnbvBdG1w9aow_21 = divInt64(a, IL64(2));
+			a = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_21);
+			nimln_(55, "fibonacci.nim");
+			if ((NU)(((NI) 2)) >= (NU)(is_prime->Sup.len)) raiseIndexError();
+			TM_Vgl9cfKragMtnbvBdG1w9aow_22 = addInt(is_prime->data[((NI) 2)], ((NI) 1));
+			is_prime->data[((NI) 2)] = (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_22);
+		} LA2: ;
+	}
+	{
+		NI i;
+		NI colontmp_;
+		NF T4_;
+		NI res;
+		i = (NI)0;
+		colontmp_ = (NI)0;
+		nimln_(56, "fibonacci.nim");
+		T4_ = (NF)0;
+		T4_ = sqrt(((NF) (n)));
+		colontmp_ = ((NI) (T4_));
+		nimln_(2032, "system.nim");
+		res = ((NI) 3);
+		{
+			nimln_(2033, "system.nim");
+			while (1) {
+				NI TM_Vgl9cfKragMtnbvBdG1w9aow_26;
+				if (!(res <= colontmp_)) goto LA6;
+				nimln_(2034, "system.nim");
+				i = res;
+				{
+					nimln_(57, "fibonacci.nim");
+					while (1) {
+						NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_23;
+						NI TM_Vgl9cfKragMtnbvBdG1w9aow_24;
+						NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_25;
+						TM_Vgl9cfKragMtnbvBdG1w9aow_23 = modInt64(a, ((NI64) (i)));
+						if (!((NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_23) == IL64(0))) goto LA8;
+						nimln_(58, "fibonacci.nim");
+						if ((NU)(i) >= (NU)(is_prime->Sup.len)) raiseIndexError();
+						TM_Vgl9cfKragMtnbvBdG1w9aow_24 = addInt(is_prime->data[i], ((NI) 1));
+						is_prime->data[i] = (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_24);
+						nimln_(59, "fibonacci.nim");
+						TM_Vgl9cfKragMtnbvBdG1w9aow_25 = divInt64(a, ((NI64) (i)));
+						a = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_25);
+					} LA8: ;
+				}
+				nimln_(2035, "system.nim");
+				TM_Vgl9cfKragMtnbvBdG1w9aow_26 = addInt(res, ((NI) 2));
+				res = (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_26);
+			} LA6: ;
+		}
+	}
+	{
+		NI i_2;
+		NI colontmp__2;
+		NI T10_;
+		NI i_3;
+		i_2 = (NI)0;
+		colontmp__2 = (NI)0;
+		nimln_(60, "fibonacci.nim");
+		T10_ = (is_prime ? is_prime->Sup.len : 0);
+		colontmp__2 = T10_;
+		nimln_(3519, "system.nim");
+		i_3 = ((NI) 0);
+		{
+			nimln_(3520, "system.nim");
+			while (1) {
+				NI TM_Vgl9cfKragMtnbvBdG1w9aow_27;
+				if (!(i_3 < colontmp__2)) goto LA12;
+				nimln_(3521, "system.nim");
+				i_2 = i_3;
+				nimln_(61, "fibonacci.nim");
+				{
+					tyTuple_1v9bKyksXWMsm0vNwmZ4EuQ T17_;
+					NI T18_;
+					if ((NU)(i_2) >= (NU)(is_prime->Sup.len)) raiseIndexError();
+					if (!(((NI) 0) < is_prime->data[i_2])) goto LA15_;
+					nimln_(62, "fibonacci.nim");
+					T17_.Field0 = i_2;
+					if ((NU)(i_2) >= (NU)(is_prime->Sup.len)) raiseIndexError();
+					T17_.Field1 = is_prime->data[i_2];
+					prime_factors = (tySequence_8Np6tlClE5az1CyqZdN19bQ*) incrSeqV2(&(prime_factors)->Sup, sizeof(tyTuple_1v9bKyksXWMsm0vNwmZ4EuQ));
+					T18_ = prime_factors->Sup.len++;
+					prime_factors->data[T18_] = T17_;
+				}
+				LA15_: ;
+				nimln_(3522, "system.nim");
+				TM_Vgl9cfKragMtnbvBdG1w9aow_27 = addInt(i_3, ((NI) 1));
+				i_3 = (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_27);
+			} LA12: ;
+		}
+	}
+	nimln_(63, "fibonacci.nim");
+	{
+		NI T21_;
+		tyTuple_1v9bKyksXWMsm0vNwmZ4EuQ T24_;
+		NI T25_;
+		T21_ = (prime_factors ? prime_factors->Sup.len : 0);
+		if (!(T21_ == ((NI) 0))) goto LA22_;
+		nimln_(64, "fibonacci.nim");
+		T24_.Field0 = ((NI) (n));
+		T24_.Field1 = ((NI) 1);
+		prime_factors = (tySequence_8Np6tlClE5az1CyqZdN19bQ*) incrSeqV2(&(prime_factors)->Sup, sizeof(tyTuple_1v9bKyksXWMsm0vNwmZ4EuQ));
+		T25_ = prime_factors->Sup.len++;
+		prime_factors->data[T25_] = T24_;
+	}
+	LA22_: ;
+	nimln_(65, "fibonacci.nim");
+	genericSeqAssign((&result), prime_factors, (&NTI_8Np6tlClE5az1CyqZdN19bQ_));
+	goto BeforeRet_;
+	}BeforeRet_: ;
+	popFrame();
+	return result;
+}
+
+N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, fib_seq_XazPuNBjdSNg3uZwoGbpzA_2)(NI64 n) {
 	tySequence_IHUFRsFxZNv7YydiUO2esQ* result;
 	NI64 a;
 	NI64 b;
@@ -319,62 +776,62 @@ N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, fib_seq_XazPuNBjdSNg
 	a = (NI64)0;
 	b = (NI64)0;
 	temp = (NI64)0;
-	nimln_(27, "fibonacci.nim");
+	nimln_(69, "fibonacci.nim");
 	f_seq = newSeq_K4uiYKl7aEFNrk8kJo7BtQ(((NI) 0));
-	nimln_(28, "fibonacci.nim");
+	nimln_(70, "fibonacci.nim");
 	f_seq = (tySequence_IHUFRsFxZNv7YydiUO2esQ*) incrSeqV2(&(f_seq)->Sup, sizeof(NI));
 	T1_ = f_seq->Sup.len++;
 	f_seq->data[T1_] = ((NI) 0);
-	nimln_(29, "fibonacci.nim");
+	nimln_(71, "fibonacci.nim");
 	{
 		nimln_(398, "system.nim");
-		nimln_(29, "fibonacci.nim");
+		nimln_(71, "fibonacci.nim");
 		if (!!((n == IL64(0)))) goto LA4_;
-		nimln_(30, "fibonacci.nim");
+		nimln_(72, "fibonacci.nim");
 		a = IL64(0);
-		nimln_(31, "fibonacci.nim");
+		nimln_(73, "fibonacci.nim");
 		b = IL64(1);
 		{
 			NI64 i;
 			NI64 colontmp_;
-			NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_8;
+			NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_28;
 			NI64 res;
 			i = (NI64)0;
 			colontmp_ = (NI64)0;
-			nimln_(32, "fibonacci.nim");
-			TM_Vgl9cfKragMtnbvBdG1w9aow_8 = subInt64(n, ((NI) 1));
-			colontmp_ = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_8);
+			nimln_(74, "fibonacci.nim");
+			TM_Vgl9cfKragMtnbvBdG1w9aow_28 = subInt64(n, ((NI) 1));
+			colontmp_ = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_28);
 			nimln_(2059, "system.nim");
 			res = IL64(1);
 			{
 				nimln_(2060, "system.nim");
 				while (1) {
 					NI T9_;
-					NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_9;
-					NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_10;
+					NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_29;
+					NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_30;
 					if (!(res <= colontmp_)) goto LA8;
 					nimln_(2061, "system.nim");
 					i = res;
-					nimln_(33, "fibonacci.nim");
+					nimln_(75, "fibonacci.nim");
 					f_seq = (tySequence_IHUFRsFxZNv7YydiUO2esQ*) incrSeqV2(&(f_seq)->Sup, sizeof(NI64));
 					T9_ = f_seq->Sup.len++;
 					f_seq->data[T9_] = b;
-					nimln_(34, "fibonacci.nim");
+					nimln_(76, "fibonacci.nim");
 					temp = b;
-					nimln_(35, "fibonacci.nim");
-					TM_Vgl9cfKragMtnbvBdG1w9aow_9 = addInt64(a, b);
-					b = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_9);
-					nimln_(36, "fibonacci.nim");
+					nimln_(77, "fibonacci.nim");
+					TM_Vgl9cfKragMtnbvBdG1w9aow_29 = addInt64(a, b);
+					b = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_29);
+					nimln_(78, "fibonacci.nim");
 					a = temp;
 					nimln_(2062, "system.nim");
-					TM_Vgl9cfKragMtnbvBdG1w9aow_10 = addInt64(res, ((NI) 1));
-					res = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_10);
+					TM_Vgl9cfKragMtnbvBdG1w9aow_30 = addInt64(res, ((NI) 1));
+					res = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_30);
 				} LA8: ;
 			}
 		}
 	}
 	LA4_: ;
-	nimln_(37, "fibonacci.nim");
+	nimln_(79, "fibonacci.nim");
 	genericSeqAssign((&result), f_seq, (&NTI_IHUFRsFxZNv7YydiUO2esQ_));
 	goto BeforeRet_;
 	}BeforeRet_: ;
@@ -387,69 +844,69 @@ N_LIB_PRIVATE N_NIMCALL(NI64, pisano_period_9b9a7ssqgv9ay536xNiwlX8gA)(NI64 m) {
 	NI64 a;
 	NI64 b;
 	NI64 temp;
-	NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_11;
+	NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_31;
 	nimfr_("pisano_period", "fibonacci.nim");
 {	result = (NI64)0;
 	a = (NI64)0;
 	b = (NI64)0;
 	temp = (NI64)0;
-	nimln_(41, "fibonacci.nim");
+	nimln_(83, "fibonacci.nim");
 	a = IL64(0);
-	nimln_(42, "fibonacci.nim");
+	nimln_(84, "fibonacci.nim");
 	b = IL64(1);
-	nimln_(43, "fibonacci.nim");
-	TM_Vgl9cfKragMtnbvBdG1w9aow_11 = addInt64(a, b);
-	temp = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_11);
+	nimln_(85, "fibonacci.nim");
+	TM_Vgl9cfKragMtnbvBdG1w9aow_31 = addInt64(a, b);
+	temp = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_31);
 	{
 		NI64 i;
 		NI64 colontmp_;
-		NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_12;
-		NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_13;
+		NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_32;
+		NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_33;
 		NI64 res;
 		i = (NI64)0;
 		colontmp_ = (NI64)0;
-		nimln_(44, "fibonacci.nim");
-		TM_Vgl9cfKragMtnbvBdG1w9aow_12 = mulInt64(m, m);
-		TM_Vgl9cfKragMtnbvBdG1w9aow_13 = subInt64((NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_12), ((NI) 1));
-		colontmp_ = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_13);
+		nimln_(86, "fibonacci.nim");
+		TM_Vgl9cfKragMtnbvBdG1w9aow_32 = mulInt64(m, m);
+		TM_Vgl9cfKragMtnbvBdG1w9aow_33 = subInt64((NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_32), ((NI) 1));
+		colontmp_ = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_33);
 		nimln_(2059, "system.nim");
 		res = IL64(0);
 		{
 			nimln_(2060, "system.nim");
 			while (1) {
-				NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_14;
-				NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_15;
-				NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_17;
+				NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_34;
+				NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_35;
+				NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_37;
 				if (!(res <= colontmp_)) goto LA3;
 				nimln_(2061, "system.nim");
 				i = res;
-				nimln_(45, "fibonacci.nim");
-				TM_Vgl9cfKragMtnbvBdG1w9aow_14 = addInt64(a, b);
-				TM_Vgl9cfKragMtnbvBdG1w9aow_15 = modInt64((NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_14), m);
-				temp = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_15);
-				nimln_(46, "fibonacci.nim");
+				nimln_(87, "fibonacci.nim");
+				TM_Vgl9cfKragMtnbvBdG1w9aow_34 = addInt64(a, b);
+				TM_Vgl9cfKragMtnbvBdG1w9aow_35 = modInt64((NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_34), m);
+				temp = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_35);
+				nimln_(88, "fibonacci.nim");
 				a = b;
-				nimln_(47, "fibonacci.nim");
+				nimln_(89, "fibonacci.nim");
 				b = temp;
-				nimln_(48, "fibonacci.nim");
+				nimln_(90, "fibonacci.nim");
 				{
 					NIM_BOOL T6_;
-					NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_16;
+					NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_36;
 					T6_ = (NIM_BOOL)0;
 					T6_ = (a == IL64(0));
 					if (!(T6_)) goto LA7_;
 					T6_ = (b == IL64(1));
 					LA7_: ;
 					if (!T6_) goto LA8_;
-					nimln_(49, "fibonacci.nim");
-					TM_Vgl9cfKragMtnbvBdG1w9aow_16 = addInt64(i, IL64(1));
-					result = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_16);
+					nimln_(91, "fibonacci.nim");
+					TM_Vgl9cfKragMtnbvBdG1w9aow_36 = addInt64(i, IL64(1));
+					result = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_36);
 					goto BeforeRet_;
 				}
 				LA8_: ;
 				nimln_(2062, "system.nim");
-				TM_Vgl9cfKragMtnbvBdG1w9aow_17 = addInt64(res, ((NI) 1));
-				res = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_17);
+				TM_Vgl9cfKragMtnbvBdG1w9aow_37 = addInt64(res, ((NI) 1));
+				res = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_37);
 			} LA3: ;
 		}
 	}
@@ -458,18 +915,147 @@ N_LIB_PRIVATE N_NIMCALL(NI64, pisano_period_9b9a7ssqgv9ay536xNiwlX8gA)(NI64 m) {
 	return result;
 }
 
+static N_INLINE(tyObject_HSlice_x7qpDivRIi6zcMSMsudNPA, dotdot__vDQySKWzgnxQdUarow6k5Qtimes)(NI a, NI b) {
+	tyObject_HSlice_x7qpDivRIi6zcMSMsudNPA result;
+	nimfr_("..", "system.nim");
+	memset((void*)(&result), 0, sizeof(result));
+	nimln_(325, "system.nim");
+	result.a = a;
+	nimln_(326, "system.nim");
+	result.b = b;
+	popFrame();
+	return result;
+}
+
+N_LIB_PRIVATE N_NIMCALL(NI64, pisano_period_matrix_9b9a7ssqgv9ay536xNiwlX8gA_2)(NI64 m) {
+	NI64 result;
+	tySequence_IHUFRsFxZNv7YydiUO2esQ* v;
+	NI T1_;
+	NI T2_;
+	NI64 t;
+	NI T25_;
+	NI TM_Vgl9cfKragMtnbvBdG1w9aow_48;
+	nimfr_("pisano_period_matrix", "fibonacci.nim");
+{	result = (NI64)0;
+	nimln_(94, "fibonacci.nim");
+	v = newSeq_K4uiYKl7aEFNrk8kJo7BtQ(((NI) 0));
+	nimln_(95, "fibonacci.nim");
+	v = (tySequence_IHUFRsFxZNv7YydiUO2esQ*) incrSeqV2(&(v)->Sup, sizeof(NI));
+	T1_ = v->Sup.len++;
+	v->data[T1_] = ((NI) 1);
+	nimln_(96, "fibonacci.nim");
+	v = (tySequence_IHUFRsFxZNv7YydiUO2esQ*) incrSeqV2(&(v)->Sup, sizeof(NI));
+	T2_ = v->Sup.len++;
+	v->data[T2_] = ((NI) 1);
+	t = (NI64)0;
+	{
+		nimln_(98, "fibonacci.nim");
+		while (1) {
+			NI T5_;
+			NI TM_Vgl9cfKragMtnbvBdG1w9aow_38;
+			NI T6_;
+			NI TM_Vgl9cfKragMtnbvBdG1w9aow_39;
+			NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_40;
+			NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_41;
+			NI T7_;
+			nimln_(99, "fibonacci.nim");
+			T5_ = (v ? v->Sup.len : 0);
+			TM_Vgl9cfKragMtnbvBdG1w9aow_38 = subInt(T5_, ((NI) 1));
+			if ((NU)((NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_38)) >= (NU)(v->Sup.len)) raiseIndexError();
+			T6_ = (v ? v->Sup.len : 0);
+			TM_Vgl9cfKragMtnbvBdG1w9aow_39 = subInt(T6_, ((NI) 2));
+			if ((NU)((NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_39)) >= (NU)(v->Sup.len)) raiseIndexError();
+			TM_Vgl9cfKragMtnbvBdG1w9aow_40 = addInt64(v->data[(NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_38)], v->data[(NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_39)]);
+			TM_Vgl9cfKragMtnbvBdG1w9aow_41 = modInt64((NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_40), m);
+			t = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_41);
+			nimln_(100, "fibonacci.nim");
+			v = (tySequence_IHUFRsFxZNv7YydiUO2esQ*) incrSeqV2(&(v)->Sup, sizeof(NI64));
+			T7_ = v->Sup.len++;
+			v->data[T7_] = t;
+			nimln_(101, "fibonacci.nim");
+			{
+				NIM_BOOL T10_;
+				NIM_BOOL T11_;
+				NI T13_;
+				NI TM_Vgl9cfKragMtnbvBdG1w9aow_42;
+				NI T15_;
+				NI TM_Vgl9cfKragMtnbvBdG1w9aow_43;
+				NI TM_Vgl9cfKragMtnbvBdG1w9aow_44;
+				tyObject_HSlice_x7qpDivRIi6zcMSMsudNPA T16_;
+				tySequence_IHUFRsFxZNv7YydiUO2esQ* T17_;
+				NI T18_;
+				NI TM_Vgl9cfKragMtnbvBdG1w9aow_45;
+				NI T19_;
+				NI TM_Vgl9cfKragMtnbvBdG1w9aow_46;
+				tyObject_HSlice_x7qpDivRIi6zcMSMsudNPA T20_;
+				tySequence_IHUFRsFxZNv7YydiUO2esQ* T21_;
+				NI T24_;
+				NI TM_Vgl9cfKragMtnbvBdG1w9aow_47;
+				T10_ = (NIM_BOOL)0;
+				T11_ = (NIM_BOOL)0;
+				T11_ = (t == IL64(0));
+				if (!(T11_)) goto LA12_;
+				T13_ = (v ? v->Sup.len : 0);
+				TM_Vgl9cfKragMtnbvBdG1w9aow_42 = modInt(T13_, ((NI) 2));
+				T11_ = ((NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_42) == ((NI) 0));
+				LA12_: ;
+				T10_ = T11_;
+				if (!(T10_)) goto LA14_;
+				T15_ = (v ? v->Sup.len : 0);
+				TM_Vgl9cfKragMtnbvBdG1w9aow_43 = divInt(T15_, ((NI) 2));
+				TM_Vgl9cfKragMtnbvBdG1w9aow_44 = subInt((NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_43), ((NI) 1));
+				T16_ = dotdot__vDQySKWzgnxQdUarow6k5Qtimes(((NI) 0), (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_44));
+				T17_ = (tySequence_IHUFRsFxZNv7YydiUO2esQ*)0;
+				T17_ = X5BX5D__U86iIndOsF9cvl9bGVLl9bHew(v->data, v->Sup.len, T16_);
+				T18_ = (v ? v->Sup.len : 0);
+				TM_Vgl9cfKragMtnbvBdG1w9aow_45 = divInt(T18_, ((NI) 2));
+				T19_ = (v ? v->Sup.len : 0);
+				TM_Vgl9cfKragMtnbvBdG1w9aow_46 = subInt(T19_, ((NI) 1));
+				T20_ = dotdot__vDQySKWzgnxQdUarow6k5Qtimes((NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_45), (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_46));
+				T21_ = (tySequence_IHUFRsFxZNv7YydiUO2esQ*)0;
+				T21_ = X5BX5D__U86iIndOsF9cvl9bGVLl9bHew(v->data, v->Sup.len, T20_);
+				T10_ = eqeq__wAiqF9boRmi678XkqCCmKmg(T17_, T21_);
+				LA14_: ;
+				if (!T10_) goto LA22_;
+				nimln_(102, "fibonacci.nim");
+				T24_ = (v ? v->Sup.len : 0);
+				TM_Vgl9cfKragMtnbvBdG1w9aow_47 = divInt(T24_, ((NI) 2));
+				result = ((NI64) ((NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_47)));
+				goto BeforeRet_;
+			}
+			LA22_: ;
+		}
+	}
+	nimln_(103, "fibonacci.nim");
+	T25_ = (v ? v->Sup.len : 0);
+	TM_Vgl9cfKragMtnbvBdG1w9aow_48 = divInt(T25_, ((NI) 2));
+	result = ((NI64) ((NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_48)));
+	goto BeforeRet_;
+	}BeforeRet_: ;
+	popFrame();
+	return result;
+}
+
 N_LIB_PRIVATE N_NIMCALL(NI64, fib_mod_m_tPwH6fOJ62ma2JW479bsx6A)(NI64 n, NI64 m) {
 	NI64 result;
 	NI64 pisano_length;
-	NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_18;
+	NI64 rem;
+	NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_49;
+	NI64 T1_;
+	NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_50;
 	nimfr_("fib_mod_m", "fibonacci.nim");
 {	result = (NI64)0;
 	pisano_length = (NI64)0;
-	nimln_(53, "fibonacci.nim");
-	pisano_length = pisano_period_9b9a7ssqgv9ay536xNiwlX8gA(m);
-	nimln_(54, "fibonacci.nim");
-	TM_Vgl9cfKragMtnbvBdG1w9aow_18 = modInt64(n, pisano_length);
-	result = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_18);
+	nimln_(107, "fibonacci.nim");
+	pisano_length = pisano_period_matrix_9b9a7ssqgv9ay536xNiwlX8gA_2(m);
+	nimln_(108, "fibonacci.nim");
+	TM_Vgl9cfKragMtnbvBdG1w9aow_49 = modInt64(n, pisano_length);
+	rem = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_49);
+	nimln_(109, "fibonacci.nim");
+	T1_ = (NI64)0;
+	T1_ = fib_OXmP9cx9bObwuEJXyu6BoEUA(rem);
+	TM_Vgl9cfKragMtnbvBdG1w9aow_50 = modInt64(T1_, m);
+	result = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_50);
 	goto BeforeRet_;
 	}BeforeRet_: ;
 	popFrame();
@@ -487,8 +1073,8 @@ N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, fib_mod_seq_U2MJiqn8
 	a = (NI64)0;
 	b = (NI64)0;
 	temp = (NI64)0;
-	nimln_(58, "fibonacci.nim");
-	f_seq = fib_seq_XazPuNBjdSNg3uZwoGbpzA(n);
+	nimln_(113, "fibonacci.nim");
+	f_seq = fib_seq_XazPuNBjdSNg3uZwoGbpzA_2(n);
 	{
 		NI i;
 		NI colontmp_;
@@ -496,7 +1082,7 @@ N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, fib_mod_seq_U2MJiqn8
 		NI i_2;
 		i = (NI)0;
 		colontmp_ = (NI)0;
-		nimln_(59, "fibonacci.nim");
+		nimln_(114, "fibonacci.nim");
 		T2_ = (f_seq ? f_seq->Sup.len : 0);
 		colontmp_ = T2_;
 		nimln_(3519, "system.nim");
@@ -504,28 +1090,37 @@ N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, fib_mod_seq_U2MJiqn8
 		{
 			nimln_(3520, "system.nim");
 			while (1) {
-				NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_19;
-				NI TM_Vgl9cfKragMtnbvBdG1w9aow_20;
+				NI64 TM_Vgl9cfKragMtnbvBdG1w9aow_51;
+				NI TM_Vgl9cfKragMtnbvBdG1w9aow_52;
 				if (!(i_2 < colontmp_)) goto LA4;
 				nimln_(3521, "system.nim");
 				i = i_2;
 				if ((NU)(i) >= (NU)(f_seq->Sup.len)) raiseIndexError();
-				nimln_(60, "fibonacci.nim");
+				nimln_(115, "fibonacci.nim");
 				if ((NU)(i) >= (NU)(f_seq->Sup.len)) raiseIndexError();
-				TM_Vgl9cfKragMtnbvBdG1w9aow_19 = modInt64(f_seq->data[i], m);
-				f_seq->data[i] = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_19);
+				TM_Vgl9cfKragMtnbvBdG1w9aow_51 = modInt64(f_seq->data[i], m);
+				f_seq->data[i] = (NI64)(TM_Vgl9cfKragMtnbvBdG1w9aow_51);
 				nimln_(3522, "system.nim");
-				TM_Vgl9cfKragMtnbvBdG1w9aow_20 = addInt(i_2, ((NI) 1));
-				i_2 = (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_20);
+				TM_Vgl9cfKragMtnbvBdG1w9aow_52 = addInt(i_2, ((NI) 1));
+				i_2 = (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_52);
 			} LA4: ;
 		}
 	}
-	nimln_(61, "fibonacci.nim");
+	nimln_(116, "fibonacci.nim");
 	genericSeqAssign((&result), f_seq, (&NTI_IHUFRsFxZNv7YydiUO2esQ_));
 	goto BeforeRet_;
 	}BeforeRet_: ;
 	popFrame();
 	return result;
+}
+
+static N_INLINE(void, stareq__tk9bwZBdb9bO9baUcUN2AX89bQmath)(NI* x, NI y) {
+	NI TM_Vgl9cfKragMtnbvBdG1w9aow_59;
+	nimfr_("*=", "system.nim");
+	nimln_(3695, "system.nim");
+	TM_Vgl9cfKragMtnbvBdG1w9aow_59 = mulInt((*x), y);
+	(*x) = (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_59);
+	popFrame();
 }
 
 static N_INLINE(void, initStackBottomWith)(void* locals) {
@@ -534,8 +1129,20 @@ static N_INLINE(void, initStackBottomWith)(void* locals) {
 void PreMainInner(void) {
 	systemInit000();
 	stdlib_mathDatInit000();
+	stdlib_parseutilsDatInit000();
+	stdlib_algorithmDatInit000();
+	stdlib_strutilsDatInit000();
+	stdlib_dynlibDatInit000();
+	stdlib_winleanDatInit000();
+	stdlib_timesDatInit000();
 	fibonacciDatInit000();
 	stdlib_mathInit000();
+	stdlib_parseutilsInit000();
+	stdlib_algorithmInit000();
+	stdlib_strutilsInit000();
+	stdlib_dynlibInit000();
+	stdlib_winleanInit000();
+	stdlib_timesInit000();
 }
 
 void PreMain(void) {
@@ -570,18 +1177,83 @@ int main(int argc, char** args, char** env) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, NimMainModule)(void) {
-	tyArray_nHXaesL0DJZHyVS07ARPRA T1_;
-	tySequence_IHUFRsFxZNv7YydiUO2esQ* T2_;
+	NI T1_;
+	NI TM_Vgl9cfKragMtnbvBdG1w9aow_53;
+	NI TM_Vgl9cfKragMtnbvBdG1w9aow_54;
+	tyArray_nHXaesL0DJZHyVS07ARPRA T5_;
+	NI TM_Vgl9cfKragMtnbvBdG1w9aow_58;
 	nimfr_("fibonacci", "fibonacci.nim");
-	nimln_(67, "fibonacci.nim");
-	memset((void*)T1_, 0, sizeof(T1_));
-	T2_ = (tySequence_IHUFRsFxZNv7YydiUO2esQ*)0;
-	T2_ = prime_factorize_9btfSQmAdKV2xmhyxQPgcMw(IL64(2015));
-	T1_[0] = dollar__0b4ekXvToMcMODtKTiwn1A(T2_);
-	echoBinSafe(T1_, 1);
+	nimln_(118, "fibonacci.nim");
+	T1_ = (NI)0;
+	T1_ = roof__quCe21GD6ES9cmTsTs9cYP7Q(((NI) 10), ((NI) 9));
+	TM_Vgl9cfKragMtnbvBdG1w9aow_53 = addInt(T1_, ((NI) 7));
+	dmoj_m_56zZueV9cJX6GESAYmBvV8Q = (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_53);
+	nimln_(119, "fibonacci.nim");
+	dmoj_pisano_period_AT9btKHo9b52QMiILOFSK7Gw = ((NI) 2000000016);
+	nimln_(120, "fibonacci.nim");
+	n_QCfubBUdzgyrwlImNmokzg = roof__quCe21GD6ES9cmTsTs9cYP7Q(((NI) 10), ((NI) 5));
+	nimln_(121, "fibonacci.nim");
+	TM_Vgl9cfKragMtnbvBdG1w9aow_54 = modInt(n_QCfubBUdzgyrwlImNmokzg, dmoj_pisano_period_AT9btKHo9b52QMiILOFSK7Gw);
+	rem_AJbUva82LOSSFeoZiPF3bA = (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_54);
+	nimln_(122, "fibonacci.nim");
+	f_4i8inHERs9cRhOrgJQDD3pQ = ((NI) 0);
+	nimln_(123, "fibonacci.nim");
+	s_sLu2IMVp9cAXjt3Vfd5PfjA = ((NI) 1);
+	nimln_(124, "fibonacci.nim");
+	res_xlP9b9cPw7wdfFhQQvzPE34Q = rem_AJbUva82LOSSFeoZiPF3bA;
+	{
+		NI i;
+		nimln_(3519, "system.nim");
+		i = ((NI) 1);
+		{
+			nimln_(3520, "system.nim");
+			while (1) {
+				NI TM_Vgl9cfKragMtnbvBdG1w9aow_55;
+				NI TM_Vgl9cfKragMtnbvBdG1w9aow_56;
+				NI TM_Vgl9cfKragMtnbvBdG1w9aow_57;
+				if (!(i < rem_AJbUva82LOSSFeoZiPF3bA)) goto LA4;
+				nimln_(3521, "system.nim");
+				i_MX2L9cVNa9aGuWF08moLKqzQ = i;
+				nimln_(126, "fibonacci.nim");
+				TM_Vgl9cfKragMtnbvBdG1w9aow_55 = addInt(f_4i8inHERs9cRhOrgJQDD3pQ, s_sLu2IMVp9cAXjt3Vfd5PfjA);
+				TM_Vgl9cfKragMtnbvBdG1w9aow_56 = modInt((NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_55), dmoj_m_56zZueV9cJX6GESAYmBvV8Q);
+				res_xlP9b9cPw7wdfFhQQvzPE34Q = (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_56);
+				nimln_(127, "fibonacci.nim");
+				f_4i8inHERs9cRhOrgJQDD3pQ = s_sLu2IMVp9cAXjt3Vfd5PfjA;
+				nimln_(128, "fibonacci.nim");
+				s_sLu2IMVp9cAXjt3Vfd5PfjA = res_xlP9b9cPw7wdfFhQQvzPE34Q;
+				nimln_(3522, "system.nim");
+				TM_Vgl9cfKragMtnbvBdG1w9aow_57 = addInt(i, ((NI) 1));
+				i = (NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_57);
+			} LA4: ;
+		}
+	}
+	nimln_(129, "fibonacci.nim");
+	memset((void*)T5_, 0, sizeof(T5_));
+	TM_Vgl9cfKragMtnbvBdG1w9aow_58 = modInt(res_xlP9b9cPw7wdfFhQQvzPE34Q, dmoj_m_56zZueV9cJX6GESAYmBvV8Q);
+	T5_[0] = nimIntToStr((NI)(TM_Vgl9cfKragMtnbvBdG1w9aow_58));
+	echoBinSafe(T5_, 1);
 	popFrame();
 }
 
 NIM_EXTERNC N_NOINLINE(void, fibonacciDatInit000)(void) {
+static TNimNode* TM_Vgl9cfKragMtnbvBdG1w9aow_18[2];
+static TNimNode TM_Vgl9cfKragMtnbvBdG1w9aow_0[3];
+NTI_1v9bKyksXWMsm0vNwmZ4EuQ_.size = sizeof(tyTuple_1v9bKyksXWMsm0vNwmZ4EuQ);
+NTI_1v9bKyksXWMsm0vNwmZ4EuQ_.kind = 18;
+NTI_1v9bKyksXWMsm0vNwmZ4EuQ_.base = 0;
+NTI_1v9bKyksXWMsm0vNwmZ4EuQ_.flags = 3;
+TM_Vgl9cfKragMtnbvBdG1w9aow_18[0] = &TM_Vgl9cfKragMtnbvBdG1w9aow_0[1];
+TM_Vgl9cfKragMtnbvBdG1w9aow_0[1].kind = 1;
+TM_Vgl9cfKragMtnbvBdG1w9aow_0[1].offset = offsetof(tyTuple_1v9bKyksXWMsm0vNwmZ4EuQ, Field0);
+TM_Vgl9cfKragMtnbvBdG1w9aow_0[1].typ = (&NTI_rR5Bzr1D5krxoo1NcNyeMA_);
+TM_Vgl9cfKragMtnbvBdG1w9aow_0[1].name = "Field0";
+TM_Vgl9cfKragMtnbvBdG1w9aow_18[1] = &TM_Vgl9cfKragMtnbvBdG1w9aow_0[2];
+TM_Vgl9cfKragMtnbvBdG1w9aow_0[2].kind = 1;
+TM_Vgl9cfKragMtnbvBdG1w9aow_0[2].offset = offsetof(tyTuple_1v9bKyksXWMsm0vNwmZ4EuQ, Field1);
+TM_Vgl9cfKragMtnbvBdG1w9aow_0[2].typ = (&NTI_rR5Bzr1D5krxoo1NcNyeMA_);
+TM_Vgl9cfKragMtnbvBdG1w9aow_0[2].name = "Field1";
+TM_Vgl9cfKragMtnbvBdG1w9aow_0[0].len = 2; TM_Vgl9cfKragMtnbvBdG1w9aow_0[0].kind = 2; TM_Vgl9cfKragMtnbvBdG1w9aow_0[0].sons = &TM_Vgl9cfKragMtnbvBdG1w9aow_18[0];
+NTI_1v9bKyksXWMsm0vNwmZ4EuQ_.node = &TM_Vgl9cfKragMtnbvBdG1w9aow_0[0];
 }
 

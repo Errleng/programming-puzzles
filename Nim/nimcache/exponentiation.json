@@ -1,0 +1,9 @@
+{"compile":[
+["d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\exponentiation.c", "D:\\Documents\\Code\\mingw64\\bin\\gcc.exe -c  -w -mno-ms-bitfields  -ID:\\Documents\\Code\\nim-0.18.0\\lib -o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\exponentiation.o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\exponentiation.c"]
+],
+"link":[
+"d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\exponentiation.o",
+"d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_system.o"
+],
+"linkcmd": "D:\\Documents\\Code\\mingw64\\bin\\gcc.exe   -o d:\\Documents\\SourceTree\\Challenges\\Nim\\exponentiation.exe  d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\exponentiation.o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_system.o    "
+}

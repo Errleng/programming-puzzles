@@ -1,11 +1,16 @@
 {"compile":[
-["c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\fibonacci.c", "C:\\Users\\aisae\\Documents\\Dependencies\\mingw64\\bin\\gcc.exe -c  -w -mno-ms-bitfields  -IC:\\Users\\aisae\\Documents\\Dependencies\\nim-0.18.0\\lib -o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\fibonacci.o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\fibonacci.c"],
-["c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_math.c", "C:\\Users\\aisae\\Documents\\Dependencies\\mingw64\\bin\\gcc.exe -c  -w -mno-ms-bitfields  -IC:\\Users\\aisae\\Documents\\Dependencies\\nim-0.18.0\\lib -o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_math.o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_math.c"]
+["d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\fibonacci.c", "D:\\Documents\\Code\\mingw64\\bin\\gcc.exe -c  -w -mno-ms-bitfields -DWIN32_LEAN_AND_MEAN  -ID:\\Documents\\Code\\nim-0.18.0\\lib -o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\fibonacci.o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\fibonacci.c"]
 ],
 "link":[
-"c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\fibonacci.o",
-"c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_system.o",
-"c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_math.o"
+"d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\fibonacci.o",
+"d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_system.o",
+"d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_math.o",
+"d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_times.o",
+"d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_strutils.o",
+"d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_parseutils.o",
+"d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_algorithm.o",
+"d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_winlean.o",
+"d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_dynlib.o"
 ],
-"linkcmd": "C:\\Users\\aisae\\Documents\\Dependencies\\mingw64\\bin\\gcc.exe   -o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\fibonacci.exe  c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\fibonacci.o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_system.o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_math.o    "
+"linkcmd": "D:\\Documents\\Code\\mingw64\\bin\\gcc.exe   -o d:\\Documents\\SourceTree\\Challenges\\Nim\\fibonacci.exe  d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\fibonacci.o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_system.o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_math.o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_times.o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_strutils.o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_parseutils.o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_algorithm.o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_winlean.o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_dynlib.o    "
 }

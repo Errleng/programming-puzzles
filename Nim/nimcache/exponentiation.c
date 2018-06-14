@@ -21,15 +21,20 @@
 #undef near
 #undef powerpc
 #undef unix
-typedef struct tySequence_qwqHTkRvwhrRyENtudHQ7g tySequence_qwqHTkRvwhrRyENtudHQ7g;
+typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
+typedef struct tySequence_IHUFRsFxZNv7YydiUO2esQ tySequence_IHUFRsFxZNv7YydiUO2esQ;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
-typedef struct NimStringDesc NimStringDesc;
 struct TGenericSeq {
 NI len;
 NI reserved;
 };
+struct NimStringDesc {
+  TGenericSeq Sup;
+NIM_CHAR data[SEQ_DECL_SIZE];
+};
+typedef NimStringDesc* tyArray_sMpvt1sOxOJ3LFGulnbeMQ[4];
 typedef NU8 tyEnum_TNimKind_jIBKr1ejBgsfM33Kxw4j7A;
 typedef NU8 tySet_tyEnum_TNimTypeFlag_v8QUszD1sWlSIWZz7mC4bQ;
 typedef N_NIMCALL_PTR(void, tyProc_ojoeKfW4VYIm36I9cpDTQIg) (void* p, NI op);
@@ -53,16 +58,14 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-struct NimStringDesc {
-  TGenericSeq Sup;
-NIM_CHAR data[SEQ_DECL_SIZE];
-};
+typedef NI64 tyArray_EawPLnQhPqWwYm5GdCoh8A[2];
+typedef tyArray_EawPLnQhPqWwYm5GdCoh8A tyArray_X4Lo9adz49bWDIQMo8kGcUYA[2];
 typedef NimStringDesc* tyArray_nHXaesL0DJZHyVS07ARPRA[1];
-struct tySequence_qwqHTkRvwhrRyENtudHQ7g {
+struct tySequence_IHUFRsFxZNv7YydiUO2esQ {
   TGenericSeq Sup;
-  NI data[SEQ_DECL_SIZE];
+  NI64 data[SEQ_DECL_SIZE];
 };
-N_LIB_PRIVATE N_NIMCALL(NI, exponent_binary_npqi4kJ7015vhjS4gHyImQ)(NI* n, NI* x);
+N_LIB_PRIVATE N_NIMCALL(NI, exponent_binary_eqKG4APkqy5I3XN2s41dNw)(NI* n, NI* x);
 N_NOINLINE(void, raiseOverflow)(void);
 static N_INLINE(NI, divInt)(NI a, NI b);
 N_NOINLINE(void, raiseDivByZero)(void);
@@ -72,21 +75,27 @@ N_NIMCALL(NI, mulInt)(NI a, NI b);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_LIB_PRIVATE N_NOINLINE(void, stackOverflow_II46IjNZztN9bmbxUD8dt8g)(void);
 static N_INLINE(void, popFrame)(void);
-N_LIB_PRIVATE N_NIMCALL(tySequence_qwqHTkRvwhrRyENtudHQ7g*, mult_mat_hwXi2iCY9aewz7k7VmACdVQ)(tySequence_qwqHTkRvwhrRyENtudHQ7g* x, tySequence_qwqHTkRvwhrRyENtudHQ7g* y);
-N_NOINLINE(void, raiseIndexError)(void);
-static N_INLINE(NI, addInt)(NI a, NI b);
-static N_NIMCALL(void, Marker_tySequence_qwqHTkRvwhrRyENtudHQ7g)(void* p, NI op);
-N_NIMCALL(void*, newSeq)(TNimType* typ, NI len);
-N_LIB_PRIVATE N_NIMCALL(tySequence_qwqHTkRvwhrRyENtudHQ7g*, pow_mat_aW2IER2BZmu1vkPYlXWjfA)(tySequence_qwqHTkRvwhrRyENtudHQ7g** n, NI* x);
-N_NIMCALL(void, genericSeqAssign)(void* dest, void* src, TNimType* mt);
-N_NIMCALL(void, unsureAsgnRef)(void** dest, void* src);
-N_LIB_PRIVATE N_NIMCALL(NI, fib_matrix_exp_UTOuZwP23azkd3lRnY9aWRg)(NI n);
-static N_INLINE(NI, subInt)(NI a, NI b);
-N_LIB_PRIVATE N_NIMCALL(NimStringDesc*, dollar__H9byP9au7Ewl1LWJ70fLKs7Q)(tySequence_qwqHTkRvwhrRyENtudHQ7g* x);
-N_NIMCALL(void, echoBinSafe)(NimStringDesc** args, NI argsLen_0);
+N_NIMCALL(NimStringDesc*, copyString)(NimStringDesc* src);
 N_NIMCALL(NimStringDesc*, nimIntToStr)(NI x);
-N_LIB_PRIVATE N_NIMCALL(NimStringDesc*, collectionToString_KntgA0rM9cu9bcqGqe2CjUEQ)(tySequence_qwqHTkRvwhrRyENtudHQ7g* x, NimStringDesc* prefix, NimStringDesc* separator, NimStringDesc* suffix);
-N_LIB_PRIVATE N_NIMCALL(void, addQuoted_nyaZAljVI03SH2d9cnD0WMw)(NimStringDesc** s, NI x);
+N_NIMCALL(void, echoBinSafe)(NimStringDesc** args, NI argsLen_0);
+N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, mult_mat_seq_gAx9cw1jGr5nn9cG9bQNBHmSw)(tySequence_IHUFRsFxZNv7YydiUO2esQ* x, tySequence_IHUFRsFxZNv7YydiUO2esQ* y);
+N_NOINLINE(void, raiseIndexError)(void);
+N_NIMCALL(NI64, mulInt64)(NI64 a, NI64 b);
+static N_INLINE(NI64, addInt64)(NI64 a, NI64 b);
+static N_NIMCALL(void, Marker_tySequence_IHUFRsFxZNv7YydiUO2esQ)(void* p, NI op);
+N_NIMCALL(void*, newSeq)(TNimType* typ, NI len);
+N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, pow_mat_seq_r9aZSYkqxTNtselrdI83q7g)(tySequence_IHUFRsFxZNv7YydiUO2esQ** n, NI64* x);
+N_NIMCALL(void, genericSeqAssign)(void* dest, void* src, TNimType* mt);
+static N_INLINE(NI64, modInt64)(NI64 a, NI64 b);
+N_NIMCALL(void, unsureAsgnRef)(void** dest, void* src);
+static N_INLINE(NI64, divInt64)(NI64 a, NI64 b);
+N_LIB_PRIVATE N_NIMCALL(NI64, fib_matrix_exp_qSFrKVtQsOuIF1VV39aezJQ)(NI64 n);
+static N_INLINE(NI64, subInt64)(NI64 a, NI64 b);
+N_LIB_PRIVATE N_NIMCALL(void, pow_mat_HdAB07TCTeuAOvGfbnUtNw)(tyArray_EawPLnQhPqWwYm5GdCoh8A* a, NI64* x, tyArray_X4Lo9adz49bWDIQMo8kGcUYA Result);
+N_NOINLINE(void, chckNil)(void* p);
+N_LIB_PRIVATE N_NIMCALL(void, mult_mat_TwUb3trnSFHi9aXPb9buA3iA)(tyArray_X4Lo9adz49bWDIQMo8kGcUYA a, tyArray_X4Lo9adz49bWDIQMo8kGcUYA b, tyArray_X4Lo9adz49bWDIQMo8kGcUYA Result);
+static N_INLINE(NI, addInt)(NI a, NI b);
+N_NIMCALL(NimStringDesc*, nimInt64ToStr)(NI64 x);
 static N_INLINE(void, initStackBottomWith)(void* locals);
 N_NOINLINE(void, setStackBottom)(void* theStackBottom);
 NIM_EXTERNC N_NOINLINE(void, systemInit000)(void);
@@ -94,24 +103,22 @@ NIM_EXTERNC N_NOINLINE(void, systemDatInit000)(void);
 NIM_EXTERNC N_NOINLINE(void, NimMainModule)(void);
 NIM_EXTERNC N_NOINLINE(void, exponentiationDatInit000)(void);
 extern TFrame* framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw;
-extern TNimType NTI_rR5Bzr1D5krxoo1NcNyeMA_;
-TNimType NTI_qwqHTkRvwhrRyENtudHQ7g_;
+extern TNimType NTI_Aav8dQoMlCFnZRxA0IhTHQ_;
+TNimType NTI_IHUFRsFxZNv7YydiUO2esQ_;
 NI x_4lJzM9awleS2bOq9bPStf9bpw;
 NI y_M4Xr9cr2hdldN4ghM59b0i3g;
-NIM_CONST struct {
-  TGenericSeq Sup;
-  NI data[4];
-} TM_3QZA9aYngBryeZ5dBpvXr9cw_27 = {{4, 4}, {((NI) 1),
-((NI) 1),
-((NI) 1),
-((NI) 0)}};
-NIM_CONST tySequence_qwqHTkRvwhrRyENtudHQ7g* TM_3QZA9aYngBryeZ5dBpvXr9cw_26 = ((tySequence_qwqHTkRvwhrRyENtudHQ7g*)&TM_3QZA9aYngBryeZ5dBpvXr9cw_27);
-NIM_CONST struct {
-  TGenericSeq Sup;
-  NI data[2];
-} TM_3QZA9aYngBryeZ5dBpvXr9cw_29 = {{2, 2}, {((NI) 1),
-((NI) 0)}};
-NIM_CONST tySequence_qwqHTkRvwhrRyENtudHQ7g* TM_3QZA9aYngBryeZ5dBpvXr9cw_28 = ((tySequence_qwqHTkRvwhrRyENtudHQ7g*)&TM_3QZA9aYngBryeZ5dBpvXr9cw_29);
+STRING_LITERAL(TM_3QZA9aYngBryeZ5dBpvXr9cw_5, "n, x: ", 6);
+STRING_LITERAL(TM_3QZA9aYngBryeZ5dBpvXr9cw_6, " ", 1);
+NIM_CONST tyArray_X4Lo9adz49bWDIQMo8kGcUYA TM_3QZA9aYngBryeZ5dBpvXr9cw_28 = {{IL64(1),
+IL64(1)}
+,
+{IL64(1),
+IL64(0)}
+}
+;
+STRING_LITERAL(TM_3QZA9aYngBryeZ5dBpvXr9cw_32, "Invalid matrix dimensions", 25);
+NIM_CONST tyArray_nHXaesL0DJZHyVS07ARPRA TM_3QZA9aYngBryeZ5dBpvXr9cw_31 = {((NimStringDesc*) &TM_3QZA9aYngBryeZ5dBpvXr9cw_32)}
+;
 
 static N_INLINE(NI, divInt)(NI a, NI b) {
 	NI result;
@@ -188,7 +195,7 @@ static N_INLINE(void, stareq__tk9bwZBdb9bO9baUcUN2AX89bQexponentiation)(NI* x, N
 	popFrame();
 }
 
-N_LIB_PRIVATE N_NIMCALL(NI, exponent_binary_npqi4kJ7015vhjS4gHyImQ)(NI* n, NI* x) {
+N_LIB_PRIVATE N_NIMCALL(NI, exponent_binary_eqKG4APkqy5I3XN2s41dNw)(NI* n, NI* x) {
 	NI result;
 	NI res;
 	nimfr_("exponent_binary", "exponentiation.nim");
@@ -204,7 +211,7 @@ N_LIB_PRIVATE N_NIMCALL(NI, exponent_binary_npqi4kJ7015vhjS4gHyImQ)(NI* n, NI* x
 		z = ((NI64)-((*x)));
 		nimln_(4, "exponentiation.nim");
 		T5_ = (NI)0;
-		T5_ = exponent_binary_npqi4kJ7015vhjS4gHyImQ(n, (&z));
+		T5_ = exponent_binary_eqKG4APkqy5I3XN2s41dNw(n, (&z));
 		TM_3QZA9aYngBryeZ5dBpvXr9cw_2 = divInt(((NI) 1), T5_);
 		result = (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_2);
 		goto BeforeRet_;
@@ -215,7 +222,8 @@ N_LIB_PRIVATE N_NIMCALL(NI, exponent_binary_npqi4kJ7015vhjS4gHyImQ)(NI* n, NI* x
 	{
 		nimln_(6, "exponentiation.nim");
 		while (1) {
-			NI TM_3QZA9aYngBryeZ5dBpvXr9cw_5;
+			tyArray_sMpvt1sOxOJ3LFGulnbeMQ T12_;
+			NI TM_3QZA9aYngBryeZ5dBpvXr9cw_7;
 			if (!(((NI) 0) < (*x))) goto LA7;
 			nimln_(7, "exponentiation.nim");
 			{
@@ -227,17 +235,254 @@ N_LIB_PRIVATE N_NIMCALL(NI, exponent_binary_npqi4kJ7015vhjS4gHyImQ)(NI* n, NI* x
 			}
 			LA10_: ;
 			nimln_(9, "exponentiation.nim");
-			stareq__tk9bwZBdb9bO9baUcUN2AX89bQexponentiation(n, (*n));
+			memset((void*)T12_, 0, sizeof(T12_));
+			T12_[0] = copyString(((NimStringDesc*) &TM_3QZA9aYngBryeZ5dBpvXr9cw_5));
+			T12_[1] = nimIntToStr((*n));
+			T12_[2] = copyString(((NimStringDesc*) &TM_3QZA9aYngBryeZ5dBpvXr9cw_6));
+			T12_[3] = nimIntToStr((*x));
+			echoBinSafe(T12_, 4);
 			nimln_(10, "exponentiation.nim");
-			TM_3QZA9aYngBryeZ5dBpvXr9cw_5 = divInt((*x), ((NI) 2));
-			(*x) = (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_5);
+			stareq__tk9bwZBdb9bO9baUcUN2AX89bQexponentiation(n, (*n));
+			nimln_(11, "exponentiation.nim");
+			TM_3QZA9aYngBryeZ5dBpvXr9cw_7 = divInt((*x), ((NI) 2));
+			(*x) = (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_7);
 		} LA7: ;
 	}
-	nimln_(11, "exponentiation.nim");
+	nimln_(12, "exponentiation.nim");
 	result = res;
 	goto BeforeRet_;
 	}BeforeRet_: ;
 	popFrame();
+	return result;
+}
+
+static N_INLINE(NI64, addInt64)(NI64 a, NI64 b) {
+	NI64 result;
+{	result = (NI64)0;
+	result = (NI64)((NU64)(a) + (NU64)(b));
+	{
+		NIM_BOOL T3_;
+		T3_ = (NIM_BOOL)0;
+		T3_ = (IL64(0) <= (NI64)(result ^ a));
+		if (T3_) goto LA4_;
+		T3_ = (IL64(0) <= (NI64)(result ^ b));
+		LA4_: ;
+		if (!T3_) goto LA5_;
+		goto BeforeRet_;
+	}
+	LA5_: ;
+	raiseOverflow();
+	}BeforeRet_: ;
+	return result;
+}
+static N_NIMCALL(void, Marker_tySequence_IHUFRsFxZNv7YydiUO2esQ)(void* p, NI op) {
+	tySequence_IHUFRsFxZNv7YydiUO2esQ* a;
+	NI T1_;
+	a = (tySequence_IHUFRsFxZNv7YydiUO2esQ*)p;
+	T1_ = (NI)0;
+}
+
+N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, mult_mat_seq_gAx9cw1jGr5nn9cG9bQNBHmSw)(tySequence_IHUFRsFxZNv7YydiUO2esQ* x, tySequence_IHUFRsFxZNv7YydiUO2esQ* y) {
+	tySequence_IHUFRsFxZNv7YydiUO2esQ* result;
+	NI64 a;
+	NI64 b;
+	NI64 c;
+	NI64 d;
+	NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_14;
+	NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_15;
+	NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_16;
+	NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_17;
+	NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_18;
+	NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_19;
+	NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_20;
+	NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_21;
+	NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_22;
+	NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_23;
+	NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_24;
+	NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_25;
+	nimfr_("mult_mat_seq", "exponentiation.nim");
+{	result = (tySequence_IHUFRsFxZNv7YydiUO2esQ*)0;
+	a = (NI64)0;
+	b = (NI64)0;
+	c = (NI64)0;
+	d = (NI64)0;
+	nimln_(19, "exponentiation.nim");
+	{
+		NI T3_;
+		NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_8;
+		NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_9;
+		NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_10;
+		NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_11;
+		NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_12;
+		NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_13;
+		T3_ = (y ? y->Sup.len : 0);
+		if (!(T3_ == ((NI) 2))) goto LA4_;
+		nimln_(20, "exponentiation.nim");
+		if ((NU)(((NI) 0)) >= (NU)(x->Sup.len)) raiseIndexError();
+		if ((NU)(((NI) 0)) >= (NU)(y->Sup.len)) raiseIndexError();
+		TM_3QZA9aYngBryeZ5dBpvXr9cw_8 = mulInt64(x->data[((NI) 0)], y->data[((NI) 0)]);
+		if ((NU)(((NI) 1)) >= (NU)(x->Sup.len)) raiseIndexError();
+		if ((NU)(((NI) 1)) >= (NU)(y->Sup.len)) raiseIndexError();
+		TM_3QZA9aYngBryeZ5dBpvXr9cw_9 = mulInt64(x->data[((NI) 1)], y->data[((NI) 1)]);
+		TM_3QZA9aYngBryeZ5dBpvXr9cw_10 = addInt64((NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_8), (NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_9));
+		a = (NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_10);
+		nimln_(21, "exponentiation.nim");
+		if ((NU)(((NI) 2)) >= (NU)(x->Sup.len)) raiseIndexError();
+		if ((NU)(((NI) 0)) >= (NU)(y->Sup.len)) raiseIndexError();
+		TM_3QZA9aYngBryeZ5dBpvXr9cw_11 = mulInt64(x->data[((NI) 2)], y->data[((NI) 0)]);
+		if ((NU)(((NI) 3)) >= (NU)(x->Sup.len)) raiseIndexError();
+		if ((NU)(((NI) 1)) >= (NU)(y->Sup.len)) raiseIndexError();
+		TM_3QZA9aYngBryeZ5dBpvXr9cw_12 = mulInt64(x->data[((NI) 3)], y->data[((NI) 1)]);
+		TM_3QZA9aYngBryeZ5dBpvXr9cw_13 = addInt64((NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_11), (NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_12));
+		b = (NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_13);
+		nimln_(22, "exponentiation.nim");
+		result = (tySequence_IHUFRsFxZNv7YydiUO2esQ*) newSeq((&NTI_IHUFRsFxZNv7YydiUO2esQ_), 2);
+		result->data[0] = a;
+		result->data[1] = b;
+		goto BeforeRet_;
+	}
+	LA4_: ;
+	nimln_(23, "exponentiation.nim");
+	if ((NU)(((NI) 0)) >= (NU)(x->Sup.len)) raiseIndexError();
+	if ((NU)(((NI) 0)) >= (NU)(y->Sup.len)) raiseIndexError();
+	TM_3QZA9aYngBryeZ5dBpvXr9cw_14 = mulInt64(x->data[((NI) 0)], y->data[((NI) 0)]);
+	if ((NU)(((NI) 1)) >= (NU)(x->Sup.len)) raiseIndexError();
+	if ((NU)(((NI) 2)) >= (NU)(y->Sup.len)) raiseIndexError();
+	TM_3QZA9aYngBryeZ5dBpvXr9cw_15 = mulInt64(x->data[((NI) 1)], y->data[((NI) 2)]);
+	TM_3QZA9aYngBryeZ5dBpvXr9cw_16 = addInt64((NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_14), (NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_15));
+	a = (NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_16);
+	nimln_(24, "exponentiation.nim");
+	if ((NU)(((NI) 0)) >= (NU)(x->Sup.len)) raiseIndexError();
+	if ((NU)(((NI) 1)) >= (NU)(y->Sup.len)) raiseIndexError();
+	TM_3QZA9aYngBryeZ5dBpvXr9cw_17 = mulInt64(x->data[((NI) 0)], y->data[((NI) 1)]);
+	if ((NU)(((NI) 1)) >= (NU)(x->Sup.len)) raiseIndexError();
+	if ((NU)(((NI) 3)) >= (NU)(y->Sup.len)) raiseIndexError();
+	TM_3QZA9aYngBryeZ5dBpvXr9cw_18 = mulInt64(x->data[((NI) 1)], y->data[((NI) 3)]);
+	TM_3QZA9aYngBryeZ5dBpvXr9cw_19 = addInt64((NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_17), (NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_18));
+	b = (NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_19);
+	nimln_(25, "exponentiation.nim");
+	if ((NU)(((NI) 2)) >= (NU)(x->Sup.len)) raiseIndexError();
+	if ((NU)(((NI) 0)) >= (NU)(y->Sup.len)) raiseIndexError();
+	TM_3QZA9aYngBryeZ5dBpvXr9cw_20 = mulInt64(x->data[((NI) 2)], y->data[((NI) 0)]);
+	if ((NU)(((NI) 3)) >= (NU)(x->Sup.len)) raiseIndexError();
+	if ((NU)(((NI) 2)) >= (NU)(y->Sup.len)) raiseIndexError();
+	TM_3QZA9aYngBryeZ5dBpvXr9cw_21 = mulInt64(x->data[((NI) 3)], y->data[((NI) 2)]);
+	TM_3QZA9aYngBryeZ5dBpvXr9cw_22 = addInt64((NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_20), (NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_21));
+	c = (NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_22);
+	nimln_(26, "exponentiation.nim");
+	if ((NU)(((NI) 2)) >= (NU)(x->Sup.len)) raiseIndexError();
+	if ((NU)(((NI) 1)) >= (NU)(y->Sup.len)) raiseIndexError();
+	TM_3QZA9aYngBryeZ5dBpvXr9cw_23 = mulInt64(x->data[((NI) 2)], y->data[((NI) 1)]);
+	if ((NU)(((NI) 3)) >= (NU)(x->Sup.len)) raiseIndexError();
+	if ((NU)(((NI) 3)) >= (NU)(y->Sup.len)) raiseIndexError();
+	TM_3QZA9aYngBryeZ5dBpvXr9cw_24 = mulInt64(x->data[((NI) 3)], y->data[((NI) 3)]);
+	TM_3QZA9aYngBryeZ5dBpvXr9cw_25 = addInt64((NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_23), (NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_24));
+	d = (NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_25);
+	nimln_(27, "exponentiation.nim");
+	result = (tySequence_IHUFRsFxZNv7YydiUO2esQ*) newSeq((&NTI_IHUFRsFxZNv7YydiUO2esQ_), 4);
+	result->data[0] = a;
+	result->data[1] = b;
+	result->data[2] = c;
+	result->data[3] = d;
+	goto BeforeRet_;
+	}BeforeRet_: ;
+	popFrame();
+	return result;
+}
+
+static N_INLINE(NI64, modInt64)(NI64 a, NI64 b) {
+	NI64 result;
+{	result = (NI64)0;
+	{
+		if (!(b == IL64(0))) goto LA3_;
+		raiseDivByZero();
+	}
+	LA3_: ;
+	result = (NI64)(a % b);
+	goto BeforeRet_;
+	}BeforeRet_: ;
+	return result;
+}
+
+static N_INLINE(NI64, divInt64)(NI64 a, NI64 b) {
+	NI64 result;
+{	result = (NI64)0;
+	{
+		if (!(b == IL64(0))) goto LA3_;
+		raiseDivByZero();
+	}
+	LA3_: ;
+	{
+		NIM_BOOL T7_;
+		T7_ = (NIM_BOOL)0;
+		T7_ = (a == (IL64(-9223372036854775807) - IL64(1)));
+		if (!(T7_)) goto LA8_;
+		T7_ = (b == IL64(-1));
+		LA8_: ;
+		if (!T7_) goto LA9_;
+		raiseOverflow();
+	}
+	LA9_: ;
+	result = (NI64)(a / b);
+	goto BeforeRet_;
+	}BeforeRet_: ;
+	return result;
+}
+
+N_LIB_PRIVATE N_NIMCALL(tySequence_IHUFRsFxZNv7YydiUO2esQ*, pow_mat_seq_r9aZSYkqxTNtselrdI83q7g)(tySequence_IHUFRsFxZNv7YydiUO2esQ** n, NI64* x) {
+	tySequence_IHUFRsFxZNv7YydiUO2esQ* result;
+	tySequence_IHUFRsFxZNv7YydiUO2esQ* res;
+	nimfr_("pow_mat_seq", "exponentiation.nim");
+{	result = (tySequence_IHUFRsFxZNv7YydiUO2esQ*)0;
+	res = (tySequence_IHUFRsFxZNv7YydiUO2esQ*)0;
+	nimln_(32, "exponentiation.nim");
+	genericSeqAssign((&res), (*n), (&NTI_IHUFRsFxZNv7YydiUO2esQ_));
+	{
+		nimln_(33, "exponentiation.nim");
+		while (1) {
+			NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_27;
+			if (!(IL64(0) < (*x))) goto LA2;
+			nimln_(34, "exponentiation.nim");
+			{
+				NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_26;
+				TM_3QZA9aYngBryeZ5dBpvXr9cw_26 = modInt64((*x), IL64(2));
+				if (!((NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_26) == IL64(1))) goto LA5_;
+				nimln_(35, "exponentiation.nim");
+				res = mult_mat_seq_gAx9cw1jGr5nn9cG9bQNBHmSw(res, (*n));
+			}
+			LA5_: ;
+			nimln_(36, "exponentiation.nim");
+			unsureAsgnRef((void**) (&(*n)), mult_mat_seq_gAx9cw1jGr5nn9cG9bQNBHmSw((*n), (*n)));
+			nimln_(37, "exponentiation.nim");
+			TM_3QZA9aYngBryeZ5dBpvXr9cw_27 = divInt64((*x), IL64(2));
+			(*x) = (NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_27);
+		} LA2: ;
+	}
+	nimln_(38, "exponentiation.nim");
+	genericSeqAssign((&result), res, (&NTI_IHUFRsFxZNv7YydiUO2esQ_));
+	goto BeforeRet_;
+	}BeforeRet_: ;
+	popFrame();
+	return result;
+}
+
+static N_INLINE(NI64, subInt64)(NI64 a, NI64 b) {
+	NI64 result;
+{	result = (NI64)0;
+	result = (NI64)((NU64)(a) - (NU64)(b));
+	{
+		NIM_BOOL T3_;
+		T3_ = (NIM_BOOL)0;
+		T3_ = (IL64(0) <= (NI64)(result ^ a));
+		if (T3_) goto LA4_;
+		T3_ = (IL64(0) <= (NI64)(result ^ (NI64)((NU64) ~(b))));
+		LA4_: ;
+		if (!T3_) goto LA5_;
+		goto BeforeRet_;
+	}
+	LA5_: ;
+	raiseOverflow();
+	}BeforeRet_: ;
 	return result;
 }
 
@@ -260,207 +505,214 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 	}BeforeRet_: ;
 	return result;
 }
-static N_NIMCALL(void, Marker_tySequence_qwqHTkRvwhrRyENtudHQ7g)(void* p, NI op) {
-	tySequence_qwqHTkRvwhrRyENtudHQ7g* a;
-	NI T1_;
-	a = (tySequence_qwqHTkRvwhrRyENtudHQ7g*)p;
-	T1_ = (NI)0;
-}
 
-N_LIB_PRIVATE N_NIMCALL(tySequence_qwqHTkRvwhrRyENtudHQ7g*, mult_mat_hwXi2iCY9aewz7k7VmACdVQ)(tySequence_qwqHTkRvwhrRyENtudHQ7g* x, tySequence_qwqHTkRvwhrRyENtudHQ7g* y) {
-	tySequence_qwqHTkRvwhrRyENtudHQ7g* result;
-	NI a;
-	NI b;
-	NI c;
-	NI d;
-	NI TM_3QZA9aYngBryeZ5dBpvXr9cw_12;
-	NI TM_3QZA9aYngBryeZ5dBpvXr9cw_13;
-	NI TM_3QZA9aYngBryeZ5dBpvXr9cw_14;
-	NI TM_3QZA9aYngBryeZ5dBpvXr9cw_15;
-	NI TM_3QZA9aYngBryeZ5dBpvXr9cw_16;
-	NI TM_3QZA9aYngBryeZ5dBpvXr9cw_17;
-	NI TM_3QZA9aYngBryeZ5dBpvXr9cw_18;
-	NI TM_3QZA9aYngBryeZ5dBpvXr9cw_19;
-	NI TM_3QZA9aYngBryeZ5dBpvXr9cw_20;
-	NI TM_3QZA9aYngBryeZ5dBpvXr9cw_21;
-	NI TM_3QZA9aYngBryeZ5dBpvXr9cw_22;
-	NI TM_3QZA9aYngBryeZ5dBpvXr9cw_23;
+N_LIB_PRIVATE N_NIMCALL(void, mult_mat_TwUb3trnSFHi9aXPb9buA3iA)(tyArray_X4Lo9adz49bWDIQMo8kGcUYA a, tyArray_X4Lo9adz49bWDIQMo8kGcUYA b, tyArray_X4Lo9adz49bWDIQMo8kGcUYA Result) {
+	NI M;
+	NI N;
+	NI M2;
+	NI N2;
+	tyArray_X4Lo9adz49bWDIQMo8kGcUYA res;
 	nimfr_("mult_mat", "exponentiation.nim");
-{	result = (tySequence_qwqHTkRvwhrRyENtudHQ7g*)0;
-	a = (NI)0;
-	b = (NI)0;
-	c = (NI)0;
-	d = (NI)0;
-	nimln_(15, "exponentiation.nim");
+{	chckNil((void*)Result);
+	memset((void*)Result, 0, sizeof(Result));
+	nimln_(41, "exponentiation.nim");
+	M = ((NI) 2);
+	nimln_(42, "exponentiation.nim");
+	N = ((NI) 2);
+	nimln_(43, "exponentiation.nim");
+	M2 = ((NI) 2);
+	nimln_(44, "exponentiation.nim");
+	N2 = ((NI) 2);
+	nimln_(45, "exponentiation.nim");
 	{
-		NI T3_;
-		NI TM_3QZA9aYngBryeZ5dBpvXr9cw_6;
-		NI TM_3QZA9aYngBryeZ5dBpvXr9cw_7;
-		NI TM_3QZA9aYngBryeZ5dBpvXr9cw_8;
-		NI TM_3QZA9aYngBryeZ5dBpvXr9cw_9;
-		NI TM_3QZA9aYngBryeZ5dBpvXr9cw_10;
-		NI TM_3QZA9aYngBryeZ5dBpvXr9cw_11;
-		T3_ = (y ? y->Sup.len : 0);
-		if (!(T3_ == ((NI) 2))) goto LA4_;
-		nimln_(16, "exponentiation.nim");
-		if ((NU)(((NI) 0)) >= (NU)(x->Sup.len)) raiseIndexError();
-		if ((NU)(((NI) 0)) >= (NU)(y->Sup.len)) raiseIndexError();
-		TM_3QZA9aYngBryeZ5dBpvXr9cw_6 = mulInt(x->data[((NI) 0)], y->data[((NI) 0)]);
-		if ((NU)(((NI) 1)) >= (NU)(x->Sup.len)) raiseIndexError();
-		if ((NU)(((NI) 1)) >= (NU)(y->Sup.len)) raiseIndexError();
-		TM_3QZA9aYngBryeZ5dBpvXr9cw_7 = mulInt(x->data[((NI) 1)], y->data[((NI) 1)]);
-		TM_3QZA9aYngBryeZ5dBpvXr9cw_8 = addInt((NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_6), (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_7));
-		a = (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_8);
-		nimln_(17, "exponentiation.nim");
-		if ((NU)(((NI) 2)) >= (NU)(x->Sup.len)) raiseIndexError();
-		if ((NU)(((NI) 0)) >= (NU)(y->Sup.len)) raiseIndexError();
-		TM_3QZA9aYngBryeZ5dBpvXr9cw_9 = mulInt(x->data[((NI) 2)], y->data[((NI) 0)]);
-		if ((NU)(((NI) 3)) >= (NU)(x->Sup.len)) raiseIndexError();
-		if ((NU)(((NI) 1)) >= (NU)(y->Sup.len)) raiseIndexError();
-		TM_3QZA9aYngBryeZ5dBpvXr9cw_10 = mulInt(x->data[((NI) 3)], y->data[((NI) 1)]);
-		TM_3QZA9aYngBryeZ5dBpvXr9cw_11 = addInt((NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_9), (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_10));
-		b = (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_11);
-		nimln_(18, "exponentiation.nim");
-		result = (tySequence_qwqHTkRvwhrRyENtudHQ7g*) newSeq((&NTI_qwqHTkRvwhrRyENtudHQ7g_), 2);
-		result->data[0] = a;
-		result->data[1] = b;
-		goto BeforeRet_;
+		nimln_(398, "system.nim");
+		nimln_(45, "exponentiation.nim");
+		if (!!((M == N))) goto LA3_;
+		nimln_(46, "exponentiation.nim");
+		echoBinSafe(TM_3QZA9aYngBryeZ5dBpvXr9cw_31, 1);
 	}
-	LA4_: ;
-	nimln_(19, "exponentiation.nim");
-	if ((NU)(((NI) 0)) >= (NU)(x->Sup.len)) raiseIndexError();
-	if ((NU)(((NI) 0)) >= (NU)(y->Sup.len)) raiseIndexError();
-	TM_3QZA9aYngBryeZ5dBpvXr9cw_12 = mulInt(x->data[((NI) 0)], y->data[((NI) 0)]);
-	if ((NU)(((NI) 1)) >= (NU)(x->Sup.len)) raiseIndexError();
-	if ((NU)(((NI) 2)) >= (NU)(y->Sup.len)) raiseIndexError();
-	TM_3QZA9aYngBryeZ5dBpvXr9cw_13 = mulInt(x->data[((NI) 1)], y->data[((NI) 2)]);
-	TM_3QZA9aYngBryeZ5dBpvXr9cw_14 = addInt((NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_12), (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_13));
-	a = (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_14);
-	nimln_(20, "exponentiation.nim");
-	if ((NU)(((NI) 0)) >= (NU)(x->Sup.len)) raiseIndexError();
-	if ((NU)(((NI) 1)) >= (NU)(y->Sup.len)) raiseIndexError();
-	TM_3QZA9aYngBryeZ5dBpvXr9cw_15 = mulInt(x->data[((NI) 0)], y->data[((NI) 1)]);
-	if ((NU)(((NI) 1)) >= (NU)(x->Sup.len)) raiseIndexError();
-	if ((NU)(((NI) 3)) >= (NU)(y->Sup.len)) raiseIndexError();
-	TM_3QZA9aYngBryeZ5dBpvXr9cw_16 = mulInt(x->data[((NI) 1)], y->data[((NI) 3)]);
-	TM_3QZA9aYngBryeZ5dBpvXr9cw_17 = addInt((NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_15), (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_16));
-	b = (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_17);
-	nimln_(21, "exponentiation.nim");
-	if ((NU)(((NI) 2)) >= (NU)(x->Sup.len)) raiseIndexError();
-	if ((NU)(((NI) 0)) >= (NU)(y->Sup.len)) raiseIndexError();
-	TM_3QZA9aYngBryeZ5dBpvXr9cw_18 = mulInt(x->data[((NI) 2)], y->data[((NI) 0)]);
-	if ((NU)(((NI) 3)) >= (NU)(x->Sup.len)) raiseIndexError();
-	if ((NU)(((NI) 2)) >= (NU)(y->Sup.len)) raiseIndexError();
-	TM_3QZA9aYngBryeZ5dBpvXr9cw_19 = mulInt(x->data[((NI) 3)], y->data[((NI) 2)]);
-	TM_3QZA9aYngBryeZ5dBpvXr9cw_20 = addInt((NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_18), (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_19));
-	c = (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_20);
-	nimln_(22, "exponentiation.nim");
-	if ((NU)(((NI) 2)) >= (NU)(x->Sup.len)) raiseIndexError();
-	if ((NU)(((NI) 1)) >= (NU)(y->Sup.len)) raiseIndexError();
-	TM_3QZA9aYngBryeZ5dBpvXr9cw_21 = mulInt(x->data[((NI) 2)], y->data[((NI) 1)]);
-	if ((NU)(((NI) 3)) >= (NU)(x->Sup.len)) raiseIndexError();
-	if ((NU)(((NI) 3)) >= (NU)(y->Sup.len)) raiseIndexError();
-	TM_3QZA9aYngBryeZ5dBpvXr9cw_22 = mulInt(x->data[((NI) 3)], y->data[((NI) 3)]);
-	TM_3QZA9aYngBryeZ5dBpvXr9cw_23 = addInt((NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_21), (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_22));
-	d = (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_23);
-	nimln_(23, "exponentiation.nim");
-	result = (tySequence_qwqHTkRvwhrRyENtudHQ7g*) newSeq((&NTI_qwqHTkRvwhrRyENtudHQ7g_), 4);
-	result->data[0] = a;
-	result->data[1] = b;
-	result->data[2] = c;
-	result->data[3] = d;
+	LA3_: ;
+	memset((void*)res, 0, sizeof(res));
+	nimln_(47, "exponentiation.nim");
+	memcpy((void*)res, (NIM_CONST void*)a, sizeof(tyArray_X4Lo9adz49bWDIQMo8kGcUYA));
+	{
+		NI i;
+		NI i_2;
+		i = (NI)0;
+		nimln_(3519, "system.nim");
+		i_2 = ((NI) 0);
+		{
+			nimln_(3520, "system.nim");
+			while (1) {
+				NI TM_3QZA9aYngBryeZ5dBpvXr9cw_34;
+				if (!(i_2 < M)) goto LA7;
+				nimln_(3521, "system.nim");
+				i = i_2;
+				{
+					NI j;
+					NI i_3;
+					j = (NI)0;
+					nimln_(3519, "system.nim");
+					i_3 = ((NI) 0);
+					{
+						nimln_(3520, "system.nim");
+						while (1) {
+							NI TM_3QZA9aYngBryeZ5dBpvXr9cw_33;
+							if (!(i_3 < N2)) goto LA10;
+							nimln_(3521, "system.nim");
+							j = i_3;
+							if ((NU)(i) > (NU)(1)) raiseIndexError();
+							if ((NU)(j) > (NU)(1)) raiseIndexError();
+							nimln_(50, "exponentiation.nim");
+							res[(i)- 0][(j)- 0] = IL64(0);
+							nimln_(3522, "system.nim");
+							TM_3QZA9aYngBryeZ5dBpvXr9cw_33 = addInt(i_3, ((NI) 1));
+							i_3 = (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_33);
+						} LA10: ;
+					}
+				}
+				TM_3QZA9aYngBryeZ5dBpvXr9cw_34 = addInt(i_2, ((NI) 1));
+				i_2 = (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_34);
+			} LA7: ;
+		}
+	}
+	{
+		NI i_4;
+		NI i_5;
+		i_4 = (NI)0;
+		nimln_(3519, "system.nim");
+		i_5 = ((NI) 0);
+		{
+			nimln_(3520, "system.nim");
+			while (1) {
+				NI TM_3QZA9aYngBryeZ5dBpvXr9cw_39;
+				if (!(i_5 < M)) goto LA13;
+				nimln_(3521, "system.nim");
+				i_4 = i_5;
+				{
+					NI j_2;
+					NI i_6;
+					j_2 = (NI)0;
+					nimln_(3519, "system.nim");
+					i_6 = ((NI) 0);
+					{
+						nimln_(3520, "system.nim");
+						while (1) {
+							NI TM_3QZA9aYngBryeZ5dBpvXr9cw_38;
+							if (!(i_6 < N2)) goto LA16;
+							nimln_(3521, "system.nim");
+							j_2 = i_6;
+							{
+								NI k;
+								NI i_7;
+								k = (NI)0;
+								nimln_(3519, "system.nim");
+								i_7 = ((NI) 0);
+								{
+									nimln_(3520, "system.nim");
+									while (1) {
+										NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_35;
+										NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_36;
+										NI TM_3QZA9aYngBryeZ5dBpvXr9cw_37;
+										if (!(i_7 < N)) goto LA19;
+										nimln_(3521, "system.nim");
+										k = i_7;
+										nimln_(54, "exponentiation.nim");
+										if ((NU)(i_4) > (NU)(1)) raiseIndexError();
+										if ((NU)(j_2) > (NU)(1)) raiseIndexError();
+										if ((NU)(i_4) > (NU)(1)) raiseIndexError();
+										if ((NU)(k) > (NU)(1)) raiseIndexError();
+										if ((NU)(k) > (NU)(1)) raiseIndexError();
+										if ((NU)(j_2) > (NU)(1)) raiseIndexError();
+										TM_3QZA9aYngBryeZ5dBpvXr9cw_35 = mulInt64(a[(i_4)- 0][(k)- 0], b[(k)- 0][(j_2)- 0]);
+										TM_3QZA9aYngBryeZ5dBpvXr9cw_36 = addInt64(res[(i_4)- 0][(j_2)- 0], (NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_35));
+										res[(i_4)- 0][(j_2)- 0] = (NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_36);
+										nimln_(3522, "system.nim");
+										TM_3QZA9aYngBryeZ5dBpvXr9cw_37 = addInt(i_7, ((NI) 1));
+										i_7 = (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_37);
+									} LA19: ;
+								}
+							}
+							TM_3QZA9aYngBryeZ5dBpvXr9cw_38 = addInt(i_6, ((NI) 1));
+							i_6 = (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_38);
+						} LA16: ;
+					}
+				}
+				TM_3QZA9aYngBryeZ5dBpvXr9cw_39 = addInt(i_5, ((NI) 1));
+				i_5 = (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_39);
+			} LA13: ;
+		}
+	}
+	nimln_(55, "exponentiation.nim");
+	memcpy((void*)Result, (NIM_CONST void*)res, sizeof(tyArray_X4Lo9adz49bWDIQMo8kGcUYA));
 	goto BeforeRet_;
 	}BeforeRet_: ;
 	popFrame();
-	return result;
 }
 
-N_LIB_PRIVATE N_NIMCALL(tySequence_qwqHTkRvwhrRyENtudHQ7g*, pow_mat_aW2IER2BZmu1vkPYlXWjfA)(tySequence_qwqHTkRvwhrRyENtudHQ7g** n, NI* x) {
-	tySequence_qwqHTkRvwhrRyENtudHQ7g* result;
-	tySequence_qwqHTkRvwhrRyENtudHQ7g* res;
+N_LIB_PRIVATE N_NIMCALL(void, pow_mat_HdAB07TCTeuAOvGfbnUtNw)(tyArray_EawPLnQhPqWwYm5GdCoh8A* a, NI64* x, tyArray_X4Lo9adz49bWDIQMo8kGcUYA Result) {
+	tyArray_X4Lo9adz49bWDIQMo8kGcUYA res;
 	nimfr_("pow_mat", "exponentiation.nim");
-{	result = (tySequence_qwqHTkRvwhrRyENtudHQ7g*)0;
-	res = (tySequence_qwqHTkRvwhrRyENtudHQ7g*)0;
-	nimln_(27, "exponentiation.nim");
-	genericSeqAssign((&res), (*n), (&NTI_qwqHTkRvwhrRyENtudHQ7g_));
+{	chckNil((void*)Result);
+	memset((void*)Result, 0, sizeof(Result));
+	memset((void*)res, 0, sizeof(res));
+	nimln_(58, "exponentiation.nim");
+	memcpy((void*)res, (NIM_CONST void*)a, sizeof(tyArray_X4Lo9adz49bWDIQMo8kGcUYA));
 	{
-		nimln_(28, "exponentiation.nim");
+		nimln_(59, "exponentiation.nim");
 		while (1) {
-			NI TM_3QZA9aYngBryeZ5dBpvXr9cw_25;
-			if (!(((NI) 0) < (*x))) goto LA2;
-			nimln_(29, "exponentiation.nim");
+			tyArray_X4Lo9adz49bWDIQMo8kGcUYA T8_;
+			NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_40;
+			if (!(IL64(0) < (*x))) goto LA2;
+			nimln_(60, "exponentiation.nim");
 			{
-				NI TM_3QZA9aYngBryeZ5dBpvXr9cw_24;
-				TM_3QZA9aYngBryeZ5dBpvXr9cw_24 = modInt((*x), ((NI) 2));
-				if (!((NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_24) == ((NI) 1))) goto LA5_;
-				nimln_(30, "exponentiation.nim");
-				res = mult_mat_hwXi2iCY9aewz7k7VmACdVQ(res, (*n));
+				NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_30;
+				tyArray_X4Lo9adz49bWDIQMo8kGcUYA T7_;
+				TM_3QZA9aYngBryeZ5dBpvXr9cw_30 = modInt64((*x), IL64(2));
+				if (!((NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_30) == IL64(1))) goto LA5_;
+				nimln_(61, "exponentiation.nim");
+				memset((void*)T7_, 0, sizeof(T7_));
+				mult_mat_TwUb3trnSFHi9aXPb9buA3iA(res, a, T7_);
+				memcpy((void*)res, (NIM_CONST void*)T7_, sizeof(tyArray_X4Lo9adz49bWDIQMo8kGcUYA));
 			}
 			LA5_: ;
-			nimln_(31, "exponentiation.nim");
-			unsureAsgnRef((void**) (&(*n)), mult_mat_hwXi2iCY9aewz7k7VmACdVQ((*n), (*n)));
-			nimln_(32, "exponentiation.nim");
-			TM_3QZA9aYngBryeZ5dBpvXr9cw_25 = divInt((*x), ((NI) 2));
-			(*x) = (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_25);
+			nimln_(62, "exponentiation.nim");
+			memset((void*)T8_, 0, sizeof(T8_));
+			mult_mat_TwUb3trnSFHi9aXPb9buA3iA(a, a, T8_);
+			memcpy((void*)a, (NIM_CONST void*)T8_, sizeof(tyArray_X4Lo9adz49bWDIQMo8kGcUYA));
+			nimln_(63, "exponentiation.nim");
+			TM_3QZA9aYngBryeZ5dBpvXr9cw_40 = divInt64((*x), IL64(2));
+			(*x) = (NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_40);
 		} LA2: ;
 	}
-	nimln_(33, "exponentiation.nim");
-	genericSeqAssign((&result), res, (&NTI_qwqHTkRvwhrRyENtudHQ7g_));
+	nimln_(64, "exponentiation.nim");
+	memcpy((void*)Result, (NIM_CONST void*)res, sizeof(tyArray_X4Lo9adz49bWDIQMo8kGcUYA));
 	goto BeforeRet_;
 	}BeforeRet_: ;
 	popFrame();
-	return result;
 }
 
-static N_INLINE(NI, subInt)(NI a, NI b) {
-	NI result;
-{	result = (NI)0;
-	result = (NI)((NU64)(a) - (NU64)(b));
-	{
-		NIM_BOOL T3_;
-		T3_ = (NIM_BOOL)0;
-		T3_ = (((NI) 0) <= (NI)(result ^ a));
-		if (T3_) goto LA4_;
-		T3_ = (((NI) 0) <= (NI)(result ^ (NI)((NU64) ~(b))));
-		LA4_: ;
-		if (!T3_) goto LA5_;
-		goto BeforeRet_;
-	}
-	LA5_: ;
-	raiseOverflow();
-	}BeforeRet_: ;
-	return result;
-}
-
-N_LIB_PRIVATE N_NIMCALL(NI, fib_matrix_exp_UTOuZwP23azkd3lRnY9aWRg)(NI n) {
-	NI result;
-	tySequence_qwqHTkRvwhrRyENtudHQ7g* A;
-	tySequence_qwqHTkRvwhrRyENtudHQ7g* V;
-	NI x;
-	NI TM_3QZA9aYngBryeZ5dBpvXr9cw_30;
-	tySequence_qwqHTkRvwhrRyENtudHQ7g* res;
-	tySequence_qwqHTkRvwhrRyENtudHQ7g* T1_;
-	tyArray_nHXaesL0DJZHyVS07ARPRA T2_;
+N_LIB_PRIVATE N_NIMCALL(NI64, fib_matrix_exp_qSFrKVtQsOuIF1VV39aezJQ)(NI64 n) {
+	NI64 result;
+	tyArray_X4Lo9adz49bWDIQMo8kGcUYA A;
+	NI64 x;
+	NI64 TM_3QZA9aYngBryeZ5dBpvXr9cw_29;
+	tyArray_X4Lo9adz49bWDIQMo8kGcUYA T1_;
 	nimfr_("fib_matrix_exp", "exponentiation.nim");
-{	result = (NI)0;
-	nimln_(37, "exponentiation.nim");
-	genericSeqAssign((&A), TM_3QZA9aYngBryeZ5dBpvXr9cw_26, (&NTI_qwqHTkRvwhrRyENtudHQ7g_));
-	nimln_(38, "exponentiation.nim");
-	genericSeqAssign((&V), TM_3QZA9aYngBryeZ5dBpvXr9cw_28, (&NTI_qwqHTkRvwhrRyENtudHQ7g_));
-	nimln_(39, "exponentiation.nim");
-	TM_3QZA9aYngBryeZ5dBpvXr9cw_30 = subInt(n, ((NI) 2));
-	x = (NI)(TM_3QZA9aYngBryeZ5dBpvXr9cw_30);
-	nimln_(40, "exponentiation.nim");
-	T1_ = (tySequence_qwqHTkRvwhrRyENtudHQ7g*)0;
-	T1_ = pow_mat_aW2IER2BZmu1vkPYlXWjfA((&A), (&x));
-	res = mult_mat_hwXi2iCY9aewz7k7VmACdVQ(T1_, V);
-	nimln_(41, "exponentiation.nim");
-	memset((void*)T2_, 0, sizeof(T2_));
-	T2_[0] = dollar__H9byP9au7Ewl1LWJ70fLKs7Q(res);
-	echoBinSafe(T2_, 1);
-	nimln_(42, "exponentiation.nim");
-	if ((NU)(((NI) 0)) >= (NU)(res->Sup.len)) raiseIndexError();
-	result = res->data[((NI) 0)];
+{	result = (NI64)0;
+	memset((void*)A, 0, sizeof(A));
+	nimln_(69, "exponentiation.nim");
+	memcpy((void*)A, (NIM_CONST void*)TM_3QZA9aYngBryeZ5dBpvXr9cw_28, sizeof(tyArray_X4Lo9adz49bWDIQMo8kGcUYA));
+	x = (NI64)0;
+	nimln_(71, "exponentiation.nim");
+	TM_3QZA9aYngBryeZ5dBpvXr9cw_29 = subInt64(n, IL64(2));
+	x = (NI64)(TM_3QZA9aYngBryeZ5dBpvXr9cw_29);
+	nimln_(72, "exponentiation.nim");
+	memset((void*)T1_, 0, sizeof(T1_));
+	pow_mat_HdAB07TCTeuAOvGfbnUtNw(A, (&x), T1_);
+	memcpy((void*)A, (NIM_CONST void*)T1_, sizeof(tyArray_X4Lo9adz49bWDIQMo8kGcUYA));
+	nimln_(73, "exponentiation.nim");
+	result = A[(((NI) 0))- 0][(((NI) 0))- 0];
 	goto BeforeRet_;
 	}BeforeRet_: ;
 	popFrame();
@@ -510,32 +762,32 @@ NIM_EXTERNC N_NOINLINE(void, NimMainModule)(void) {
 	tyArray_nHXaesL0DJZHyVS07ARPRA T1_;
 	NI T2_;
 	tyArray_nHXaesL0DJZHyVS07ARPRA T3_;
-	NI T4_;
+	NI64 T4_;
 	nimfr_("exponentiation", "exponentiation.nim");
-	nimln_(44, "exponentiation.nim");
+	nimln_(75, "exponentiation.nim");
 	x_4lJzM9awleS2bOq9bPStf9bpw = ((NI) 2);
-	nimln_(45, "exponentiation.nim");
-	y_M4Xr9cr2hdldN4ghM59b0i3g = ((NI) 3);
-	nimln_(46, "exponentiation.nim");
+	nimln_(76, "exponentiation.nim");
+	y_M4Xr9cr2hdldN4ghM59b0i3g = ((NI) 5);
+	nimln_(77, "exponentiation.nim");
 	memset((void*)T1_, 0, sizeof(T1_));
 	T2_ = (NI)0;
-	T2_ = exponent_binary_npqi4kJ7015vhjS4gHyImQ((&x_4lJzM9awleS2bOq9bPStf9bpw), (&y_M4Xr9cr2hdldN4ghM59b0i3g));
+	T2_ = exponent_binary_eqKG4APkqy5I3XN2s41dNw((&x_4lJzM9awleS2bOq9bPStf9bpw), (&y_M4Xr9cr2hdldN4ghM59b0i3g));
 	T1_[0] = nimIntToStr(T2_);
 	echoBinSafe(T1_, 1);
-	nimln_(47, "exponentiation.nim");
+	nimln_(78, "exponentiation.nim");
 	memset((void*)T3_, 0, sizeof(T3_));
-	T4_ = (NI)0;
-	T4_ = fib_matrix_exp_UTOuZwP23azkd3lRnY9aWRg(((NI) 9));
-	T3_[0] = nimIntToStr(T4_);
+	T4_ = (NI64)0;
+	T4_ = fib_matrix_exp_qSFrKVtQsOuIF1VV39aezJQ(IL64(9));
+	T3_[0] = nimInt64ToStr(T4_);
 	echoBinSafe(T3_, 1);
 	popFrame();
 }
 
 NIM_EXTERNC N_NOINLINE(void, exponentiationDatInit000)(void) {
-NTI_qwqHTkRvwhrRyENtudHQ7g_.size = sizeof(tySequence_qwqHTkRvwhrRyENtudHQ7g*);
-NTI_qwqHTkRvwhrRyENtudHQ7g_.kind = 24;
-NTI_qwqHTkRvwhrRyENtudHQ7g_.base = (&NTI_rR5Bzr1D5krxoo1NcNyeMA_);
-NTI_qwqHTkRvwhrRyENtudHQ7g_.flags = 2;
-NTI_qwqHTkRvwhrRyENtudHQ7g_.marker = Marker_tySequence_qwqHTkRvwhrRyENtudHQ7g;
+NTI_IHUFRsFxZNv7YydiUO2esQ_.size = sizeof(tySequence_IHUFRsFxZNv7YydiUO2esQ*);
+NTI_IHUFRsFxZNv7YydiUO2esQ_.kind = 24;
+NTI_IHUFRsFxZNv7YydiUO2esQ_.base = (&NTI_Aav8dQoMlCFnZRxA0IhTHQ_);
+NTI_IHUFRsFxZNv7YydiUO2esQ_.flags = 2;
+NTI_IHUFRsFxZNv7YydiUO2esQ_.marker = Marker_tySequence_IHUFRsFxZNv7YydiUO2esQ;
 }
 

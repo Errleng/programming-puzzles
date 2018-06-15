@@ -173,14 +173,98 @@ final public class Matrix {
             x.data[j][0] = (b.data[j][0] - t) / A.data[j][j];
         }
         return x;
+    }
 
+    public Matrix cofactor(int p, int q) {
+        Matrix result = new Matrix(this.M-1, this.N-1);
+        int k;
+        for (int i = 0; i < this.N; i++) {
+            for (int j = 0; j < this.N; j++) {
+                if (i < p)
+                    k = i;
+                else if (i > p)
+                    k = i - 1;
+                else
+                    continue;
+                if (j < q) {
+                    result.data[k][j] = this.data[i][j];
+                } else if (j > q) {
+                    result.data[k][j-1] = this.data[i][j];
+                }
+           }
+        }
+        return result;
+    }
+
+    public double determinant() { // Determinant by minors
+        if (this.N == 1) {
+            return this.data[0][0]; // a
+        }
+
+        double result = 0;
+        Matrix temp; // Smaller matrix which holds the matrix formed by deleting the i'th row and j'th column
+        int sign = 1;
+
+        /* Example
+        A = [
+        1 2 3
+        4 5 6
+        7 8 9
+        ]
+        A(1,1) = [
+        5 6
+        8 9
+        ]
+         */
+
+        for (int i = 0; i < this.N; i++) {
+            temp = cofactor(0, i);
+            result += sign * this.data[0][i] * temp.determinant();
+            sign = -sign;
+        }
+        return result;
+    }
+
+    public Matrix adjoint() {
+        Matrix result = new Matrix(this.data);
+        if (result.N == 1) {
+            result.data[0][0] = 1;
+            return result;
+        }
+
+        Matrix temp;
+        int sign = 1;
+
+        for (int i = 0; i < result.N; i++) {
+            for (int j = 0; j < result.N; j++) {
+                temp = this.cofactor(i, j);
+                sign = ((i+j) % 2 == 0) ? 1 : - 1;
+                result.data[j][i] = sign * temp.determinant();
+            }
+        }
+        return result;
+    }
+
+    public Matrix inverse() {
+        Matrix result = new Matrix(this.data);
+        double det = result.determinant();
+        if (Math.signum(det) == 0) {
+            throw new RuntimeException("Inverse of a singular matrix cannot be found");
+        }
+        Matrix adjoint = result.adjoint();
+        for (int i = 0; i < result.N; i++) {
+            for (int j = 0; j < result.N; j++) {
+                result.data[i][j] = adjoint.data[i][j] / det;
+            }
+        }
+        return result;
     }
 
     // print Matrix to standard output
     public void show() {
         for (int i = 0; i < M; i++) {
             for (int j = 0; j < N; j++)
-                System.out.print((int)data[i][j] + " ");
+                System.out.printf("%1.2f ", this.data[i][j]);
             System.out.println();
         }
     }

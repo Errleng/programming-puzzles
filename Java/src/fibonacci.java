@@ -40,4 +40,30 @@ public class fibonacci {
             return memo.get(n);
         }
     }
+
+    public static void binetProof() {
+        double[][] arr_A = {
+                {8, 11, 2, 8},
+                {0, -7, 2, -1},
+                {-3, -7, 2, 1},
+                {1, 1, 2, 4}
+        };
+        double[][] arr_B = {
+                {1, -2, 0, 5},
+                {0, 7, 1, 5},
+                {0, 4, 4, 0},
+                {0, 0, 0, 2}
+        };
+        Matrix A = new Matrix(arr_A);
+        Matrix B = new Matrix(arr_B);
+        A.show();
+        System.out.println();
+        B.show();
+        System.out.println();
+        System.out.println(A.determinant());
+        System.out.println();
+        Matrix C = A.times(A.inverse());
+        C.show();
+        System.out.println();
+    }
 }

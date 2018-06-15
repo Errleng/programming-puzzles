@@ -56,14 +56,77 @@ public class fibonacci {
         };
         Matrix A = new Matrix(arr_A);
         Matrix B = new Matrix(arr_B);
-        A.show();
+        A.showInt();
         System.out.println();
-        B.show();
+        B.showInt();
         System.out.println();
-        System.out.println(A.determinant());
+        // Determinant
+        System.out.println(A.determinant()); // Factor that an area is scaled after applying the matrix's transformation
         System.out.println();
-        Matrix C = A.times(A.inverse());
-        C.show();
+
+        // Inverse matrices
+        double[][] arr_C = {
+                {-3, 6},
+                {2, -5}
+        };
+        Matrix C = new Matrix(arr_C);
+        C.showInt();
         System.out.println();
+        C.inverse().show();
+        System.out.println();
+        C.times(C.inverse()).show();
+        System.out.println();
+
+        // Change of Basis
+        double[][] arr_jennifer_basis = { // Consists of Jennifer's basis vectors
+                {2, -1},
+                {1, 1}
+        };
+        double[][] arr_jennifer_vector = {
+                {-1},
+                {2}
+        };
+        double[][] arr_our_vector = {
+                {3},
+                {2}
+        };
+        double[][] arr_rotation_90_ccw = {
+                {0, -1},
+                {1, 0}
+        };
+        Matrix jenV = new Matrix(arr_jennifer_vector);
+        Matrix ourV = new Matrix(arr_our_vector);
+        Matrix jenniferBasis = new Matrix(arr_jennifer_basis); // Transformation Jennifer's vector into ours
+        Matrix rotation90CCW = new Matrix(arr_rotation_90_ccw);
+        jenniferBasis.times(jenV).show(); // Jennifer's vector in our coordinate system
+        System.out.println();
+        jenniferBasis.inverse().times(ourV).show(); // Transforms our vector into Jennifer's coordinate system
+        System.out.println();
+        jenniferBasis.inverse().times(rotation90CCW.times(jenniferBasis.times(jenV))).show();
+        // What's going on here?
+        // Translate Jennifer's vector into our coordinate system
+        // Apply transformation matrix to that vector
+        // Translate the resulting transformed vector into Jennifer's coordinate system
+        // inv(A) * M * A
+
+        // Eigenvectors and Eigenvalues
+        // After a transformation (multiplying by a matrix), the eigenvector stays on its own span line (AKA doesn't change direction to the side)
+        // A * v = lambda * v (v = eigenvector, lambda = eigenvalue)
+        // lambda is currently a scalar, but it can also be represented as a matrix
+        // lambda = diagonal matrix where the diagonal values are lambda. AKA lambda * identity matrix
+        // It has the same effect as multiplying by lambda as a scalar
+        // lambda = l * I where I is the identity matrix and l is lambda
+        // Now that lambda is a matrix composition, it can be used in matrix operations
+        // A * v - (l * I) * v = 0
+        // (A - l) * v = 0
+        /*
+        Matrix Example
+        [
+        2 - l, 2;
+        1, 3 - l
+        ]
+        */
+        // For a non-zero eigenvector v, det(A - l) must therefore be 0
+
     }
 }

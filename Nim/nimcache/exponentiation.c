@@ -3,7 +3,7 @@
 /* The generated code is subject to the original license. */
 /* Compiled for: Windows, amd64, gcc */
 /* Command for C compiler:
-   D:\Documents\Code\mingw64\bin\gcc.exe -c  -w -mno-ms-bitfields  -ID:\Documents\Code\nim-0.18.0\lib -o d:\Documents\SourceTree\Challenges\Nim\nimcache\exponentiation.o d:\Documents\SourceTree\Challenges\Nim\nimcache\exponentiation.c */
+   C:\Users\aisae\Documents\Dependencies\mingw64\bin\gcc.exe -c  -w -mno-ms-bitfields  -IC:\Users\aisae\Documents\Dependencies\nim-0.18.0\lib -o c:\Users\aisae\Documents\Sourcetree\Challenges\Nim\nimcache\exponentiation.o c:\Users\aisae\Documents\Sourcetree\Challenges\Nim\nimcache\exponentiation.c */
 #define NIM_NEW_MANGLING_RULES
 #define NIM_INTBITS 64
 
@@ -95,7 +95,6 @@ N_LIB_PRIVATE N_NIMCALL(void, pow_mat_HdAB07TCTeuAOvGfbnUtNw)(tyArray_EawPLnQhPq
 N_NOINLINE(void, chckNil)(void* p);
 N_LIB_PRIVATE N_NIMCALL(void, mult_mat_TwUb3trnSFHi9aXPb9buA3iA)(tyArray_X4Lo9adz49bWDIQMo8kGcUYA a, tyArray_X4Lo9adz49bWDIQMo8kGcUYA b, tyArray_X4Lo9adz49bWDIQMo8kGcUYA Result);
 static N_INLINE(NI, addInt)(NI a, NI b);
-N_NIMCALL(NimStringDesc*, nimInt64ToStr)(NI64 x);
 static N_INLINE(void, initStackBottomWith)(void* locals);
 N_NOINLINE(void, setStackBottom)(void* theStackBottom);
 NIM_EXTERNC N_NOINLINE(void, systemInit000)(void);
@@ -761,8 +760,6 @@ int main(int argc, char** args, char** env) {
 NIM_EXTERNC N_NOINLINE(void, NimMainModule)(void) {
 	tyArray_nHXaesL0DJZHyVS07ARPRA T1_;
 	NI T2_;
-	tyArray_nHXaesL0DJZHyVS07ARPRA T3_;
-	NI64 T4_;
 	nimfr_("exponentiation", "exponentiation.nim");
 	nimln_(75, "exponentiation.nim");
 	x_4lJzM9awleS2bOq9bPStf9bpw = ((NI) 2);
@@ -774,12 +771,6 @@ NIM_EXTERNC N_NOINLINE(void, NimMainModule)(void) {
 	T2_ = exponent_binary_eqKG4APkqy5I3XN2s41dNw((&x_4lJzM9awleS2bOq9bPStf9bpw), (&y_M4Xr9cr2hdldN4ghM59b0i3g));
 	T1_[0] = nimIntToStr(T2_);
 	echoBinSafe(T1_, 1);
-	nimln_(78, "exponentiation.nim");
-	memset((void*)T3_, 0, sizeof(T3_));
-	T4_ = (NI64)0;
-	T4_ = fib_matrix_exp_qSFrKVtQsOuIF1VV39aezJQ(IL64(9));
-	T3_[0] = nimInt64ToStr(T4_);
-	echoBinSafe(T3_, 1);
 	popFrame();
 }
 

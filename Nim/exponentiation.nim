@@ -75,4 +75,4 @@ proc fib_matrix_exp(n: int64) : int64 =
 var x = 2
 var y = 5
 echo exponent_binary(x, y)
-echo fib_matrix_exp(9)
+# echo fib_matrix_exp(9)

@@ -1,9 +1,10 @@
 {"compile":[
-["d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\exponentiation.c", "D:\\Documents\\Code\\mingw64\\bin\\gcc.exe -c  -w -mno-ms-bitfields  -ID:\\Documents\\Code\\nim-0.18.0\\lib -o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\exponentiation.o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\exponentiation.c"]
+["c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\exponentiation.c", "C:\\Users\\aisae\\Documents\\Dependencies\\mingw64\\bin\\gcc.exe -c  -w -mno-ms-bitfields  -IC:\\Users\\aisae\\Documents\\Dependencies\\nim-0.18.0\\lib -o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\exponentiation.o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\exponentiation.c"],
+["c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_system.c", "C:\\Users\\aisae\\Documents\\Dependencies\\mingw64\\bin\\gcc.exe -c  -w -mno-ms-bitfields  -IC:\\Users\\aisae\\Documents\\Dependencies\\nim-0.18.0\\lib -o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_system.o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_system.c"]
 ],
 "link":[
-"d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\exponentiation.o",
-"d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_system.o"
+"c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\exponentiation.o",
+"c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_system.o"
 ],
-"linkcmd": "D:\\Documents\\Code\\mingw64\\bin\\gcc.exe   -o d:\\Documents\\SourceTree\\Challenges\\Nim\\exponentiation.exe  d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\exponentiation.o d:\\Documents\\SourceTree\\Challenges\\Nim\\nimcache\\stdlib_system.o    "
+"linkcmd": "C:\\Users\\aisae\\Documents\\Dependencies\\mingw64\\bin\\gcc.exe   -o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\exponentiation.exe  c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\exponentiation.o c:\\Users\\aisae\\Documents\\Sourcetree\\Challenges\\Nim\\nimcache\\stdlib_system.o    "
 }

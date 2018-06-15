@@ -268,4 +268,12 @@ final public class Matrix {
             System.out.println();
         }
     }
+
+    public void showInt() {
+        for (int i = 0; i < M; i++) {
+            for (int j = 0; j < N; j++)
+                System.out.print((int)this.data[i][j] + " ");
+            System.out.println();
+        }
+    }
 }

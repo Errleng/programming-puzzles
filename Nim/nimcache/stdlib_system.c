@@ -3,7 +3,7 @@
 /* The generated code is subject to the original license. */
 /* Compiled for: Windows, amd64, gcc */
 /* Command for C compiler:
-   D:\Documents\Code\mingw64\bin\gcc.exe -c  -w -mno-ms-bitfields  -ID:\Documents\Code\nim-0.18.0\lib -o d:\Documents\SourceTree\Challenges\Nim\nimcache\stdlib_system.o d:\Documents\SourceTree\Challenges\Nim\nimcache\stdlib_system.c */
+   C:\Users\aisae\Documents\Dependencies\mingw64\bin\gcc.exe -c  -w -mno-ms-bitfields  -IC:\Users\aisae\Documents\Dependencies\nim-0.18.0\lib -o c:\Users\aisae\Documents\Sourcetree\Challenges\Nim\nimcache\stdlib_system.o c:\Users\aisae\Documents\Sourcetree\Challenges\Nim\nimcache\stdlib_system.c */
 #define NIM_NEW_MANGLING_RULES
 #define NIM_INTBITS 64
 

@@ -1,3 +1,0 @@
-C:/Users/aisae/Documents/Sourcetree/Challenges/C++/build-DMPG 2018-Desktop-Default/CMakeFiles/DMPG_2018.dir
-C:/Users/aisae/Documents/Sourcetree/Challenges/C++/build-DMPG 2018-Desktop-Default/CMakeFiles/edit_cache.dir
-C:/Users/aisae/Documents/Sourcetree/Challenges/C++/build-DMPG 2018-Desktop-Default/CMakeFiles/rebuild_cache.dir

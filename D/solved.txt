@@ -1,0 +1,354 @@
+void nailed_it() {
+    int N, ans_l = 0, ans_h = 0;
+    int[2001] boards;
+    int[4001] lengths;
+    scanf("%d", &N);
+    foreach(i; 0..N) {
+        int j;
+        scanf("%d", &j);
+        boards[j]++;
+    }
+    foreach(i; 2..4001) {
+        int nboards = 0;
+        int a = max(1, i - 2000);
+        int b = i - a;
+        while (a <= i / 2) {
+            if (a == b) {
+                nboards += boards[a]/2;
+            }
+            else {
+                nboards += min(boards[a], boards[b]);
+            }
+            ++a;
+            --b;
+        }
+        if (nboards > ans_l) {
+            ans_l = nboards;
+            ans_h = 0;
+        }
+        if (nboards == ans_l) {
+            ans_h++;
+        }
+    }
+    writeln(ans_l, " ", ans_h);
+}
+
+void alice_through_the_looking_glass() {
+	int col(int m, int x) { // Gets the number of crystal squares above x-coordinate
+		int res = 0;
+		if (m > 0) {
+			int xp = pow(5, m-1);
+			int xc = x / xp;
+			if (xc == 1 || xc == 3) res = xp + col(m-1, x % xp);
+			else if (xc == 2) res = 2 * xp + col(m-1, x % xp);
+		}
+		return res;
+	}
+	
+    int T, m, x, y;
+    scanf("%d", &T);
+    foreach (i; 0..T) {
+        scanf("%d %d %d", &m, &x, &y);
+        if (y < col(m,x))
+            writeln("crystal");
+        else
+            writeln("empty");
+    }
+}
+
+void esdeath() {
+
+	struct node {
+		int id, d;
+		this(int a, int b) {
+			this.id = a;
+			this.d = b;
+		}
+	}
+
+	int middle(int n, int s) {
+        if (s == 0) return n;
+        else return middle(par[n], s-1);
+    }
+
+    int distChk(int n) {
+        bvis[] = false;
+        int cnt = 0, center;
+        foreach (i; 0..N) {
+            if (!bvis[cities[i].id]) {
+                svis[] = false;
+                center = middle(cities[i].id, n);
+                visit(center, n);
+                cnt++;
+            }
+        }
+        return cnt;
+    }
+	
+	
+	    const int MAXN = 5000;
+    int N, S;
+    bool[MAXN] bvis, svis;
+    int[][MAXN] adj;
+    int[MAXN] par;
+    node[] cities;
+    int u, v;
+
+    void set(int n, int d) {
+        cities[n].d = ++d;
+        int next;
+        foreach (i; 0..adj[n].length) {
+            next = adj[n][i];
+            if (next != par[n]) {
+                par[next] = n;
+                set(next, d);
+            }
+        }
+    }
+
+    void visit(int id, int n) {
+        if (n == -1) return;
+        bvis[id] = true;
+        svis[id] = true;
+        foreach(i; 0..adj[id].length) {
+            if (!svis[adj[id][i]]) 
+                visit(adj[id][i], n-1);
+        }
+    }
+
+    scanf("%d %d", &N, &S);
+
+    foreach (i; 0..N-1) {
+        scanf("%d %d", &u, &v);
+        v--;
+        u--;
+        adj[u] ~= v;
+        adj[v] ~= u;
+        cities ~= node(i, 0);
+    }
+    cities ~= node(N-1, 0);
+
+    set(0, -1);
+    cities.sort!((a, b) => a.d > b.d);
+
+    int l = 0, r = 5000, m, dist, center;
+    while (l <= r) {
+        m = l + (r - l) / 2;
+        bvis[] = false;
+        dist = 0;
+        foreach (i; 0..N) {
+            if (!bvis[cities[i].id]) {
+                svis[] = false;
+                center = cities[i].id;
+                foreach (j; 0..m) {
+                    center = par[center];
+                }
+                visit(center, m);
+                dist++;
+            }
+        }
+        if (dist <= S)
+            r = m - 1;
+        else
+            l = m + 1;
+    }
+    writeln(l);
+}
+
+void maximum_strategic_savings() {
+	struct DisjointSet {
+		int S;
+		int[] par, rank;
+		this(int size) {
+			this.S = size;
+			this.par.length = size;
+			this.rank.length = size;
+		}
+		void init() {
+			foreach(i; 0..S)
+				this.par[i] = i;
+		}
+		int find(int a) {
+			if (par[a] != a) {
+				par[a] = this.find(par[a]);
+			}
+			return par[a];
+		}
+		void unite(int a, int b) {
+			int ra = this.find(a);
+			int rb = this.find(b);
+			if (ra != rb) {
+				if (rank[ra] < rank[rb]) {
+					par[ra] = rb;
+				} else if (rank[rb] < rank[ra]) {
+					par[rb] = ra;
+				} else {
+					par[rb] = ra;
+					rank[ra]++;
+				}
+			}
+		}
+	}
+
+	alias tup = Tuple!(long, int, int, bool);
+	
+	int N, M, P, Q;
+    scanf("%d %d %d %d", &N, &M, &P, &Q);
+
+    tup[] edges;
+    DisjointSet Pl = DisjointSet(N);
+    DisjointSet Ci = DisjointSet(M);
+    Pl.init();
+    Ci.init();
+
+    int a, b;
+    long c;
+
+    long total = 0, saved = 0;
+
+    foreach(p; 0..P) {
+        scanf("%d %d %d", &a, &b, &c);
+        --a; --b;
+        edges ~= tup(c, a, b, true);
+        total += c * N;
+    }
+    foreach(q; 0..Q) {
+        scanf("%d %d %d", &a, &b, &c);
+        --a; --b;
+        edges ~= tup(c, a, b, false);
+        total += c * M;
+    }
+
+    auto bh = heapify!"a > b"(edges);
+    int remPl = N, remCi = M;
+    tup e;
+    while (!bh.empty) {
+        e = bh.front();
+        bh.removeFront();
+        if (e[3] && Ci.find(e[1]) != Ci.find(e[2])) {
+            saved += e[0] * remPl;
+            remCi--;
+            Ci.unite(e[1], e[2]);
+        } else if (!e[3] && Pl.find(e[1]) != Pl.find(e[2])) {
+            saved += e[0] * remCi;
+            remPl--;
+            Pl.unite(e[1], e[2]);
+        }
+    }
+    writeln(total - saved);
+}
+
+void SelectiveCutting() {
+	class FenwickTree {
+	public:
+		size_t N;
+		int* BIT;
+		FenwickTree(size_t size) {
+			this->N = size;
+			BIT = new int[N+1]();
+		}
+		FenwickTree(int* input, size_t size) {
+			this->N = size;
+			BIT = new int[N+1]();
+			for (size_t i = 1; i <= N; ++i) {
+				update(i, input[i-1]);
+			}
+		}
+		~FenwickTree() {
+			delete[] BIT;
+		}
+		void update(size_t pos, int add) {
+			while (pos <= N) {
+				BIT[pos] += add;
+				pos += pos & (-pos);
+			}
+		}
+		int query(int pos) {
+			int sum = 0;
+			while (pos > 0) {
+				sum += BIT[pos];
+				pos -= pos & (-pos);
+			}
+			return sum;
+		}
+		int getPos(int pos) {
+			return query(pos) - query(pos-1);
+		}
+	};
+
+	struct Tree {
+		int id, mass;
+		Tree() {}
+		Tree(int id, int mass) {
+			this->id = id;
+			this->mass = mass;
+		}
+	};
+	bool treeCmp(Tree const &t1, Tree const& t2) {
+		return t1.mass > t2.mass;
+	}
+
+	struct Query {
+		int id, a, b, q;
+		Query() {}
+		Query(int id, int a, int b, int q) {
+			this->id = id;
+			this->a = a;
+			this->b = b;
+			this->q = q;
+		}
+	};
+	bool queryCmp(Query const &q1, Query const &q2) {
+		return q1.q > q2.q;
+	}
+
+	const int MAXN = 100000;
+	int N, Q, m, a, b, q;
+	int ans[MAXN];
+	Tree trees[MAXN];
+	Query qs[MAXN];
+
+	void Solve() {
+		scan(N);
+		FOR(i, N) {
+			scan(m);
+			trees[i] = Tree(i+1, m);
+		}
+
+		sort(trees, trees+N, treeCmp);
+		FOR(i, N) {
+			cout << trees[i].mass << " ";
+		}
+		cout << endl;
+		FenwickTree BIT(N);
+		scan(Q);
+		FOR(i, Q) {
+			scan(a); scan(b); scan(q);
+			qs[i] = Query(i, a, b, q);
+		}
+		sort(qs, qs+Q, queryCmp);
+		FOR(i, Q) {
+			cout << qs[i].q << " ";
+		}
+		cout << endl;
+
+		int ind = 0;
+		FOR(i, Q) {
+			while (ind < N && trees[ind].mass >= qs[i].q) {
+				BIT.update(trees[ind].id, trees[ind].mass);
+				ind++;
+			}
+			ans[qs[i].id] = BIT.query(qs[i].b+1) - BIT.query(qs[i].a);
+		}
+		cout << endl;
+		FOR(i, Q) {
+			cout << ans[i] << endl;
+		}
+
+		printA(BIT.BIT, N+1);
+		FOR(i, N) {
+			cout << BIT.query(i+1) << " ";
+		}
+		cout << endl;
+	}
+}

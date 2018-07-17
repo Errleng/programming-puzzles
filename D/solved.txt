@@ -1,4 +1,4 @@
-void nailed_it() {
+void Nailed_It() {
     int N, ans_l = 0, ans_h = 0;
     int[2001] boards;
     int[4001] lengths;
@@ -33,7 +33,7 @@ void nailed_it() {
     writeln(ans_l, " ", ans_h);
 }
 
-void alice_through_the_looking_glass() {
+void Alice_Through_The_Looking_Glass() {
 	int col(int m, int x) { // Gets the number of crystal squares above x-coordinate
 		int res = 0;
 		if (m > 0) {
@@ -56,7 +56,7 @@ void alice_through_the_looking_glass() {
     }
 }
 
-void esdeath() {
+void Esdeath() {
 
 	struct node {
 		int id, d;
@@ -86,7 +86,7 @@ void esdeath() {
     }
 	
 	
-	    const int MAXN = 5000;
+	const int MAXN = 5000;
     int N, S;
     bool[MAXN] bvis, svis;
     int[][MAXN] adj;
@@ -155,7 +155,7 @@ void esdeath() {
     writeln(l);
 }
 
-void maximum_strategic_savings() {
+void Maximum_Strategic_Savings() {
 	struct DisjointSet {
 		int S;
 		int[] par, rank;
@@ -238,7 +238,7 @@ void maximum_strategic_savings() {
     writeln(total - saved);
 }
 
-void SelectiveCutting() {
+void Selective_Cutting() {
 	class FenwickTree {
 	public:
 		size_t N;
@@ -351,4 +351,37 @@ void SelectiveCutting() {
 		}
 		cout << endl;
 	}
+}
+
+void Ship_Defense() {
+    int D, E, T[1000] = {0}, L[1000] = {0};
+    double H, A[5] = {0}, S[5] = {0}, X[1000] = {0}, shift[1000] = {0};
+    scanf("%lf %d %d", &H, &D, &E);
+    FOR(i, D) {
+        scanf("%lf", &A[i]);
+        scanf("%lf", &S[i]);
+        A[i] /= 100.0;
+    }
+    FOR(i, E) {
+        scanf("%d %d %lf", &T[i], &L[i], &X[i]);
+        shift[T[i]] += X[i];
+        shift[T[i] + L[i]] -= X[i];
+    }
+    double curDmg = 0;
+    FOR(t, 1000) {
+        curDmg += shift[t];
+        double newDmg = curDmg;
+        FOR(i, D) {
+            newDmg = min(newDmg, (curDmg - S[i]) * (1.0 - A[i]));
+        }
+        if (newDmg > 0) {
+            H -= newDmg;
+        }
+    }
+    if (H > 0) {
+        printf("%.2f", H);
+    } else {
+        printf("DO A BARREL ROLL!");
+    }
+    return 0;
 }

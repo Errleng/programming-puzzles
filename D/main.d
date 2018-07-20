@@ -21,44 +21,88 @@ void wvar(T...)(T args) {
     }
 }
 
-struct point {
-    int r, c;
-    this(int r, int c) {
-        this.r = r;
-        this.c = c;
-    }
+struct DisjointSet {
+	int S;
+	int[] par, rank;
+	this(int size) {
+		this.S = size;
+		this.par.length = size;
+		this.rank.length = size;
+	}
+	void init() {
+		foreach(i; 0..S)
+			this.par[i] = i;
+	}
+	int find(int a) {
+		if (par[a] != a) {
+			par[a] = this.find(par[a]);
+		}
+		return par[a];
+	}
+	void unite(int a, int b) {
+		int ra = this.find(a);
+		int rb = this.find(b);
+		if (ra != rb) {
+			if (rank[ra] < rank[rb]) {
+				par[ra] = rb;
+			} else if (rank[rb] < rank[ra]) {
+				par[rb] = ra;
+			} else {
+				par[rb] = ra;
+				rank[ra]++;
+			}
+		}
+	}
 }
-
-long take_photos(int n, int m, int k, int[] r, int[] c) {
-    const int INF = to!int(1e9);
-    int[][] dp = new int[][](n+1, k+1);
-    point[] ps;
-    foreach (i; 0..n) {
-        ps ~= point(r[i], c[i]);
-    }
-    wvarln(ps);
-    ps.sort!("a.r < b.r");
-    wvarln(ps);
-    foreach (i; 1..n+1) {
-        foreach (j; 0..k+1) {
-            dp[i][j] = INF;
-        }
-    }
-    wvarln(dp);
-    foreach (i; 1..n+1) {
-        foreach (j; 1..k+1) {
-            foreach (t; 0..i) {
-                dp[i][j] = min(dp[i][j], dp[t][j-1] + pow((ps[i].r - ps[t].c + 1), 2));
-            }
-        }
-    }
-    wvarln(dp);
-    return dp[n][k];
-}
-
 void solve() {
-    long ans = take_photos(5, 7, 2, [0, 4, 4, 4, 4], [3, 4, 6, 5, 6]);
-    wvarln("Answer:", ans);
+	alias tup = Tuple!(long, int, int, bool);
+	
+	int N, M, P, Q;
+    scanf("%d %d %d %d", &N, &M, &P, &Q);
+
+    tup[] edges;
+    DisjointSet Pl = DisjointSet(N);
+    DisjointSet Ci = DisjointSet(M);
+    Pl.init();
+    Ci.init();
+
+    int a, b;
+    long c;
+
+    long total = 0, saved = 0;
+
+    foreach(p; 0..P) {
+        scanf("%d %d %d", &a, &b, &c);
+        --a; --b;
+        edges ~= tup(c, a, b, true);
+        total += c * N;
+    }
+    foreach(q; 0..Q) {
+        scanf("%d %d %d", &a, &b, &c);
+        --a; --b;
+        edges ~= tup(c, a, b, false);
+        total += c * M;
+    }
+
+    auto bh = heapify!"a > b"(edges);
+    int remPl = N, remCi = M;
+    tup e;
+    while (!bh.empty) {
+        e = bh.front();
+        bh.removeFront();
+        if (e[3] && Ci.find(e[1]) != Ci.find(e[2])) {
+            saved += e[0] * remPl;
+            wvarln(saved);
+            remCi--;
+            Ci.unite(e[1], e[2]);
+        } else if (!e[3] && Pl.find(e[1]) != Pl.find(e[2])) {
+            saved += e[0] * remCi;
+            wvarln(saved);
+            remPl--;
+            Pl.unite(e[1], e[2]);
+        }
+    }
+    writeln(total - saved);
 }
 
 void main() {

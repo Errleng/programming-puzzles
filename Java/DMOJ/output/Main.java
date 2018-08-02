@@ -2,7 +2,13 @@ import java.io.OutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
+import java.util.Arrays;
+import java.util.StringTokenizer;
 import java.util.Scanner;
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.InputStream;
 
 /**
  * Built using CHelper plug-in
@@ -12,48 +18,104 @@ public class Main {
     public static void main(String[] args) {
         InputStream inputStream = System.in;
         OutputStream outputStream = System.out;
-        Scanner in = new Scanner(inputStream);
+        FastScanner in = new FastScanner(inputStream);
         PrintWriter out = new PrintWriter(outputStream);
-        CCC16S5 solver = new CCC16S5();
+        CCC05S5 solver = new CCC05S5();
         solver.solve(1, in, out);
         out.close();
     }
 
-    static class CCC16S5 {
-        public void solve(int testNumber, Scanner in, PrintWriter out) {
-            int N;
-            long T;
-            N = in.nextInt();
-            T = in.nextLong();
-            char[] startState = in.next().toCharArray();
-            int[] state = new int[startState.length];
-            for (int i = 0; i < startState.length; ++i) {
-                state[i] = startState[i] - '0';
+    static class CCC05S5 {
+        public void solve(int testNumber, FastScanner in, PrintWriter out) {
+            double ans = 0;
+            int T = in.nextInt();
+            BIT FT = new BIT(T);
+            Elem[] scores = new Elem[T];
+            for (int i = 0; i < T; i++) {
+                scores[i] = new Elem(i, in.nextInt());
             }
-            while (T > 0) {
-                long LB = maxPow(2, T);
-                state = simulate(state, LB);
-                T -= LB;
+            Arrays.sort(scores, (a, b) -> a.val - b.val);
+            for (int i = T - 1; i > -1; i--) {
+                FT.update(scores[i].idx + 1, 1);
+                ans += FT.query(scores[i].idx + 1);
             }
-            for (int i = 0; i < state.length; ++i) {
-                out.print(state[i]);
+            ans /= T;
+            out.printf("%.2f\n", ans - 1e-9);
+        }
+
+    }
+
+    static class FastScanner {
+        BufferedReader br;
+        StringTokenizer st;
+
+        public FastScanner(InputStream IS) {
+            br = new BufferedReader(new
+                    InputStreamReader(IS));
+        }
+
+        String next() {
+            while (st == null || !st.hasMoreElements()) {
+                try {
+                    st = new StringTokenizer(br.readLine());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            return st.nextToken();
+        }
+
+        int nextInt() {
+            return Integer.parseInt(next());
+        }
+
+    }
+
+    static class Elem {
+        int val;
+        int idx;
+
+        Elem(int a, int b) {
+            this.idx = a;
+            this.val = b;
+        }
+
+    }
+
+    static class BIT {
+        int[] Arr;
+
+        public BIT(int size) {
+            Arr = new int[size];
+            for (int i = 1; i <= size; i++) {
+                this.update(i, Arr[i - 1]);
             }
         }
 
-        long maxPow(int b, long n) {
-            int e = (int) (Math.log(n) / Math.log(b));
-            return (int) (Math.pow(b, e));
+        public BIT(int[] inArr) {
+            Arr = new int[inArr.length];
+            for (int i = 0; i < inArr.length; i++) {
+                Arr[i] = inArr[i];
+            }
+            for (int i = 1; i <= inArr.length; i++) {
+                this.update(i, Arr[i - 1]);
+            }
         }
 
-        int[] simulate(int[] curState, long generations) {
-            int[] res = new int[curState.length];
-            for (int i = 0; i < curState.length; ++i) {
-                int a = (int) (i + generations) % curState.length;
-                int b = (int) (i - generations) % curState.length;
-                if (b < 0) b += curState.length;
-                res[i] = curState[a] ^ curState[b];
+        public void update(int i, int add) {
+            while (i <= Arr.length) {
+                Arr[i - 1] += add;
+                i += i & (-i);
             }
-            return res;
+        }
+
+        public int query(int i) {
+            int sum = 0;
+            while (i > 0) {
+                sum += Arr[i - 1];
+                i -= i & (-i);
+            }
+            return sum;
         }
 
     }

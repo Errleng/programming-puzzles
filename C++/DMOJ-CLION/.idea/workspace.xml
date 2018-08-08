@@ -11,34 +11,72 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bec8b789-bece-4142-ad34-07366a7b1fce" name="Default" comment="" />
+    <list default="true" id="bec8b789-bece-4142-ad34-07366a7b1fce" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/tasks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Haskell/DMOJ/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DMOJ_CLION.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DMOJ_CLION.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DMOJ_CLION.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DMOJ_CLION.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DMOJ_CLION.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DMOJ_CLION.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/DMOJ/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../Haskell/DMOJ/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/DMOJ/.projectile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/DMOJ/ChangeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Haskell/DMOJ/ChangeLog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/DMOJ/DMOJ.cabal" beforeDir="false" afterPath="$PROJECT_DIR$/../../Haskell/DMOJ/DMOJ.cabal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/DMOJ/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../../Haskell/DMOJ/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/DMOJ/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Haskell/DMOJ/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/DMOJ/Setup.hs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Haskell/DMOJ/Setup.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/DMOJ/app/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Haskell/DMOJ/app/Main.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/DMOJ/package.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Haskell/DMOJ/package.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/DMOJ/src/Lib.hs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Haskell/DMOJ/src/Lib.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/DMOJ/stack.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Haskell/DMOJ/stack.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/DMOJ/test/Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Haskell/DMOJ/test/Spec.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/DMOJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/DMOJ/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/DMOJ/CHelperReport.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/DMOJ/CHelperReport.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/DMOJ/chelper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/DMOJ/chelper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/DMOJ/out/production/DMOJ/Main/CCC18S5.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/DMOJ/out/production/DMOJ/Main/CCC18S5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/DMOJ/out/production/DMOJ/Main/Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/DMOJ/out/production/DMOJ/Main/Edge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/DMOJ/output/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/DMOJ/output/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/DMOJ/src/Main/CCC18S5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/DMOJ/src/Main/CCC18S5.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FUSProjectUsageTrigger">
+    <session id="-745046436">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
-              <folding>
-                <element signature="e#405#427#0" expanded="true" />
-                <element signature="e#368#400#0" expanded="true" />
-                <element signature="e#870#917#0" />
-                <element signature="e#3330#4182#0" />
-              </folding>
+            <state relative-caret-position="288">
+              <caret line="215" column="32" selection-start-line="215" selection-start-column="32" selection-end-line="215" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -69,6 +107,9 @@
       <replace>Solve3</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -82,20 +123,19 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,7 +147,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -115,7 +154,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -129,12 +168,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DMOJ_CLION">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DMOJ_CLION" RUN_TARGET_NAME="DMOJ_CLION" EXPLICIT_BUILD_TARGET_NAME="all" />
-    <configuration name="DMOJ_CLION" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DMOJ_CLION" TARGET_NAME="DMOJ_CLION" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DMOJ_CLION" RUN_TARGET_NAME="DMOJ_CLION" />
+  <component name="RunManager" selected="Task.CCC09S4">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DMOJ_CLION" RUN_TARGET_NAME="DMOJ_CLION" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DMOJ_CLION" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DMOJ_CLION" TARGET_NAME="DMOJ_CLION" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DMOJ_CLION" RUN_TARGET_NAME="DMOJ_CLION">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.DMOJ_CLION" />
+      <item itemvalue="Task.CCC09S4" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -149,33 +197,38 @@
       <updated>1530356131751</updated>
       <workItem from="1530356133943" duration="234000" />
       <workItem from="1530364044574" duration="32803000" />
+      <workItem from="1533586868886" duration="183000" />
+      <workItem from="1533587096103" duration="289000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33037000" />
+    <option name="totallyTimeSpent" value="33509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.111979164" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32946146" />
-      <window_info anchor="bottom" id="CMake" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2344245" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.114072494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2344245" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="CMake" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32946146" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,28 +237,7 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="4" />
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-          <folding>
-            <element signature="e#405#427#0" expanded="true" />
-            <element signature="e#368#400#0" expanded="true" />
-            <element signature="e#870#917#0" />
-            <element signature="e#3330#4182#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../Code/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/c++/x86_64-w64-mingw32/bits/c++config.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="472">
@@ -225,14 +257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
-          <folding>
-            <element signature="e#405#427#0" expanded="true" />
-            <element signature="e#368#400#0" expanded="true" />
-            <element signature="e#870#917#0" />
-            <element signature="e#3330#4182#0" />
-          </folding>
+        <state relative-caret-position="288">
+          <caret line="215" column="32" selection-start-line="215" selection-start-column="32" selection-end-line="215" selection-end-column="32" />
         </state>
       </provider>
     </entry>

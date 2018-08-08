@@ -4,11 +4,11 @@ import java.io.InputStream;
 import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.StringTokenizer;
-import java.util.Scanner;
 import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 /**
  * Built using CHelper plug-in
@@ -20,27 +20,69 @@ public class Main {
         OutputStream outputStream = System.out;
         FastScanner in = new FastScanner(inputStream);
         PrintWriter out = new PrintWriter(outputStream);
-        CCC05S5 solver = new CCC05S5();
+        CCC09S4 solver = new CCC09S4();
         solver.solve(1, in, out);
         out.close();
     }
 
-    static class CCC05S5 {
+    static class CCC09S4 {
         public void solve(int testNumber, FastScanner in, PrintWriter out) {
-            double ans = 0;
+            int N = in.nextInt();
             int T = in.nextInt();
-            BIT FT = new BIT(T);
-            Elem[] scores = new Elem[T];
-            for (int i = 0; i < T; i++) {
-                scores[i] = new Elem(i, in.nextInt());
+            Graph graph = new Graph(N);
+
+            for (int i = 0; i < T; ++i) {
+                int u = in.nextInt() - 1;
+                int v = in.nextInt() - 1;
+                int w = in.nextInt();
+                graph.addUDEdge(new Edge(u, w), new Edge(v, w));
             }
-            Arrays.sort(scores, (a, b) -> a.val - b.val);
-            for (int i = T - 1; i > -1; i--) {
-                FT.update(scores[i].idx + 1, 1);
-                ans += FT.query(scores[i].idx + 1);
+
+            int K = in.nextInt();
+            int[] ps = new int[K];
+            int[] cs = new int[K];
+            for (int i = 0; i < K; ++i) {
+                cs[i] = in.nextInt() - 1;
+                ps[i] = in.nextInt();
             }
-            ans /= T;
-            out.printf("%.2f\n", ans - 1e-9);
+            int[] ds = new int[N];
+            Arrays.fill(ds, Integer.MAX_VALUE);
+            int dest = in.nextInt() - 1;
+            boolean[] vis = new boolean[N];
+            ds[dest] = 0;
+            for (int i = 0; i < N; ++i) {
+                int min = Integer.MAX_VALUE;
+                int minIdx = -1;
+                for (int j = 0; j < N; ++j) {
+                    if (!vis[j] && ds[j] < min) {
+                        min = ds[j];
+                        minIdx = j;
+                    }
+                }
+                if (minIdx == -1) {
+                    break;
+                }
+                vis[minIdx] = true;
+                for (Edge e : graph.adj[minIdx]) {
+                    ds[e.id] = Math.min(ds[e.id], ds[minIdx] + e.w);
+                }
+            }
+            int ans = Integer.MAX_VALUE;
+            for (int i = 0; i < K; ++i) {
+                ans = Math.min(ans, ds[cs[i]] + ps[i]);
+            }
+            out.println(ans);
+        }
+
+    }
+
+    static class Edge {
+        int id;
+        int w;
+
+        Edge(int node, int weight) {
+            this.id = node;
+            this.w = weight;
         }
 
     }
@@ -71,51 +113,21 @@ public class Main {
 
     }
 
-    static class Elem {
-        int val;
-        int idx;
+    static class Graph {
+        final int V;
+        ArrayList<Edge>[] adj;
 
-        Elem(int a, int b) {
-            this.idx = a;
-            this.val = b;
-        }
-
-    }
-
-    static class BIT {
-        int[] Arr;
-
-        public BIT(int size) {
-            Arr = new int[size];
-            for (int i = 1; i <= size; i++) {
-                this.update(i, Arr[i - 1]);
+        Graph(int N) {
+            this.V = N;
+            this.adj = new ArrayList[V];
+            for (int i = 0; i < V; ++i) {
+                adj[i] = new ArrayList<Edge>();
             }
         }
 
-        public BIT(int[] inArr) {
-            Arr = new int[inArr.length];
-            for (int i = 0; i < inArr.length; i++) {
-                Arr[i] = inArr[i];
-            }
-            for (int i = 1; i <= inArr.length; i++) {
-                this.update(i, Arr[i - 1]);
-            }
-        }
-
-        public void update(int i, int add) {
-            while (i <= Arr.length) {
-                Arr[i - 1] += add;
-                i += i & (-i);
-            }
-        }
-
-        public int query(int i) {
-            int sum = 0;
-            while (i > 0) {
-                sum += Arr[i - 1];
-                i -= i & (-i);
-            }
-            return sum;
+        public void addUDEdge(Edge u, Edge v) {
+            adj[u.id].add(v);
+            adj[v.id].add(u);
         }
 
     }

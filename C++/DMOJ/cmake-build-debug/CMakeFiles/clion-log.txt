@@ -1,0 +1,4 @@
+D:\Applications\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\Documents\SourceTree\Challenges\C++\DMOJ
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Documents/SourceTree/Challenges/C++/DMOJ/cmake-build-debug

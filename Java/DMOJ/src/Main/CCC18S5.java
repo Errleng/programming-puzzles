@@ -13,13 +13,13 @@ public class CCC18S5 {
         P = in.nextInt();
         Q = in.nextInt();
         int a, b, c;
-        Edge[] edges = new Edge[P + Q];
+        BiEdge[] edges = new BiEdge[P + Q];
         for (int i = 0; i < P; ++i) {
             a = in.nextInt();
             b = in.nextInt();
             c = in.nextInt();
             total += c * N;
-            edges[i] = new Edge(a - 1, b - 1, c, false);
+            edges[i] = new BiEdge(a - 1, b - 1, c, false);
         }
         int x, y, z;
         for (int i = 0; i < Q; ++i) {
@@ -27,7 +27,7 @@ public class CCC18S5 {
             y = in.nextInt();
             z = in.nextInt();
             total += z * M;
-            edges[i + P] = new Edge(x - 1, y - 1, z, true);
+            edges[i + P] = new BiEdge(x - 1, y - 1, z, true);
         }
         Arrays.sort(edges, (u, v) -> u.w - v.w);
         DSet planets = new DSet(N);
@@ -35,7 +35,7 @@ public class CCC18S5 {
         int MSTcost = 0;
         int planetEdges = N;
         int cityEdges = M;
-        for (Edge e : edges) {
+        for (BiEdge e : edges) {
             if (e.t && planets.union(e.u, e.v)) {
                 MSTcost += e.w * cityEdges;
                 planetEdges--;
@@ -48,11 +48,11 @@ public class CCC18S5 {
     }
 }
 
-class Edge {
+class BiEdge {
     int u, v, w;
     boolean t;
 
-    Edge(int u, int v, int w, boolean t) {
+    BiEdge(int u, int v, int w, boolean t) {
         this.u = u;
         this.v = v;
         this.w = w;

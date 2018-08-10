@@ -1,3 +1,3 @@
-D:\Applications\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\ouput.dir/objects.a
+D:\Applications\apps\CLion\ch-0\182.3911.40\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\ouput.dir/objects.a
 D:\Documents\Code\mingw64\bin\ar.exe cr CMakeFiles\ouput.dir/objects.a @CMakeFiles\ouput.dir\objects1.rsp
 D:\Documents\Code\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\ouput.dir/objects.a -Wl,--no-whole-archive  -o ouput.exe -Wl,--out-implib,libouput.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ouput.dir\linklibs.rsp

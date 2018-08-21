@@ -202,6 +202,33 @@ tasks/CCC16S3.cpp.s:
 	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/CCC16S3.cpp.s
 .PHONY : tasks/CCC16S3.cpp.s
 
+tasks/ds1.obj: tasks/ds1.cpp.obj
+
+.PHONY : tasks/ds1.obj
+
+# target to build an object file
+tasks/ds1.cpp.obj:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ds1.cpp.obj
+.PHONY : tasks/ds1.cpp.obj
+
+tasks/ds1.i: tasks/ds1.cpp.i
+
+.PHONY : tasks/ds1.i
+
+# target to preprocess a source file
+tasks/ds1.cpp.i:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ds1.cpp.i
+.PHONY : tasks/ds1.cpp.i
+
+tasks/ds1.s: tasks/ds1.cpp.s
+
+.PHONY : tasks/ds1.s
+
+# target to generate assembly for a file
+tasks/ds1.cpp.s:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ds1.cpp.s
+.PHONY : tasks/ds1.cpp.s
+
 testrunner/main.obj: testrunner/main.cpp.obj
 
 .PHONY : testrunner/main.obj
@@ -246,6 +273,9 @@ help:
 	@echo ... tasks/CCC16S3.obj
 	@echo ... tasks/CCC16S3.i
 	@echo ... tasks/CCC16S3.s
+	@echo ... tasks/ds1.obj
+	@echo ... tasks/ds1.i
+	@echo ... tasks/ds1.s
 	@echo ... testrunner/main.obj
 	@echo ... testrunner/main.i
 	@echo ... testrunner/main.s

@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Documents/SourceTree/Challenges/C++/DMOJ/tasks/CCC16S3.cpp" "D:/Documents/SourceTree/Challenges/C++/DMOJ/cmake-build-debug/CMakeFiles/test.dir/tasks/CCC16S3.cpp.obj"
+  "D:/Documents/SourceTree/Challenges/C++/DMOJ/tasks/ds1.cpp" "D:/Documents/SourceTree/Challenges/C++/DMOJ/cmake-build-debug/CMakeFiles/test.dir/tasks/ds1.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -238,6 +238,128 @@ void Maximum_Strategic_Savings() {
     writeln(total - saved);
 }
 
+
+void Binary_Indexed_Tree_Test() {
+	#include <iostream>
+	#include <algorithm>
+
+	#define scan(x) do{while((x=getchar())<'0'); for(x-='0'; '0'<=(_=getchar()); x=(x<<3)+(x<<1)+_-'0');}while(0)
+	char _;
+
+	#define FOR(a, b) for (int (a) = 0; (a) < (b); ++(a))
+	#define FORR(a, n, b) for (int (a) = (n); (a) < (b); ++(a))
+	#define RFOR(a, n, b) for (int (a) = (n); (a) > (b); --(a))
+
+	using namespace std;
+
+	typedef pair<int, int> pii;
+
+	class BIT {
+	public:
+		int size;
+		int* arr;
+		
+		BIT(int a) {
+			size = a;
+			arr = new int[size+1]();
+			for (int i = 1; i <= size; ++i) {
+				update(i, arr[i]);
+			}
+		}
+		
+		BIT(int inp[], int N) {
+			size = N+1;
+			arr = new int[size]();
+			for (int i = 1; i <= size; ++i) {
+				update(i, inp[i-1]);
+			}
+		}
+		
+		void update(int a, int b) {
+			while (a <= size) {
+				arr[a] += b;
+				a += a & (-a);
+			}
+		}
+		
+		int query(int a) {
+			int s = 0;
+			while (a > 0) {
+				s += arr[a];
+				a -= a & (-a);
+			}
+			return s;
+		}
+	};
+
+	const int MAXN = 100000;
+	int N, M, a, b;
+	char op;
+	unsigned long long res = 0;
+	int inp[MAXN];
+
+	int main() {
+		scan(N);
+		scan(M);
+		BIT C(N);
+		FOR(i, N) {
+			scan(inp[i]);
+			C.update(inp[i], 1);
+			
+			// cout << inp[i] << " ";
+		}
+		
+		// cout << endl;
+		
+		BIT F(inp, N);
+		
+		// FOR(i, N+1) {
+		//     cout << F.arr[i] << " ";
+		// }
+		// cout << endl;
+		//     FOR(i, N+1) {
+		//     cout << C.arr[i] << " ";
+		// }
+		// cout << endl;
+		
+		FOR(i, M) {
+			cin >> op;
+			
+			// cout << op << " ";
+			
+			if (op == 'C') {
+				scan(a);
+				scan(b);
+				int change = F.query(a) - F.query(a-1);
+				
+				// cout << "(" << b - change << "," << b - inp[a] << ") ";
+				
+				F.update(a, (b - inp[a]));
+				C.update(inp[a], -1);
+				C.update(b, 1);
+				
+				// FOR(i, N+1) {
+				//     cout << F.arr[i] << " ";
+				// }
+				
+				// cout << endl;
+				
+			} else if (op == 'S') {
+				scan(a);
+				scan(b);
+				res = F.query(b) - F.query(a-1);
+				
+				cout << res << endl;
+			} else if (op == 'Q') {
+				scan(a);
+				
+				cout << C.query(a) << endl;
+			}
+		}
+		return 0;
+	}
+}
+
 void Selective_Cutting() {
 	class FenwickTree {
 	public:

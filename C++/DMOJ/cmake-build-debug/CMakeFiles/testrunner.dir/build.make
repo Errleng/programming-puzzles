@@ -59,15 +59,15 @@ include CMakeFiles/testrunner.dir/flags.make
 CMakeFiles/testrunner.dir/testrunner/main.cpp.obj: CMakeFiles/testrunner.dir/flags.make
 CMakeFiles/testrunner.dir/testrunner/main.cpp.obj: ../testrunner/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documents\SourceTree\Challenges\C++\DMOJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/testrunner.dir/testrunner/main.cpp.obj"
-	D:\Documents\Code\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\testrunner.dir\testrunner\main.cpp.obj -c D:\Documents\SourceTree\Challenges\C++\DMOJ\testrunner\main.cpp
+	D:\Applications\Mingw64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\testrunner.dir\testrunner\main.cpp.obj -c D:\Documents\SourceTree\Challenges\C++\DMOJ\testrunner\main.cpp
 
 CMakeFiles/testrunner.dir/testrunner/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testrunner.dir/testrunner/main.cpp.i"
-	D:\Documents\Code\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\SourceTree\Challenges\C++\DMOJ\testrunner\main.cpp > CMakeFiles\testrunner.dir\testrunner\main.cpp.i
+	D:\Applications\Mingw64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\SourceTree\Challenges\C++\DMOJ\testrunner\main.cpp > CMakeFiles\testrunner.dir\testrunner\main.cpp.i
 
 CMakeFiles/testrunner.dir/testrunner/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testrunner.dir/testrunner/main.cpp.s"
-	D:\Documents\Code\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\SourceTree\Challenges\C++\DMOJ\testrunner\main.cpp -o CMakeFiles\testrunner.dir\testrunner\main.cpp.s
+	D:\Applications\Mingw64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\SourceTree\Challenges\C++\DMOJ\testrunner\main.cpp -o CMakeFiles\testrunner.dir\testrunner\main.cpp.s
 
 # Object files for target testrunner
 testrunner_OBJECTS = \

@@ -1,3 +1,0 @@
-D:\Applications\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\DMOJ.dir/objects.a
-D:\Documents\Code\mingw64\bin\ar.exe cr CMakeFiles\DMOJ.dir/objects.a @CMakeFiles\DMOJ.dir\objects1.rsp
-D:\Documents\Code\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\DMOJ.dir/objects.a -Wl,--no-whole-archive  -o DMOJ.exe -Wl,--out-implib,libDMOJ.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\DMOJ.dir\linklibs.rsp

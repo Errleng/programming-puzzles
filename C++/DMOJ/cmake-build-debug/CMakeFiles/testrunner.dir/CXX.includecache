@@ -6,12 +6,12 @@
 
 #IncludeRegexTransform: 
 
-D:/Documents/SourceTree/Challenges/C++/DMOJ/tasks/CCC16S3.cpp
+D:/Documents/SourceTree/Challenges/C++/DMOJ/tasks/ds1.cpp
 bits/stdc++.h
 -
 
 D:/Documents/SourceTree/Challenges/C++/DMOJ/testrunner/main.cpp
-D:/Documents/SourceTree/Challenges/C++/DMOJ/tasks/CCC16S3.cpp
+D:/Documents/SourceTree/Challenges/C++/DMOJ/tasks/ds1.cpp
 -
 iostream
 -

@@ -59,15 +59,15 @@ include CMakeFiles/ouput.dir/flags.make
 CMakeFiles/ouput.dir/output/main.cpp.obj: CMakeFiles/ouput.dir/flags.make
 CMakeFiles/ouput.dir/output/main.cpp.obj: ../output/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documents\SourceTree\Challenges\C++\DMOJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ouput.dir/output/main.cpp.obj"
-	D:\Documents\Code\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ouput.dir\output\main.cpp.obj -c D:\Documents\SourceTree\Challenges\C++\DMOJ\output\main.cpp
+	D:\Applications\Mingw64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ouput.dir\output\main.cpp.obj -c D:\Documents\SourceTree\Challenges\C++\DMOJ\output\main.cpp
 
 CMakeFiles/ouput.dir/output/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ouput.dir/output/main.cpp.i"
-	D:\Documents\Code\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\SourceTree\Challenges\C++\DMOJ\output\main.cpp > CMakeFiles\ouput.dir\output\main.cpp.i
+	D:\Applications\Mingw64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\SourceTree\Challenges\C++\DMOJ\output\main.cpp > CMakeFiles\ouput.dir\output\main.cpp.i
 
 CMakeFiles/ouput.dir/output/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ouput.dir/output/main.cpp.s"
-	D:\Documents\Code\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\SourceTree\Challenges\C++\DMOJ\output\main.cpp -o CMakeFiles\ouput.dir\output\main.cpp.s
+	D:\Applications\Mingw64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\SourceTree\Challenges\C++\DMOJ\output\main.cpp -o CMakeFiles\ouput.dir\output\main.cpp.s
 
 # Object files for target ouput
 ouput_OBJECTS = \

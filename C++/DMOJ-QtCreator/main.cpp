@@ -146,26 +146,28 @@ void Solve() {
   scan(N);
   scan(M);
   scan(K);
-  int potats[MAXN];
-  FOR(i, N) { potats[i] = M; }
+  int potats[MAXN] = { 0 };
+  potats[0] = M;
   FOR(i, M) {
     scan(a);
     scan(b);
-    FORN(j, a - 1, b) { potats[j]--; }
+    potats[a - 1]--;
+    potats[b]++;
   }
+  FORN(i, 1, N) { potats[i] += potats[i - 1]; }
   int sum = 0;
   int lo = 0;
   FOR(hi, N) {
     sum += potats[hi];
     if (sum >= K) {
-      //            cout << hi << " " << lo << ": " << sum << " ";
+      cout << hi << " " << lo << ": " << sum << " ";
       while (sum - potats[lo] >= K) {
         sum -= potats[lo];
         lo++;
-        //                cout << sum << " ";
+        cout << sum << " ";
       }
       W = min(W, hi - lo + 1);
-      //            print(W);
+      print(W);
     }
   }
   if (W == INF)
@@ -174,7 +176,7 @@ void Solve() {
 }
 
 int main() {
-  freopen("../DMOJ/input.txt", "r", stdin);
+  freopen("input.txt", "r", stdin);
 
   time_point<steady_clock> start = steady_clock::now();
 

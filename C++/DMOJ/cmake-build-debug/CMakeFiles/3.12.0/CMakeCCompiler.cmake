@@ -1,7 +1,7 @@
-set(CMAKE_C_COMPILER "D:/Documents/Code/mingw64/bin/gcc.exe")
+set(CMAKE_C_COMPILER "D:/Applications/Mingw64/mingw64/bin/gcc.exe")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
-set(CMAKE_C_COMPILER_VERSION "6.3.0")
+set(CMAKE_C_COMPILER_VERSION "8.1.0")
 set(CMAKE_C_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_C_COMPILER_WRAPPER "")
 set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "11")
@@ -16,11 +16,11 @@ set(CMAKE_C_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "D:/Documents/Code/mingw64/bin/ar.exe")
-set(CMAKE_C_COMPILER_AR "D:/Documents/Code/mingw64/bin/gcc-ar.exe")
-set(CMAKE_RANLIB "D:/Documents/Code/mingw64/bin/ranlib.exe")
-set(CMAKE_C_COMPILER_RANLIB "D:/Documents/Code/mingw64/bin/gcc-ranlib.exe")
-set(CMAKE_LINKER "D:/Documents/Code/mingw64/bin/ld.exe")
+set(CMAKE_AR "D:/Applications/Mingw64/mingw64/bin/ar.exe")
+set(CMAKE_C_COMPILER_AR "D:/Applications/Mingw64/mingw64/bin/gcc-ar.exe")
+set(CMAKE_RANLIB "D:/Applications/Mingw64/mingw64/bin/ranlib.exe")
+set(CMAKE_C_COMPILER_RANLIB "D:/Applications/Mingw64/mingw64/bin/gcc-ranlib.exe")
+set(CMAKE_LINKER "D:/Applications/Mingw64/mingw64/bin/ld.exe")
 set(CMAKE_COMPILER_IS_GNUCC 1)
 set(CMAKE_C_COMPILER_LOADED 1)
 set(CMAKE_C_COMPILER_WORKS TRUE)
@@ -68,6 +68,6 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "mingw32;gcc;moldname;mingwex;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc;moldname;mingwex")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "D:/Documents/Code/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0;D:/Documents/Code/mingw64/lib/gcc;D:/Documents/Code/mingw64/x86_64-w64-mingw32/lib;D:/Documents/Code/mingw64/lib")
+set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "mingw32;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc;moldname;mingwex")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "D:/Applications/Mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0;D:/Applications/Mingw64/mingw64/lib/gcc;D:/Applications/Mingw64/mingw64/x86_64-w64-mingw32/lib;D:/Applications/Mingw64/mingw64/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

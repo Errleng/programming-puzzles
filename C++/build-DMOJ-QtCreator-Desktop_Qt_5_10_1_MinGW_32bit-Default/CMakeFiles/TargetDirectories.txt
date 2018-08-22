@@ -1,4 +1,0 @@
-D:/Documents/SourceTree/Challenges/C++/build-DMOJ-QtCreator-Desktop_Qt_5_10_1_MinGW_32bit-Default/CMakeFiles/DMOJ-QtCreator.dir
-D:/Documents/SourceTree/Challenges/C++/build-DMOJ-QtCreator-Desktop_Qt_5_10_1_MinGW_32bit-Default/CMakeFiles/edit_cache.dir
-D:/Documents/SourceTree/Challenges/C++/build-DMOJ-QtCreator-Desktop_Qt_5_10_1_MinGW_32bit-Default/CMakeFiles/rebuild_cache.dir
-D:/Documents/SourceTree/Challenges/C++/build-DMOJ-QtCreator-Desktop_Qt_5_10_1_MinGW_32bit-Default/CMakeFiles/DMOJ-QtCreator_autogen.dir

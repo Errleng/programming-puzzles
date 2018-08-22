@@ -1,4 +1,0 @@
-D:/Documents/SourceTree/Challenges/C++/QTcreator/build-MonsterHunter-Desktop_Qt_5_10_1_MinGW_32bit-Default/CMakeFiles/MonsterHunter.dir
-D:/Documents/SourceTree/Challenges/C++/QTcreator/build-MonsterHunter-Desktop_Qt_5_10_1_MinGW_32bit-Default/CMakeFiles/edit_cache.dir
-D:/Documents/SourceTree/Challenges/C++/QTcreator/build-MonsterHunter-Desktop_Qt_5_10_1_MinGW_32bit-Default/CMakeFiles/rebuild_cache.dir
-D:/Documents/SourceTree/Challenges/C++/QTcreator/build-MonsterHunter-Desktop_Qt_5_10_1_MinGW_32bit-Default/CMakeFiles/MonsterHunter_autogen.dir

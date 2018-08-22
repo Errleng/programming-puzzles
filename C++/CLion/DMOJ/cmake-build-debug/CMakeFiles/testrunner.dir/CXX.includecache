@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/CCC16S3.cpp
+bits/stdc++.h
+-
+
+D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/testrunner/main.cpp
+D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/CCC16S3.cpp
+-
+iostream
+-
+fstream
+-
+sstream
+-
+string
+-
+vector
+-
+cctype
+-
+ctime
+-
+

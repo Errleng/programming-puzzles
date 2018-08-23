@@ -47,7 +47,7 @@ public:
         }
     }
 
-    void solve(std::istream& in, std::ostream& out) {
+    void solve(std::istream &in, std::ostream &out) {
         in >> N >> M;
         int a, b;
         for (int i = 0; i < M; ++i) {

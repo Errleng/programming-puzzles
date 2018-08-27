@@ -1,3 +1,1 @@
-D:\Applications\apps\CLion\ch-0\182.3911.40\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\output.dir/objects.a
-D:\Applications\Qt\Tools\mingw530_32\bin\ar.exe cr CMakeFiles\output.dir/objects.a @CMakeFiles\output.dir\objects1.rsp
-D:\Applications\Qt\Tools\mingw530_32\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\output.dir/objects.a -Wl,--no-whole-archive  -o output.exe -Wl,--out-implib,liboutput.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\output.dir\linklibs.rsp
+/usr/bin/c++  -g  -rdynamic CMakeFiles/output.dir/output/main.cpp.o  -o output 

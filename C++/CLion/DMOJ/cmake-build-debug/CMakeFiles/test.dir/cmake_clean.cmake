@@ -1,11 +1,13 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/test.dir/tasks/CCC16S3.cpp.obj"
-  "CMakeFiles/test.dir/tasks/Task.cpp.obj"
-  "CMakeFiles/test.dir/tasks/ds1.cpp.obj"
+  "CMakeFiles/test.dir/tasks/Task.cpp.o"
+  "CMakeFiles/test.dir/tasks/ccc06s5.cpp.o"
+  "CMakeFiles/test.dir/tasks/ccc12s4.cpp.o"
+  "CMakeFiles/test.dir/tasks/ccc16s3.cpp.o"
+  "CMakeFiles/test.dir/tasks/ccc16s4.cpp.o"
+  "CMakeFiles/test.dir/tasks/ds1.cpp.o"
+  "CMakeFiles/test.dir/tasks/fibonacci2.cpp.o"
   "test.pdb"
-  "test.exe"
-  "test.exe.manifest"
-  "libtest.dll.a"
+  "test"
 )
 
 # Per-language clean rules from dependency scanning.

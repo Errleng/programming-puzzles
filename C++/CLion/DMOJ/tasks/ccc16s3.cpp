@@ -1,8 +1,9 @@
+#include "../library/lib.hpp"
 #include <bits/stdc++.h>
 
 using namespace std;
 
-class CCC16S3 {
+class ccc16s3 {
 public:
     const int MAXN = 100000;
     int N, M, cost = 0, maxDist = -1, maxIdx = -1, *dist = new int[MAXN]();

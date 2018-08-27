@@ -7,79 +7,327 @@
 #include <iostream>
 #include <fstream>
 
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
-class CCC16S3 {
-public:
-    const int MAXN = 100000;
-    int N, M, cost = 0, maxDist = -1, maxIdx = -1, *dist = new int[MAXN]();
-    vector<int> pho;
-    vector<int> *adj = new vector<int>[MAXN];
-    bool *isPho = new bool[MAXN](), *include = new bool[MAXN]();
+void print() {
+    return;
+}
 
-    void mark(int cur, int prev) {
-        if (isPho[cur]) {
-            include[cur] = true;
+template<typename T, typename... Types>
+void print(T var1, Types... var2) {
+    cout << var1 << " ";
+    print(var2...);
+}
+
+void println() {
+    cout << endl;
+}
+
+template<typename T, typename... Types>
+void println(T var1, Types... var2) {
+    cout << var1 << " ";
+    println(var2...);
+}
+
+template<typename T, size_t N>
+void print1D(T(&arr)[N]) {
+    for (int i = 0; i < N; ++i) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+template<typename T, size_t R, size_t C>
+void print2D(T(&arr)[R][C]) {
+    for (int i = 0; i < R; ++i) {
+        for (int j = 0; j < C; ++j) {
+            cout << arr[i][j] << " ";
         }
-        for (int i : adj[cur]) {
-            if (i != prev) {
-                mark(i, cur);
-                if (include[i]) {
-                    cost += 2;
-                    include[cur] = true;
-                }
-            }
+        cout << endl;
+    }
+}
+
+
+#include <bits/stdc++.h>
+
+#define pb push_back
+#define fi first
+#define se second
+
+using namespace std;
+
+typedef unsigned long long ull;
+typedef unsigned long long matrix[2][2];
+
+class fibonacci2 {
+public:
+    template<typename Integer>
+    Integer gcd(Integer a, Integer b) {
+        while (true) {
+            if (a == 0) return b;
+            b %= a;
+            if (b == 0) return a;
+            a %= b;
         }
     }
 
-    void DFS(int cur, int prev) {
-        for (int i : adj[cur]) {
-            if (i != prev && include[i]) {
-                dist[i] = dist[cur] + 1;
-                if (dist[i] > maxDist) {
-                    maxDist = dist[i];
-                    maxIdx = i;
+    template<typename Integer>
+    Integer lcm(Integer a, Integer b) {
+        Integer temp = gcd(a, b);
+        return temp ? (a / temp * b) : 0;
+    }
+
+    template<typename Integer>
+    Integer get_bit(Integer n, Integer k) {
+        return (n >> k) & 1;
+    }
+
+
+    void copy(matrix *r, const matrix *a) {
+        0[*r][0] = 0[*a][0], 0[*r][1] = 0[*a][1];
+        1[*r][0] = 1[*a][0], 1[*r][1] = 1[*a][1];
+    }
+
+    void multiply(ull m, matrix *p, const matrix *a, const matrix *b) {
+        for (int i = 0; i < 2; ++i)
+            for (int j = 0; j < 2; ++j) {
+                i[*p][j] = 0;
+                for (int k = 0; k < 2; ++k)
+                    i[*p][j] = (i[*p][j] + i[*a][k] * k[*b][j]) % m;
+            }
+    }
+
+    void power(ull m, matrix *r, const matrix *a, unsigned long long b) {
+        if (b == 1)
+            copy(r, a);
+        else if (b & 1) {
+            matrix even;
+            power(m, &even, a, b - 1);
+            multiply(m, r, a, &even);
+        } else {
+            matrix sq;
+            multiply(m, &sq, a, a);
+            power(m, r, &sq, b >> 1);
+        }
+    }
+
+    ull fib_mod(ull n, ull m) {
+        matrix fib_q = {{1, 1},
+                        {1, 0}}, r;
+        power(m, &r, &fib_q, n);
+        return r[1][0];
+    }
+
+    template<typename Integer>
+    Integer fibmod(Integer n, Integer m) {
+        Integer f = 0, g = 1, a = 0, b = 1;
+        for (Integer i = 0; i <= (Integer) log2(n); ++i) {
+            if (get_bit(n, i)) {
+                tie(f, g) = make_pair((f * a + g * b) % m, (f * b + g * (a + b)) % m);
+            }
+            tie(a, b) = make_pair((a * a + b * b) % m, (a * b + b * (a + b)) % m);
+        }
+        return f;
+    }
+
+    template<typename Integer>
+    vector<Integer> divisors(Integer n) {
+        vector<Integer> res;
+        for (Integer i = 1; i <= sqrt(n); i++) {
+            if (n % i == 0) {
+                if (n / i == i) {
+                    res.pb(i);
+                } else {
+                    res.pb(i);
+                    res.pb(n / i);
                 }
-                DFS(i, cur);
             }
         }
+        return res;
+    }
+
+    template<typename Integer>
+    vector<pair<Integer, Integer>> prime_factorize(Integer n) {
+        vector<pair<Integer, Integer>> res;
+        map<int, int> exp;
+        while (n % 2 == 0) {
+            auto it = exp.find(2);
+            if (it != exp.end()) {
+                it->se++;
+            } else {
+                exp.insert({2, 1});
+            }
+            n = n / 2;
+        }
+        for (int i = 3; i <= sqrt(n); i = i + 2) {
+            while (n % i == 0) {
+                auto it = exp.find(i);
+                if (it != exp.end()) {
+                    it->se++;
+                } else {
+                    exp.insert({i, 1});
+                }
+                n = n / i;
+            }
+        }
+        if (n > 2) {
+            auto it = exp.find(n);
+            if (it != exp.end()) {
+                it->se++;
+            } else {
+                exp.insert({n, 1});
+            }
+        }
+        for (auto it = exp.begin(); it != exp.end(); ++it) {
+            res.push_back(pair<Integer, Integer>(it->fi, it->se));
+        }
+        return res;
+    }
+
+    template<typename Integer>
+    Integer prime_power_divisor(Integer p, Integer k) {
+        if (k == 0)
+            return 1;
+        else if (p == 5)
+            return (5 * static_cast<Integer>(pow(p, k - 1)));
+        int e = (p % 5 == 2 || p % 5 == 3) ? 1 : -1;
+        Integer res = 0;
+        for (auto i : divisors(p + e)) {
+            if (fib_mod(i, p) == 0) {
+                res = i * static_cast<Integer>(pow(p, k - 1));
+                break;
+            }
+        }
+        return res;
+    }
+
+    template<typename Integer>
+    Integer get_pisano_period(Integer m) {
+        Integer a = 0, b = 1, c = a + b;
+        for (int i = 0; i < m * m; i++) {
+            c = (a + b) % m;
+            a = b;
+            b = c;
+            if (a == 0 && b == 1) return i + 1;
+        }
+    }
+
+    template<typename Integer>
+    Integer pisano_period(Integer n) {
+        if (n <= 0)
+            return 0;
+        else if (n == 1)
+            return 1;
+        stringstream error;
+        error << "CONJECTURE DISPROVED! For n = " << n;
+        Integer d = 1;
+        auto pf = prime_factorize(n);
+        for (auto i : pf) {
+            d = lcm(d, prime_power_divisor(i.fi, i.se));
+//            println(prime_power_divisor(i.fi, i.se));
+        }
+        for (int i = 0; i < 3; ++i) {
+            Integer t = d << i;
+            if (fib_mod(t, n) == 0 && fib_mod(t + 1, n) == 1) {
+                return t;
+            }
+        }
+        throw runtime_error(error.str());
+        return -1;
+    }
+
+    template<typename F, typename... Args>
+    double funcTime(F func, Args &&... args) {
+        auto t1 = std::chrono::high_resolution_clock::now();
+        func(std::forward<Args>(args)...);
+        auto t2 = std::chrono::high_resolution_clock::now();
+        return std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count();
+    }
+
+    void factorize(long long n) {
+        int count = 0;
+
+        // count the number of times 2 divides
+        while (!(n % 2)) {
+            n >>= 1; // equivalent to n=n/2;
+            count++;
+        }
+
+        // if 2 divides it
+        if (count)
+            cout << "(" << 2 << "," << count << ") ";
+
+        // check for all the possible numbers that can
+        // divide it
+        for (long long i = 3; i <= sqrt(n); i += 2) {
+            count = 0;
+            while (n % i == 0) {
+                count++;
+                n = n / i;
+            }
+            if (count)
+                cout << "(" << i << "," << count << ") ";
+        }
+
+        // if n at the end is a prime number.
+        if (n > 2)
+            cout << "(" << n << "," << count + 1 << ") ";
+        cout << endl;
     }
 
     void solve(std::istream &in, std::ostream &out) {
-        in >> N >> M;
-        int a, b;
-        for (int i = 0; i < M; ++i) {
-            in >> a;
-            pho.push_back(a);
-            isPho[a] = true;
-        }
-        for (int i = 0; i < N - 1; ++i) {
-            in >> a >> b;
-            adj[a].push_back(b);
-            adj[b].push_back(a);
-        }
-        mark(pho[0], -1);
-        DFS(pho[0], -1);
-        for (int i = 0; i < N; ++i) {
-            dist[i] = 0;
-        }
-        DFS(maxIdx, -1);
-        maxDist = 0;
-        for (int i = 0; i < N; ++i) {
-            if (dist[i] > maxDist) {
-                maxDist = dist[i];
+        const ull M = static_cast<ull>(pow(10, 9)) + 7;
+        ull N;
+        in >> N;
+        out << fib_mod(N, M) << " " << pisano_period(M) << endl;
+
+//        const ull large = pow(11, 4);
+
+//        println("Large:", large);
+//
+//        auto t1 = std::chrono::high_resolution_clock::now();
+//        factorize(large);
+//        auto t2 = std::chrono::high_resolution_clock::now();
+//        println("ms:", std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count());
+//
+//        t1 = std::chrono::high_resolution_clock::now();
+//        auto pf = prime_factorize(large);
+//        for (auto i : pf) {
+//            cout << "(" << i.fi << "," << i.se << ")" << " ";
+//        }
+//        cout << endl;
+//        t2 = std::chrono::high_resolution_clock::now();
+//        println("ms:", std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count());
+
+        const int LIMIT = 11;
+        for (int i = 2; i <= LIMIT; ++i) {
+            for (int j = 2; j <= LIMIT; ++j) {
+                ull test = pow(i, j);
+                // cout << pisano_period(test) << " ";
             }
         }
-        int ans = cost - maxDist;
-        out << ans << endl;
+        cout << endl;
+        auto d = 41841412812;
+        auto n = 31381059609;
+        for (int i = 0; i < 3; ++i) {
+            auto t = d << i;
+            auto a = fibmod(t, n);
+            auto b = fibmod(t + 1, n);
+            cout << t << ": " << a << " " << b << endl;
+        }
+        std::bitset<64> x(n);
+        cout << x << endl;
+        auto l = n;
+        l = 0;
+        cout << get_bit(n, l) << endl;
     }
 };
 
 
 int main() {
-    CCC16S3 solver;
+    fibonacci2 solver;
     std::istream& in(std::cin);
     std::ostream& out(std::cout);
     solver.solve(in, out);

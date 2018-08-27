@@ -188,6 +188,17 @@ int main() {
             }
         }
     }
-    printf("%d", ans);
+    printf("%d\n", ans);
+
+    for (int i = 0; i <= N; ++i) {
+      cout << sum[i] << " ";
+    }
+    cout << endl;
+    for (int i = 0; i <= N; ++i) {
+      for (int j = 0; j <= N; ++j) {
+        cout << getS(i, j) << " ";
+      }
+      cout << endl;
+    }
     return 0;
 }

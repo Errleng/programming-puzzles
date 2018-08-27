@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/output.dir/output/main.cpp.obj"
+  "CMakeFiles/output.dir/output/main.cpp.o"
   "output.pdb"
-  "output.exe"
-  "output.exe.manifest"
-  "liboutput.dll.a"
+  "output"
 )
 
 # Per-language clean rules from dependency scanning.

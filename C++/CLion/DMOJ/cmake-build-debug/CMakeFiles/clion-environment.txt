@@ -1,3 +1,4 @@
+ToolSet: w64 5.0@D:\Applications\Qt\Tools\mingw530_32
 Options: 
 
 Options:

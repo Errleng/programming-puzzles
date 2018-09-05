@@ -1,4 +1,4 @@
-#include "/home/pilot/GitRepos/challenges/C++/CLion/DMOJ/tasks/fibonacci2.cpp"
+#include "D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/cco00p1.cpp"
 
 #include <iostream>
 #include <fstream>
@@ -29,7 +29,7 @@ bool check(std::string expected, std::string actual) {
 
 int main() {
     std::vector<jhelper::Test> tests = {
-        {"26 1000000007", "121393 2000000016", true, true},
+        {"9\nA contains B\nA contains c\nB contains d\nF contains A\nF contains z\nX contains Y\nY contains X\nX contains x\nQ contains R", "A = {c,d}\nB = {d}\nF = {c,d,z}\nQ = {}\nR = {}\nX = {x}\nY = {x}", true, true},
     };
     bool allOK = true;
     int testID = 0;
@@ -48,7 +48,7 @@ int main() {
             std::stringstream in(test.input);
             std::ostringstream out;
             std::clock_t start = std::clock();
-            fibonacci2 solver;
+            cco00p1 solver;
             solver.solve(in, out);
             std::clock_t finish = std::clock();
             double currentTime = double(finish - start) / CLOCKS_PER_SEC;

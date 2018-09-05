@@ -1,3 +1,4 @@
+#include "../library.hpp"
 #define upto(i, s, e, c) for (int(i) = (s); (i) < (e); (i) += c)
 #define up(i, e) upto(i, 0, e, 1)
 #define upc(i, e, c) upto(i, 0, e, c)
@@ -11,23 +12,23 @@
 
 using namespace std;
 
-int N, M, T;
-const int INF = 0x3f3f3f3f;
-const int MAXN = 20;
-const int MAXT = 5;
-
 struct Node {
   int x, y, d;
   Node(int a, int b, int c) : x(a), y(b), d(c) {}
 };
 
+const int INF = 0x3f3f3f3f;
+const int MAXN = 20;
+const int MAXT = 5;
 int move_x[] = {1, -1, 0, 0};
 int move_y[] = {0, 0, 1, -1};
-
 bool vis[MAXN][MAXN];
 bool invalid[MAXN][MAXN];
 int dist[MAXT + 1][MAXT + 1];
+int N, M, T;
+
 bool in_bounds(int x, int y) { return x >= 0 && y >= 0 && x < N && y < M; }
+
 int search_hidden(Node pos, Node target) {
   memset(vis, false, sizeof(vis));
   queue<Node> q;
@@ -63,9 +64,7 @@ int main() {
     up(j, M) {
       scanf(" %c", &temp);
       if (temp == 'G') {
-        sources.push_back(Node(i, j, 0));
-        start_pos = sources[sources.size() - 1];
-        permute.push_back(cnt++);
+        start_pos = Node(i, j, 0);
       } else if (temp == 'X') {
         invalid[i][j] = true;
       } else if (temp == 'H') {
@@ -74,12 +73,18 @@ int main() {
       }
     }
   }
-  up(i, T + 1) {
-    up(j, T + 1) { dist[i][j] = search_hidden(sources[i], sources[j]); }
+  up(i, T) {
+    dist[i][T] = search_hidden(sources[i], start_pos);
+    dist[T][i] = search_hidden(start_pos, sources[i]);
+    up(j, T) {
+      dist[i][j] = search_hidden(sources[i], sources[j]);
+    }
   }
   do {
-    int cost = 0;
-    up(i, permute.size() - 1) { cost += dist[permute[i]][permute[i + 1]]; }
+    int cost = dist[T][permute[0]];
+    up(i, permute.size() - 1) {
+      cost += dist[permute[i]][permute[i + 1]];
+    }
     ans = min(ans, cost);
   } while (next_permutation(permute.begin(), permute.end()));
   printf("%d\n", ans);

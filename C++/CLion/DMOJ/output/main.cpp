@@ -60,194 +60,184 @@ using namespace std;
 #define dnto(i, s, e, c) for (int(i) = (s); (i) > (e); (i) -= (c))
 #define dn(i, s, e) downto(i, s, e, 1);
 
-class TrieNode {
+const int MAX_CHAR = 256;
+
+class Node {
 public:
-    bool is_leaf;
-    map<char, TrieNode *> children;
-    TrieNode() { is_leaf = false; }
-    ~TrieNode() {
-        for (auto const &i : children) {
-            delete i.second;
-        }
-    }
-    void insert_suffix(string s) {
-        if (s.length() > 0) {
-            if (children.find(s[0]) == children.end()) {
-                children[s[0]] = new TrieNode();
-            }
-            children[s[0]]->insert_suffix(s.substr(1));
-        }
-        is_leaf = true;
+    Node *children[MAX_CHAR];
+    Node *suffixLink;
+    int start;
+    int *end;
+    int suffixIndex;
+
+    Node(int start, int *end, Node *root) {
+        for (int i = 0; i < MAX_CHAR; i++)
+            children[i] = nullptr;
+        suffixLink = root;
+        this->start = start;
+        this->end = end;
+        suffixIndex = -1;
     }
 };
 
-class Trie {
+class SuffixTrie {
 public:
-    TrieNode *root;
-    Trie(TrieNode *a) { this->root = a; }
-    ~Trie() { delete root; }
-    void insert(string s) {
-        TrieNode *node = root;
-        up(i, s.length()) {
-            if (node->children.find(s[i]) == node->children.end()) {
-                node->children[s[i]] = new TrieNode();
-            }
-            node = node->children[s[i]];
-        }
-        node->is_leaf = true;
+    string text;
+    Node *root = nullptr;
+    Node *lastNewNode = nullptr;
+    Node *activeNode = nullptr;
+    int activeEdge = -1;
+    int activeLength = 0;
+    int remainingSuffixCount = 0;
+    int leafEnd = -1;
+    int *rootEnd = nullptr;
+    int *splitEnd = nullptr;
+    int size = -1;
+    SuffixTrie(string s) {
+        text = s;
+        size = s.length();
+        int i;
+        rootEnd = (int *) malloc(sizeof(int));
+        *rootEnd = -1;
+        root = new Node(-1, rootEnd, root);
+        activeNode = root;
+        for (i = 0; i < size; i++)
+            extendSuffixTree(i);
+        int labelHeight = 0;
+//        setSuffixIndexByDFS(root, labelHeight);
     }
-    int count_nodes(TrieNode *node) {
-        int res = 0;
-        if (node->is_leaf)
-            ++res;
-        for (auto i : node->children) {
-            res += count_nodes(i.second);
+    ~SuffixTrie() {
+    }
+
+    int edgeLength(Node *n) {
+        return *(n->end) - (n->start) + 1;
+    }
+
+    int walkDown(Node *currNode) {
+        if (activeLength >= edgeLength(currNode)) {
+            activeEdge += edgeLength(currNode);
+            activeLength -= edgeLength(currNode);
+            activeNode = currNode;
+            return 1;
+        }
+        return 0;
+    }
+
+    void extendSuffixTree(int pos) {
+        /*Extension Rule 1, this takes care of extending all
+        leaves created so far in tree*/
+        leafEnd = pos;
+
+        /*Increment remainingSuffixCount indicating that a
+        new suffix added to the list of suffixes yet to be
+        added in tree*/
+        remainingSuffixCount++;
+        lastNewNode = nullptr;
+
+
+        while (remainingSuffixCount > 0) {
+            if (activeLength == 0)
+                activeEdge = pos;
+            if (activeNode->children[text[activeEdge]] == nullptr) {
+                activeNode->children[text[activeEdge]] =
+                        new Node(pos, &leafEnd, root);
+                if (lastNewNode != nullptr) {
+                    lastNewNode->suffixLink = activeNode;
+                    lastNewNode = nullptr;
+                }
+            }
+            else {
+                Node *next = activeNode->children[text[activeEdge]];
+                if (walkDown(next))//Do walkdown
+                {
+                    continue;
+                }
+                if (text[next->start + activeLength] == text[pos]) {
+                    if (lastNewNode != nullptr && activeNode != root) {
+                        lastNewNode->suffixLink = activeNode;
+                        lastNewNode = nullptr;
+                    }
+
+                    activeLength++;
+                    break;
+                }
+                splitEnd = (int *) malloc(sizeof(int));
+                *splitEnd = next->start + activeLength - 1;
+                Node *split = new Node(next->start, splitEnd, root);
+                activeNode->children[text[activeEdge]] = split;
+                split->children[text[pos]] = new Node(pos, &leafEnd, root);
+                next->start += activeLength;
+                split->children[text[next->start]] = next;
+                if (lastNewNode != nullptr) {
+                    lastNewNode->suffixLink = split;
+                }
+
+                lastNewNode = split;
+            }
+
+            remainingSuffixCount--;
+            if (activeNode == root && activeLength > 0)
+            {
+                activeLength--;
+                activeEdge = pos - remainingSuffixCount + 1;
+            } else if (activeNode != root)
+            {
+                activeNode = activeNode->suffixLink;
+            }
+        }
+    }
+
+    void print(int i, int j) {
+        int k;
+        for (k = i; k <= j; k++)
+            printf("%c", text[k]);
+    }
+
+    void setSuffixIndexByDFS(Node *n, int labelHeight) {
+        if (n == nullptr) return;
+
+        if (n->start != -1)
+        {
+            print(n->start, *(n->end));
+        }
+        int leaf = 1;
+        int i;
+        for (i = 0; i < MAX_CHAR; i++) {
+            if (n->children[i] != nullptr) {
+                if (leaf == 1 && n->start != -1)
+                    printf(" [%d]\n", n->suffixIndex);
+                leaf = 0;
+                setSuffixIndexByDFS(n->children[i], labelHeight +
+                                                    edgeLength(n->children[i]));
+            }
+        }
+        if (leaf == 1) {
+            n->suffixIndex = size - labelHeight;
+            printf(" [%d]\n", n->suffixIndex);
+        }
+    }
+    int count_nodes(Node *n) {
+        int res = *n->end - n->start + 1;
+        for (int i = 0; i < MAX_CHAR; ++i) {
+            if (n->children[i] != nullptr) {
+                res += count_nodes(n->children[i]);
+            }
         }
         return res;
     }
 };
-const int MAX_CHAR = 256;
-class SuffixNode {
-public:
-    int s, e, id;
-    SuffixNode* suffix_link;
-    map<char, SuffixNode*> ch;
-    SuffixNode(int a, int b) {
-        s = a; e = b;
-        id = -1;
-        suffix_link = nullptr;
-    }
-    ~SuffixNode() {
-        for (auto const &i : ch) {
-            delete i.second;
-        }
-    }
-};
-class SuffixTrie {
-public:
-    string str;
-    int remainder, active_edge, active_length;
-    SuffixNode *root, *active_node, *last_node;
 
-    SuffixTrie(string s) {
-        str = s;
-        root = new SuffixNode(-1, -1);
-        active_node = root;
-        remainder = active_edge = active_length = 0;
-        last_node = nullptr;
-        for (int i = 0; i < str.length(); ++i) {
-            extend(i);
-        }
-        dfs(root, 0);
-    }
-    ~SuffixTrie() {
-        if (root != nullptr) {
-            for (auto const& i : root->ch) {
-                delete i.second;
-            }
-        }
-    }
-    int edge_length(SuffixNode* node) {
-        return node->e - node->s + 1;
-    }
-    void print(int i, int j)
-    {
-        for (int k = 0; k <= i; ++k) {
-            printf("%c", str[k]);
-        }
-    }
-//    void print(SuffixNode* node, ostream& out) {
-//        for (int i = node->s; i < node->e; ++i) {
-//            out << str[i];
-//        }
-//        out << endl;
-//        for (auto i : node->ch) {
-//            print(i.second, out);
-//        }
-//    }
-    bool walk_down(SuffixNode *node) {
-        if (active_length >= edge_length(node)) {
-            active_edge += edge_length(node);
-            active_length -= edge_length(node);
-            active_node = node;
-            return true;
-        }
-        return false;
-    }
-    void extend(int c) {
-        ++remainder;
-        last_node = nullptr;
-        cout << c << endl;
-        while (remainder > 0) {
-            if (active_length == 0) {
-                active_edge = c;
-            }
-            if (active_node->ch.find(str[active_edge]) == active_node->ch.end()) {
-                active_node->ch[str[active_edge]] = new SuffixNode(c, c);
-                if (last_node != nullptr) {
-                    last_node->suffix_link = active_node;
-                    last_node = nullptr;
-                }
-            } else {
-                SuffixNode *next = active_node->ch[str[active_edge]];
-                if (walk_down(next)) {
-                    continue;
-                }
-                if (str[next->s + active_length] == str[c]) {
-                    if (last_node != nullptr && active_node != root) {
-                        last_node->suffix_link = active_node;
-                        last_node = nullptr;
-                    }
-                    ++active_length;
-                    break;
-                }
-                SuffixNode *split = new SuffixNode(next->s, next->s + active_length - 1);
-//                active_node->ch.insert(pair<char, SuffixNode*>(str[active_edge], split));
-                active_node->ch[str[active_edge]] = split;
-                split->ch[str[c]] = new SuffixNode(c, c);
-                next->s += active_length;
-                if (last_node != nullptr) {
-                    last_node->suffix_link = split;
-                }
-                last_node = split;
-            }
-            --remainder;
-            if (active_node == root && active_length > 0) {
-                --active_length;
-                active_edge = c - remainder + 1;
-            } else if (active_node != root) {
-                active_node = active_node->suffix_link;
-            }
-        }
-    }
-    void dfs(SuffixNode *node, int height) {
-        if (node->s != -1) {
-            print(node->s, node->e);
-        }
-        int leaf = 1;
-        for (auto i : node->ch) {
-            if (leaf == 1 && node->s != -1) {
-                printf(" [%d]\n", node->id);
-            }
-            leaf = 0;
-            dfs(i.second, height + edge_length(i.second));
-        }
-        if (leaf == 1) {
-            node->id = str.length() - height;
-            printf(" [%d]\n", node->id);
-        }
-    }
-};
 
 class ccc03s4 {
 public:
-    void solve(std::istream& in, std::ostream& out) {
+    void solve(std::istream &in, std::ostream &out) {
         int N;
         string str;
         in >> N;
         up(i, N) {
             in >> str;
             auto st = new SuffixTrie(str);
+            cout << "Count: " << st->count_nodes(st->root) << endl;
         }
     }
 };

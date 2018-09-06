@@ -1,4 +1,4 @@
-#include "D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/cco00p1.cpp"
+#include "/home/pilot/GitRepos/challenges/C++/CLion/DMOJ/tasks/ccc03s4.cpp"
 
 #include <iostream>
 #include <fstream>
@@ -29,7 +29,7 @@ bool check(std::string expected, std::string actual) {
 
 int main() {
     std::vector<jhelper::Test> tests = {
-        {"9\nA contains B\nA contains c\nB contains d\nF contains A\nF contains z\nX contains Y\nY contains X\nX contains x\nQ contains R", "A = {c,d}\nB = {d}\nF = {c,d,z}\nQ = {}\nR = {}\nX = {x}\nY = {x}", true, true},
+        {"1\nabc", "abc\nbc\nc", true, true},{"1\nabcabxabcd", "", true, true},
     };
     bool allOK = true;
     int testID = 0;
@@ -48,7 +48,7 @@ int main() {
             std::stringstream in(test.input);
             std::ostringstream out;
             std::clock_t start = std::clock();
-            cco00p1 solver;
+            ccc03s4 solver;
             solver.solve(in, out);
             std::clock_t finish = std::clock();
             double currentTime = double(finish - start) / CLOCKS_PER_SEC;

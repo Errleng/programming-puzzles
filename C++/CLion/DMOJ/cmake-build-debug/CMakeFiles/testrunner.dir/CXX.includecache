@@ -6,18 +6,18 @@
 
 #IncludeRegexTransform: 
 
-D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/library/lib.hpp
+/home/pilot/GitRepos/challenges/C++/CLion/DMOJ/library/lib.hpp
 iostream
 -
 
-D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/cco00p1.cpp
+/home/pilot/GitRepos/challenges/C++/CLion/DMOJ/tasks/ccc03s4.cpp
 ../library/lib.hpp
-D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/library/lib.hpp
+/home/pilot/GitRepos/challenges/C++/CLion/DMOJ/library/lib.hpp
 bits/stdc++.h
 -
 
-D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/testrunner/main.cpp
-D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/cco00p1.cpp
+/home/pilot/GitRepos/challenges/C++/CLion/DMOJ/testrunner/main.cpp
+/home/pilot/GitRepos/challenges/C++/CLion/DMOJ/tasks/ccc03s4.cpp
 -
 iostream
 -

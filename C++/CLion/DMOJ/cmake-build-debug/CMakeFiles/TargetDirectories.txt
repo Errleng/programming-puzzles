@@ -1,5 +1,5 @@
-D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir
-D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir
-D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir
-D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/pilot/GitRepos/challenges/C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/pilot/GitRepos/challenges/C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir
+/home/pilot/GitRepos/challenges/C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir
+/home/pilot/GitRepos/challenges/C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir
+/home/pilot/GitRepos/challenges/C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -10,6 +10,138 @@ using namespace std;
 #define dn(i, s, e) downto(i, s, e, 1);
 
 const int MAX_CHAR = 256;
+const int INF = 1 << 25;
+
+class SNode {
+public:
+    map<unsigned char, SNode*> ch;
+    int s, *e;
+    SNode* link;
+    SNode(int start, int *end) {
+        s = start; e = end;
+        link = nullptr;
+    }
+    ~SNode() {
+        if (e != nullptr) {
+            free(e);
+        }
+    }
+};
+
+class STree{
+public:
+    SNode* root, *active_node, *last_insert;
+    string text;
+    int active_length, remaining, pos;
+    int *root_end, *split_end;
+    unsigned char active_edge;
+    STree(string s) {
+        text = s;
+        root_end = (int *) malloc(sizeof(int));
+        *root_end = -1;
+        root = new SNode(-1, root_end);
+        active_length = remaining = 0;
+        pos = -1;
+        active_edge = '\0';
+        active_node = root;
+        for (int i = 0; i < text.length(); ++i) {
+            pos = i;
+            extend(text[i]);
+        }
+    }
+    int edge_length(SNode *n) {
+//        return min(*(n->e), pos + 1) - n->s;
+        return *n->e - n->s + 1;
+    }
+
+    bool walk_down(SNode *next) {
+        if (active_length >= edge_length(next)) {
+            active_edge += edge_length(next);
+            active_length -= edge_length(next);
+            active_node = next;
+            return true;
+        }
+        return false;
+    }
+
+    void extend(char c) {
+        ++remaining;
+        last_insert = nullptr; // rule 2
+        while (remaining > 0) {
+            if (active_length == 0) {
+                active_edge = c;
+            }
+            for (auto i : active_node->ch) {
+                cout << i.first << " " << c << " " << active_edge;
+                cout << " " << (active_node->ch.find(active_edge) == active_node->ch.end());
+                cout << endl;
+            }
+            if (active_node->ch.find(active_edge) == active_node->ch.end()) {
+                cout << "new " << c << endl;
+                active_node->ch[active_edge] = new SNode(pos, &pos);
+                if (last_insert != nullptr) {
+                    last_insert->link = active_node; // rule 2
+                    last_insert = nullptr;
+                }
+            } else {
+                SNode *next = active_node->ch[active_edge];
+                if (walk_down(next)) {
+                    cout << "walked down" << endl;
+                    continue;
+                }
+                if (text[next->s + active_length] == c) {
+                    ++active_length;
+                    if (last_insert != nullptr && active_node != root) {
+                        last_insert->link = active_node;
+                        last_insert = nullptr;
+                    }
+                    break;
+                }
+                active_edge = c;
+                split_end = (int *) malloc(sizeof(int));
+                *split_end = next->s + active_length;
+                SNode *split = new SNode(next->s, split_end);
+                active_node->ch[active_edge] = split;
+                split->ch[c] = new SNode(pos, &pos);
+                next->s += active_length;
+                split->ch[text[next->s]] = next;
+                if (last_insert != nullptr) {
+                    last_insert->link = split;
+                }
+                last_insert = split;
+            }
+            --remaining;
+            if (active_node == root && active_length > 0) { // rule 1
+                --active_length;
+                active_edge = text[pos - remaining + 1];
+            } else {
+                if (active_node-> link == nullptr) { // rule 3
+                    active_node = root;
+                } else {
+                    active_node = active_node->link;
+                }
+            }
+        }
+    }
+
+    int count(SNode *n) {
+        int res = *n->e - n->s;
+        for (auto i : n->ch) {
+            res += count(i.second);
+        }
+
+        return res;
+    }
+
+    int count_nodes(SNode *n) {
+        int res = 1;
+        for (auto i : n->ch) {
+            res += count(i.second);
+        }
+        return res;
+    }
+};
+
 
 class Node {
 public:
@@ -186,8 +318,11 @@ public:
         in >> N;
         up(i, N) {
             in >> str;
-            auto st = new SuffixTrie(str);
-            out << st->count_nodes(st->root) << endl;
+            auto st = new STree(str);
+            println(st->count_nodes(st->root));
+            out << st->count(st->root) << endl;
+//            auto st = new SuffixTrie(str);
+//            out << st->count_nodes(st->root) << endl;
         }
     }
 };

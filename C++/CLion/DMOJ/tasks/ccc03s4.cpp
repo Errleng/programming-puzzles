@@ -51,11 +51,49 @@ public:
         root = new Node(-1, rootEnd, root);
         activeNode = root;
         for (i = 0; i < size; i++)
-            extendSuffixTree(i);
-        int labelHeight = 0;
-//        setSuffixIndexByDFS(root, labelHeight);
+            extend(i);
+        setSuffixIndexByDFS(root, 0);
     }
     ~SuffixTrie() {
+        freeSuffixTreeByPostOrder(root);
+    }
+
+    void setSuffixIndexByDFS(Node *n, int labelHeight)
+    {
+        if (n == NULL)  return;
+        int leaf = 1;
+        int i;
+        for (i = 0; i < MAX_CHAR; i++)
+        {
+            if (n->children[i] != NULL)
+            {
+                if (leaf == 1 && n->start != -1)
+                leaf = 0;
+                setSuffixIndexByDFS(n->children[i], labelHeight +
+                                                    edgeLength(n->children[i]));
+            }
+        }
+        if (leaf == 1)
+        {
+            n->suffixIndex = size - labelHeight;
+        }
+    }
+
+    void freeSuffixTreeByPostOrder(Node *n)
+    {
+        if (n == NULL)
+            return;
+        int i;
+        for (i = 0; i < MAX_CHAR; i++)
+        {
+            if (n->children[i] != NULL)
+            {
+                freeSuffixTreeByPostOrder(n->children[i]);
+            }
+        }
+        if (n->suffixIndex == -1)
+            free(n->end);
+        free(n);
     }
 
     int edgeLength(Node *n) {
@@ -72,14 +110,8 @@ public:
         return 0;
     }
 
-    void extendSuffixTree(int pos) {
-        /*Extension Rule 1, this takes care of extending all
-        leaves created so far in tree*/
+    void extend(int pos) {
         leafEnd = pos;
-
-        /*Increment remainingSuffixCount indicating that a
-        new suffix added to the list of suffixes yet to be
-        added in tree*/
         remainingSuffixCount++;
         lastNewNode = nullptr;
 
@@ -97,7 +129,7 @@ public:
             }
             else {
                 Node *next = activeNode->children[text[activeEdge]];
-                if (walkDown(next))//Do walkdown
+                if (walkDown(next))
                 {
                     continue;
                 }
@@ -135,36 +167,6 @@ public:
             }
         }
     }
-
-    void print(int i, int j) {
-        int k;
-        for (k = i; k <= j; k++)
-            printf("%c", text[k]);
-    }
-
-    void setSuffixIndexByDFS(Node *n, int labelHeight) {
-        if (n == nullptr) return;
-
-        if (n->start != -1)
-        {
-            print(n->start, *(n->end));
-        }
-        int leaf = 1;
-        int i;
-        for (i = 0; i < MAX_CHAR; i++) {
-            if (n->children[i] != nullptr) {
-                if (leaf == 1 && n->start != -1)
-                    printf(" [%d]\n", n->suffixIndex);
-                leaf = 0;
-                setSuffixIndexByDFS(n->children[i], labelHeight +
-                                                    edgeLength(n->children[i]));
-            }
-        }
-        if (leaf == 1) {
-            n->suffixIndex = size - labelHeight;
-            printf(" [%d]\n", n->suffixIndex);
-        }
-    }
     int count_nodes(Node *n) {
         int res = *n->end - n->start + 1;
         for (int i = 0; i < MAX_CHAR; ++i) {
@@ -175,7 +177,6 @@ public:
         return res;
     }
 };
-
 
 class ccc03s4 {
 public:

@@ -391,6 +391,33 @@ tasks/dmopc14c2p6.cpp.s:
 	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/dmopc14c2p6.cpp.s
 .PHONY : tasks/dmopc14c2p6.cpp.s
 
+tasks/dmopc17c4p1.obj: tasks/dmopc17c4p1.cpp.obj
+
+.PHONY : tasks/dmopc17c4p1.obj
+
+# target to build an object file
+tasks/dmopc17c4p1.cpp.obj:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/dmopc17c4p1.cpp.obj
+.PHONY : tasks/dmopc17c4p1.cpp.obj
+
+tasks/dmopc17c4p1.i: tasks/dmopc17c4p1.cpp.i
+
+.PHONY : tasks/dmopc17c4p1.i
+
+# target to preprocess a source file
+tasks/dmopc17c4p1.cpp.i:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/dmopc17c4p1.cpp.i
+.PHONY : tasks/dmopc17c4p1.cpp.i
+
+tasks/dmopc17c4p1.s: tasks/dmopc17c4p1.cpp.s
+
+.PHONY : tasks/dmopc17c4p1.s
+
+# target to generate assembly for a file
+tasks/dmopc17c4p1.cpp.s:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/dmopc17c4p1.cpp.s
+.PHONY : tasks/dmopc17c4p1.cpp.s
+
 tasks/ds1.obj: tasks/ds1.cpp.obj
 
 .PHONY : tasks/ds1.obj
@@ -510,6 +537,9 @@ help:
 	@echo ... tasks/dmopc14c2p6.obj
 	@echo ... tasks/dmopc14c2p6.i
 	@echo ... tasks/dmopc14c2p6.s
+	@echo ... tasks/dmopc17c4p1.obj
+	@echo ... tasks/dmopc17c4p1.i
+	@echo ... tasks/dmopc17c4p1.s
 	@echo ... tasks/ds1.obj
 	@echo ... tasks/ds1.i
 	@echo ... tasks/ds1.s

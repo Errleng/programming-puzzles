@@ -194,6 +194,9 @@
 		<Unit filename="D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/dmopc14c2p6.cpp">
 			<Option target="test"/>
 		</Unit>
+		<Unit filename="D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/dmopc17c4p1.cpp">
+			<Option target="test"/>
+		</Unit>
 		<Unit filename="D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/ds1.cpp">
 			<Option target="test"/>
 		</Unit>

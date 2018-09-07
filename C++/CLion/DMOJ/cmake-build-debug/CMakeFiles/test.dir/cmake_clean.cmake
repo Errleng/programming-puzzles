@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/test.dir/tasks/ccc16s4.cpp.obj"
   "CMakeFiles/test.dir/tasks/cco00p1.cpp.obj"
   "CMakeFiles/test.dir/tasks/dmopc14c2p6.cpp.obj"
+  "CMakeFiles/test.dir/tasks/dmopc17c4p1.cpp.obj"
   "CMakeFiles/test.dir/tasks/ds1.cpp.obj"
   "CMakeFiles/test.dir/tasks/fibonacci2.cpp.obj"
   "test.pdb"

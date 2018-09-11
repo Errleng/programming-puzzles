@@ -1,4 +1,4 @@
-#include "/home/pilot/GitRepos/challenges/C++/CLion/DMOJ/tasks/ccc03s4.cpp"
+#include "D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/dmopc14c2p5.cpp"
 
 #include <iostream>
 #include <fstream>
@@ -29,7 +29,7 @@ bool check(std::string expected, std::string actual) {
 
 int main() {
     std::vector<jhelper::Test> tests = {
-        {"1\nabc", "abc\nbc\nc", true, true},{"1\nabcabxabcd", "", true, true},
+        {"6 5\n1 2\n2 3\n2 4\n4 5\n4 6", "0.5\n0.25\n0.25", true, true},{"5 4\n1 2\n1 3\n2 4\n3 4", "1\n0", true, true},
     };
     bool allOK = true;
     int testID = 0;
@@ -48,7 +48,7 @@ int main() {
             std::stringstream in(test.input);
             std::ostringstream out;
             std::clock_t start = std::clock();
-            ccc03s4 solver;
+            dmopc14c2p5 solver;
             solver.solve(in, out);
             std::clock_t finish = std::clock();
             double currentTime = double(finish - start) / CLOCKS_PER_SEC;

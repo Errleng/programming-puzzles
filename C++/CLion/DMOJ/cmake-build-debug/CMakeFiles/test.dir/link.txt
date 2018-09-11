@@ -1,1 +1,3 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/test.dir/tasks/Task.cpp.o CMakeFiles/test.dir/tasks/ccc03s4.cpp.o CMakeFiles/test.dir/tasks/ccc06s5.cpp.o CMakeFiles/test.dir/tasks/ccc12s4.cpp.o CMakeFiles/test.dir/tasks/ccc16s3.cpp.o CMakeFiles/test.dir/tasks/ccc16s4.cpp.o CMakeFiles/test.dir/tasks/cco00p1.cpp.o CMakeFiles/test.dir/tasks/dmopc14c2p6.cpp.o CMakeFiles/test.dir/tasks/dmopc17c4p1.cpp.o CMakeFiles/test.dir/tasks/ds1.cpp.o CMakeFiles/test.dir/tasks/fibonacci2.cpp.o  -o test 
+D:\Applications\apps\CLion\ch-0\182.4129.51\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\test.dir/objects.a
+D:\Applications\MinGW-w64\mingw64\bin\ar.exe cr CMakeFiles\test.dir/objects.a @CMakeFiles\test.dir\objects1.rsp
+D:\Applications\MinGW-w64\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\test.dir/objects.a -Wl,--no-whole-archive  -o test.exe -Wl,--out-implib,libtest.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test.dir\linklibs.rsp

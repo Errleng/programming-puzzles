@@ -2,61 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61d20436-2156-4299-8311-33a277624a0b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/tasks/ccc06s5.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/tasks/ccc12s4.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/tasks/ccc16s3.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/tasks/ccc16s4.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/tasks/fibonacci2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/Archive/combining_riceballs.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Archive/combining_riceballs.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.0/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.0/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.0/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.0/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.0/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.0/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.0/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdC/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdCXX/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/objects.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/DMOJ.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/DMOJ.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/library/lib.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/library/lib.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/output/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/output/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/task.template" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/task.template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/tasks/CCC16S3.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/testrunner/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/testrunner/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHelperReport.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CHelperReport.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chelper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/chelper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/output/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -132,72 +79,64 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1090384261">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="2944" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2944" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
+            <state relative-caret-position="30">
               <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/CCC09S4.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main/fibonacci2.java">
+        <entry file="file://$PROJECT_DIR$/src/Main/ccc15s3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="146" column="16" selection-start-line="146" selection-start-column="16" selection-end-line="146" selection-end-column="16" />
+            <state relative-caret-position="165">
+              <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#523#535#0" expanded="true" />
-                <element signature="e#2850#2858#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/FastScanner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1034">
-              <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/CCC18S5.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/CCC05S5.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1063#1064#0" expanded="true" />
+                <element signature="e#1101#1102#0" expanded="true" />
+                <element signature="e#2469#2470#0" expanded="true" />
+                <element signature="e#2510#2511#0" expanded="true" />
+                <element signature="e#2831#2832#0" expanded="true" />
+                <element signature="e#2872#2873#0" expanded="true" />
+                <element signature="e#2126#2127#0" expanded="true" />
+                <element signature="e#2170#2171#0" expanded="true" />
+                <element signature="e#3300#3301#0" expanded="true" />
+                <element signature="e#3318#3319#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -233,6 +172,8 @@
       <find>lcm</find>
       <find>bigExp</find>
       <find>prime_factorize</find>
+      <find>leftRotate</find>
+      <find>SearchForNode</find>
     </findStrings>
     <replaceStrings>
       <replace>planetCost</replace>
@@ -244,6 +185,8 @@
       <replace>cur</replace>
       <replace>compareTo</replace>
       <replace>BigInteger</replace>
+      <replace>LeftRotation</replace>
+      <replace>GetNode</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -264,6 +207,7 @@
         <option value="$PROJECT_DIR$/src/Main/CCC18S5.java" />
         <option value="$PROJECT_DIR$/src/Main/CCC09S4.java" />
         <option value="$PROJECT_DIR$/src/Main/fibonacci2.java" />
+        <option value="$PROJECT_DIR$/src/Main/ccc15s3.java" />
       </list>
     </option>
   </component>
@@ -273,11 +217,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1920" />
-    <option name="y" value="-23" />
-    <option name="width" value="960" />
-    <option name="height" value="1103" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="695" />
+    <option name="y" value="30" />
+    <option name="width" value="671" />
+    <option name="height" value="738" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -285,9 +229,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,12 +259,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533431075756" />
-    <property name="last_opened_file_path" value="$APPLICATION_PLUGINS_DIR$/chelper/lib/chelper.jar!/" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536929439625" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -334,7 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Task.fibonacci2">
+  <component name="RunManager" selected="Task.ccc15s3">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="DMOJ" />
@@ -357,11 +301,13 @@
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
       </method>
     </configuration>
     <configuration name="CCC09S4" type="Task" factoryName="Task">
       <taskConf>src/Main/CCC09S4.json</taskConf>
       <method v="2">
+        <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
@@ -373,6 +319,7 @@
       <taskConf>src/Main/CCC16S5.json</taskConf>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
@@ -395,11 +342,19 @@
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+      </method>
+    </configuration>
+    <configuration name="ccc15s3" type="Task" factoryName="Task">
+      <taskConf>src/Main/ccc15s3.json</taskConf>
+      <method v="2">
+        <option name="MakeProject" enabled="false" />
       </method>
     </configuration>
     <configuration name="fibonacci2" type="Task" factoryName="Task">
       <taskConf>src/Main/fibonacci2.json</taskConf>
       <method v="2">
+        <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
       </method>
     </configuration>
@@ -408,8 +363,9 @@
       <item itemvalue="Task.CCC16S5" />
       <item itemvalue="Task.CCC05S5" />
       <item itemvalue="Task.CCC09S4" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="Task.fibonacci2" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Task.ccc15s3" />
     </list>
     <recent_temporary>
       <list>
@@ -440,17 +396,18 @@
       <workItem from="1533580176216" duration="1446000" />
       <workItem from="1533586328634" duration="314000" />
       <workItem from="1535255400551" duration="6316000" />
+      <workItem from="1536927338337" duration="2141000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37329000" />
+    <option name="totallyTimeSpent" value="39470000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-23" width="1920" height="1103" extended-state="6" />
+    <frame x="695" y="30" width="671" height="738" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.05378062" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -459,7 +416,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31937173" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31785715" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -536,16 +493,23 @@
     <entry file="file://$PROJECT_DIR$/src/Main/CCC09S4.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/math/BigInteger.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="459">
+          <caret line="362" selection-start-line="362" selection-end-line="362" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/CCC09S4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/FastScanner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
+        <state relative-caret-position="705">
           <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -555,7 +519,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/CCC18S5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
+        <state relative-caret-position="525">
           <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -565,7 +529,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/CCC05S5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
+        <state relative-caret-position="45">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -573,28 +537,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/CCC09S4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/math/BigInteger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="362" selection-start-line="362" selection-end-line="362" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/fibonacci2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="146" column="16" selection-start-line="146" selection-start-column="16" selection-end-line="146" selection-end-column="16" />
+        <state relative-caret-position="457">
+          <caret line="162" column="12" selection-start-line="162" selection-start-column="12" selection-end-line="162" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#523#535#0" expanded="true" />
-            <element signature="e#2850#2858#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/ccc15s3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#2469#2470#0" expanded="true" />
+            <element signature="e#2510#2511#0" expanded="true" />
+            <element signature="e#2831#2832#0" expanded="true" />
+            <element signature="e#2872#2873#0" expanded="true" />
+            <element signature="e#2126#2127#0" expanded="true" />
+            <element signature="e#2170#2171#0" expanded="true" />
+            <element signature="e#3300#3301#0" expanded="true" />
+            <element signature="e#3318#3319#0" expanded="true" />
           </folding>
         </state>
       </provider>

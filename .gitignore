@@ -279,6 +279,9 @@ paket-files/
 .idea/
 *.sln.iml
 
+# JetBrains Workspace
+workspace.xml
+
 # CodeRush
 .cr/
 

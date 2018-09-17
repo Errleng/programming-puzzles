@@ -2,6 +2,7 @@ import java.io.OutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 import java.io.IOException;
 import java.io.BufferedReader;
@@ -18,43 +19,63 @@ public class Main {
         OutputStream outputStream = System.out;
         FastScanner in = new FastScanner(inputStream);
         PrintWriter out = new PrintWriter(outputStream);
-        ccc15s3 solver = new ccc15s3();
+        tsoc15c2p5 solver = new tsoc15c2p5();
         solver.solve(1, in, out);
         out.close();
     }
 
-    static class ccc15s3 {
-        int find(int[] arr, int x) {
-            while (x != arr[x]) {
-                arr[x] = arr[arr[x]];
-                x = arr[x];
-            }
-            return x;
-        }
-
-        void unite(int[] arr, int x, int y) {
-            int top_x = find(arr, x);
-            int top_y = find(arr, y);
-            arr[top_x] = top_y;
-        }
-
+    static class tsoc15c2p5 {
         public void solve(int testNumber, FastScanner in, PrintWriter out) {
-            int G = in.nextInt();
-            int P = in.nextInt();
-            int[] d = new int[G + 1];
-            for (int i = 0; i < G + 1; ++i) {
-                d[i] = i;
+            int S = in.nextInt();
+            int N = in.nextInt();
+            Bebilith.CONVICT_SPEED = S;
+            Bebilith[] liths = new Bebilith[N];
+            for (int i = 0; i < N; ++i) {
+                int B = in.nextInt();
+                int D = in.nextInt();
+                int C = in.nextInt();
+                liths[i] = new Bebilith(i + 1, B, D, C);
             }
-            for (int i = 0; i < P; ++i) {
-                int g = in.nextInt();
-                int top = find(d, g);
-                if (top == 0) {
-                    out.println(i);
-                    return;
+            Arrays.sort(liths);
+            int Q = in.nextInt();
+            for (int i = 0; i < Q; ++i) {
+                int q = in.nextInt();
+                out.println(liths[q - 1].id);
+            }
+        }
+
+    }
+
+    static class Bebilith implements Comparable<Bebilith> {
+        static int CONVICT_SPEED;
+        int id;
+        int speed;
+        int venom;
+        int claw;
+
+        Bebilith(int a, int b, int c, int d) {
+            id = a;
+            speed = b;
+            venom = c;
+            claw = d;
+        }
+
+        public int compareTo(Bebilith o) {
+            if (speed != o.speed) {
+                return o.speed - speed;
+            } else if (speed >= CONVICT_SPEED) {
+                if (o.claw == claw) {
+                    return o.id - id;
+                } else {
+                    return o.claw - claw;
                 }
-                unite(d, top, top - 1);
+            } else {
+                if (o.venom == venom) {
+                    return o.id - id;
+                } else {
+                    return o.venom - venom;
+                }
             }
-            out.println(P);
         }
 
     }

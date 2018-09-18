@@ -1,2 +1,2 @@
-24 src/Main/tsoc15c2p5.json
+24 src/Main/coci07c6p3.json
 0

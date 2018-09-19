@@ -4,6 +4,23 @@ import %InputClassFQN%;
 import %OutputClassFQN%;
 
 public class %TaskClass% {
+    static void printv(int ...a) {
+        boolean first = true;
+        for (int i : a) {
+            if (first) {
+                System.out.print(i);
+                first = false;
+            } else {
+                System.out.print(" " + i);
+            }
+        }
+    }
+
+    static void printlnv(int ...a) {
+        printv(a);
+        System.out.println();
+    }
+
     public void solve(int testNumber, %InputClass% in, %OutputClass% out) {
     }
 }

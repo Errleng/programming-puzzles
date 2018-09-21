@@ -1,0 +1,33 @@
+{
+  "name" : "CCC18S5",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2 3 4 1\n2 3 5\n3 2 7\n1 2 6\n1 1 8\n2 1 5",
+    "output" : "41",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "src/Main",
+  "vmArgs" : "-Xmx256m -Xss64m",
+  "mainClass" : "Main",
+  "taskClass" : "Main.CCC18S5",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.07.18",
+  "contestName" : "CCC 2018",
+  "truncate" : true,
+  "inputClass" : "java.util.Scanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false
+}

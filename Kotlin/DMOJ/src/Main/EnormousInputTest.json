@@ -1,0 +1,34 @@
+{
+  "name" : "EnormousInputTest",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "7 3\n1\n51\n966369\n7\n9\n999996\n11",
+    "output" : "4",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "src/Main",
+  "vmArgs" : "-Xmx256m -Xss64m",
+  "mainClass" : "Main",
+  "taskClass" : "Main.EnormousInputTest",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.09.20",
+  "contestName" : "SPOJ Input Output",
+  "truncate" : true,
+  "inputClass" : "Main.FastScanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

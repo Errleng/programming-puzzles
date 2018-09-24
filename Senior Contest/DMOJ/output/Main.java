@@ -3,10 +3,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
 import java.io.DataInputStream;
+import java.util.Arrays;
 import java.io.IOException;
 import java.io.FileInputStream;
-import java.util.Collections;
 import java.util.ArrayList;
+import java.util.Queue;
+import java.util.LinkedList;
 import java.io.InputStream;
 
 /**
@@ -19,53 +21,76 @@ public class Main {
         OutputStream outputStream = System.out;
         FastReader in = new FastReader(inputStream);
         PrintWriter out = new PrintWriter(outputStream);
-        vmss7wc16c4p2 solver = new vmss7wc16c4p2();
+        ccc09s4 solver = new ccc09s4();
         solver.solve(1, in, out);
         out.close();
     }
 
-    static class vmss7wc16c4p2 {
-        static ArrayList<String>[] sets;
-        static ArrayList<String> strings;
-        static int N;
-        static int L;
+    static class ccc09s4 {
+        public void solve(int testNumber, FastReader in, PrintWriter out) {
+            int N = in.nextInt();
+            int T = in.nextInt();
+            int[] pencilCost = new int[N];
+            Arrays.fill(pencilCost, -1);
+            int[] dists = new int[N];
+            Arrays.fill(dists, Integer.MAX_VALUE);
+            ArrayList<Edge>[] adj = new ArrayList[N];
 
-        public void makeWords(String s, int go) {
-            if (s.length() <= L) {
-                if (go == N) {
-                    strings.add(s);
-                } else {
-                    makeWords(s, go + 1);
-                    for (String c : sets[go]) {
-                        makeWords(s + c, go + 1);
+            for (int i = 0; i < N; ++i) {
+                adj[i] = new ArrayList<>();
+            }
+            for (int i = 0; i < T; ++i) {
+                int x = in.nextInt() - 1;
+                int y = in.nextInt() - 1;
+                int c = in.nextInt();
+                adj[x].add(new Edge(y, c));
+                adj[y].add(new Edge(x, c));
+            }
+            int K = in.nextInt();
+            for (int i = 0; i < K; ++i) {
+                pencilCost[in.nextInt() - 1] = in.nextInt();
+            }
+
+            int D = in.nextInt() - 1;
+
+            dists[D] = 0;
+            int min = Integer.MAX_VALUE;
+            boolean[] vis = new boolean[N];
+            Queue<Edge> q = new LinkedList<>();
+            for (int i = 0; i < N; ++i) {
+                int m = -1;
+                for (int j = 0; j < N; ++j) {
+                    if (!vis[j] && m == -1 || !vis[j] && dists[j] < dists[m]) {
+                        m = j;
                     }
                 }
-            }
-        }
-
-        public void solve(int testNumber, FastReader in, PrintWriter out) {
-            N = in.nextInt();
-            L = in.nextInt();
-            strings = new ArrayList<>();
-            sets = new ArrayList[N];
-            for (int i = 0; i < N; ++i) {
-                sets[i] = new ArrayList<>();
-            }
-            for (int i = 0; i < N; ++i) {
-                int M = in.nextInt();
-                for (int j = 0; j < M; ++j) {
-                    sets[i].add(in.next());
+                if (dists[m] >= min) {
+                    break;
+                }
+                vis[m] = true;
+                for (Edge e : adj[m]) {
+                    dists[e.u] = Math.min(dists[e.u], e.cost + dists[m]);
+                }
+                if (pencilCost[m] != -1) {
+                    min = Math.min(min, dists[m] + pencilCost[m]);
                 }
             }
+            out.println(min);
+        }
 
-            for (String c : sets[0]) {
-                makeWords(c, 1);
-            }
+    }
 
-            Collections.sort(strings);
-            for (String s : strings) {
-                out.println(s);
-            }
+    static class Edge implements Comparable<Edge> {
+        int u;
+        int cost;
+
+        Edge(int a, int b) {
+            u = a;
+            cost = b;
+        }
+
+        public int compareTo(Edge o) {
+            return Integer.compare(o.cost, cost);
         }
 
     }
@@ -97,23 +122,6 @@ public class Main {
             }
             buffer = new byte[BUFFER_SIZE];
             bufferPointer = bytesRead = 0;
-        }
-
-        String next() {
-            byte[] buf = new byte[64];
-            int cnt = 0, c;
-            try {
-                c = read();
-                while (c <= ' ')
-                    c = read();
-                buf[cnt++] = (byte) c;
-                while ((c = read()) > ' ') {
-                    buf[cnt++] = (byte) c;
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return new String(buf, 0, cnt);
         }
 
         public int nextInt() {

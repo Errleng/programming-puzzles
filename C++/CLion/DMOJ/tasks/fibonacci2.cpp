@@ -95,6 +95,142 @@ public:
         }
         return res;
     }
+#include <bits/stdc++.h>
+
+#define scan(x) do{while((x=getchar())<'0'); for(x-='0'; '0'<=(_=getchar()); x=(x<<3)+(x<<1)+_-'0');}while(0)
+char _;
+
+#define upto(i, s, e, c) for (int(i) = (s); (i) < (e); (i) += c)
+#define up(i, e) upto(i, 0, e, 1)
+#define upc(i, e, c) upto(i, 0, e, c)
+#define dnto(i, s, e, c) for (int(i) = (s); (i) > (e); (i) -= (c))
+#define dn(i, s, e) downto(i, s, e, 1);
+
+using namespace std;
+
+int N;
+int nums[101];
+vector<int> divisors(vector<pair<int, int>> primes) {
+    int divisor_count = 1;
+    for (auto p : primes) {
+        divisor_count *= p.second;
+    }
+    vector<int> ans;
+    ans.resize(divisor_count);
+    int count = 1;
+    for (auto p : primes) {
+        const int curr_count = count;
+        const int prime = p.first;
+        const int exponent = p.second;
+        int multiplier = 1;
+        for (int j = 0; j < exponent; ++j)
+        {
+            multiplier *= prime;
+            for (int i = 0; i < curr_count; ++i)
+            {
+                ans[count++] = ans[i] * multiplier;
+            }
+        }
+    }
+    return ans;
+}
+
+vector<int> prime_divisors(vector<pair<int, int>> factors) {
+    int divisor_count = 1;
+    for (auto p : primes) {
+        divisor_count *= 1 + p.second;
+    }
+    vector<int> ans;
+    ans.resize(divisor_count);
+    ans[0] = 1;
+    int count = 1;
+    for (auto p : primes) {
+        int curr_count = count;
+        int mult = 1;
+        for (int j = 0; j < p.second; ++j)
+        {
+            mult *= p.first;
+            for (int i = 0; i < curr_count; ++i)
+            {
+                ans[count++] = ans[i] * mult;
+            }
+        }
+    }
+    return ans;
+}
+
+vector<pair<int, int>> prime_factorize(int n) {
+    vector<pair<int, int>> res;
+    map<int, int> exp;
+    while (n % 2 == 0) {
+        auto it = exp.find(2);
+        if (it != exp.end()) {
+            it->second++;
+        } else {
+            exp.insert({2, 1});
+        }
+        n = n / 2;
+    }
+    for (int i = 3; i <= sqrt(n); i = i + 2) {
+        while (n % i == 0) {
+            auto it = exp.find(i);
+            if (it != exp.end()) {
+                it->second++;
+            } else {
+                exp.insert({i, 1});
+            }
+            n = n / i;
+        }
+    }
+    if (n > 2) {
+        auto it = exp.find(n);
+        if (it != exp.end()) {
+            it->second++;
+        } else {
+            exp.insert({n, 1});
+        }
+    }
+    for (auto it = exp.begin(); it != exp.end(); ++it) {
+        res.push_back(pair<int, int>(it->first, it->second));
+    }
+    return res;
+}
+
+int gcf(int a, int b) {
+    if (b == 0) {
+        return a;
+    }
+    return gcf(b, a % b);
+}
+
+int main()
+{
+    scan(N);
+    up (i, N) {
+        scan(nums[i]);
+    }
+    int hcf = 0;
+    upto(i, 1, N, 1) {
+        hcf = gcf(abs(nums[i] - nums[i-1]), hcf);
+    }
+    for (int i = 2; i <= hcf / 2; ++i) {
+        if (hcf % i == 0) {
+            printf("%d ", i);
+        }
+    }
+    printf("%d\n", hcf);
+    cout << hcf << endl;
+    auto pf = prime_factorize(hcf);
+    for (auto i : pf) {
+        cout << i.first << " " << i.second << endl;
+    }
+    auto dv = divisors(pf);
+    for (auto i : divisors) {
+        cout << i << " ";
+    }
+    cout << endl;
+    return 0;
+}
 
     template<typename ull>
     vector<pair<ull, ull>> prime_factorize(ull n) {

@@ -1,0 +1,39 @@
+{
+  "name" : "ccc10j5",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2 1\n3 3",
+    "output" : "1",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "4 2\n7 5",
+    "output" : "2",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256m -Xss64m",
+  "mainClass" : "Main",
+  "taskClass" : "main.ccc10j5",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.09.23",
+  "contestName" : "",
+  "truncate" : true,
+  "inputClass" : "main.FastReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

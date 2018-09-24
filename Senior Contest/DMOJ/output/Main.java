@@ -4,11 +4,11 @@ import java.io.InputStream;
 import java.io.PrintWriter;
 import java.io.DataInputStream;
 import java.util.Arrays;
+import java.util.PriorityQueue;
 import java.io.IOException;
 import java.io.FileInputStream;
 import java.util.ArrayList;
-import java.util.Queue;
-import java.util.LinkedList;
+import java.util.AbstractCollection;
 import java.io.InputStream;
 
 /**
@@ -21,76 +21,48 @@ public class Main {
         OutputStream outputStream = System.out;
         FastReader in = new FastReader(inputStream);
         PrintWriter out = new PrintWriter(outputStream);
-        ccc09s4 solver = new ccc09s4();
+        sssp solver = new sssp();
         solver.solve(1, in, out);
         out.close();
     }
 
-    static class ccc09s4 {
+    static class sssp {
         public void solve(int testNumber, FastReader in, PrintWriter out) {
             int N = in.nextInt();
-            int T = in.nextInt();
-            int[] pencilCost = new int[N];
-            Arrays.fill(pencilCost, -1);
-            int[] dists = new int[N];
-            Arrays.fill(dists, Integer.MAX_VALUE);
+            int M = in.nextInt();
+            int[] dist = new int[N];
+            Arrays.fill(dist, Integer.MAX_VALUE);
             ArrayList<Edge>[] adj = new ArrayList[N];
-
             for (int i = 0; i < N; ++i) {
                 adj[i] = new ArrayList<>();
             }
-            for (int i = 0; i < T; ++i) {
-                int x = in.nextInt() - 1;
-                int y = in.nextInt() - 1;
+            for (int i = 0; i < M; ++i) {
+                int a = in.nextInt() - 1;
+                int b = in.nextInt() - 1;
                 int c = in.nextInt();
-                adj[x].add(new Edge(y, c));
-                adj[y].add(new Edge(x, c));
+                adj[a].add(new Edge(b, c));
+                adj[b].add(new Edge(a, c));
             }
-            int K = in.nextInt();
-            for (int i = 0; i < K; ++i) {
-                pencilCost[in.nextInt() - 1] = in.nextInt();
-            }
-
-            int D = in.nextInt() - 1;
-
-            dists[D] = 0;
-            int min = Integer.MAX_VALUE;
-            boolean[] vis = new boolean[N];
-            Queue<Edge> q = new LinkedList<>();
-            for (int i = 0; i < N; ++i) {
-                int m = -1;
-                for (int j = 0; j < N; ++j) {
-                    if (!vis[j] && m == -1 || !vis[j] && dists[j] < dists[m]) {
-                        m = j;
+            PriorityQueue<Edge> q = new PriorityQueue<>();
+            dist[0] = 0;
+            q.add(new Edge(0, 0));
+            while (!q.isEmpty()) {
+                Edge u = q.poll();
+                for (Edge e : adj[u.id]) {
+                    int nd = dist[u.id] + e.w;
+                    if (nd < dist[e.id]) {
+                        dist[e.id] = nd;
+                        q.add(new Edge(e.id, nd));
                     }
                 }
-                if (dists[m] >= min) {
-                    break;
-                }
-                vis[m] = true;
-                for (Edge e : adj[m]) {
-                    dists[e.u] = Math.min(dists[e.u], e.cost + dists[m]);
-                }
-                if (pencilCost[m] != -1) {
-                    min = Math.min(min, dists[m] + pencilCost[m]);
+            }
+            for (int i = 0; i < N; ++i) {
+                if (dist[i] == Integer.MAX_VALUE) {
+                    out.println(-1);
+                } else {
+                    out.println(dist[i]);
                 }
             }
-            out.println(min);
-        }
-
-    }
-
-    static class Edge implements Comparable<Edge> {
-        int u;
-        int cost;
-
-        Edge(int a, int b) {
-            u = a;
-            cost = b;
-        }
-
-        public int compareTo(Edge o) {
-            return Integer.compare(o.cost, cost);
         }
 
     }
@@ -159,6 +131,21 @@ public class Main {
             if (bufferPointer == bytesRead)
                 fillBuffer();
             return buffer[bufferPointer++];
+        }
+
+    }
+
+    static class Edge implements Comparable<Edge> {
+        int id;
+        int w;
+
+        Edge(int a, int b) {
+            id = a;
+            w = b;
+        }
+
+        public int compareTo(Edge o) {
+            return Integer.compare(o.w, w);
         }
 
     }

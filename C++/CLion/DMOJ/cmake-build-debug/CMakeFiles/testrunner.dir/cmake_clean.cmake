@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/testrunner.dir/testrunner/main.cpp.o"
+  "CMakeFiles/testrunner.dir/testrunner/main.cpp.obj"
   "testrunner.pdb"
-  "testrunner"
+  "testrunner.exe"
+  "testrunner.exe.manifest"
+  "libtestrunner.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

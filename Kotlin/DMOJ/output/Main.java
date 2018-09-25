@@ -13,15 +13,15 @@ public class Main {
         OutputStream outputStream = System.out;
         FastScanner in = new FastScanner(inputStream);
         PrintWriter out = new PrintWriter(outputStream);
-        EnormousInputTest solver = new EnormousInputTest();
+        ccc12s4 solver = new ccc12s4();
         solver.solve(1, in, out);
         out.close();
     }
 
-    static class EnormousInputTest {
+    static class ccc12s4 {
         void solve;
 
-        EnormousInputTest;
+        ccc12s4;
 
     }
 

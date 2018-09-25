@@ -1,0 +1,39 @@
+{
+  "name" : "tle17c1p2",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\ngrass 5\nbread 10\nmetal -100\n5\nbread 5\ngrass 0\ngrass 6\nbread 10\nmetal 9",
+    "output" : "4",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3\ngrass 5\nbread 10\nmetal -100\n5\nbread 5\ngrass 1\nbread 5\ngrass 6\nbread 10\nmetal 9",
+    "output" : "0",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256m -Xss64m",
+  "mainClass" : "Main",
+  "taskClass" : "main.tle17c1p2",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.09.22",
+  "contestName" : "",
+  "truncate" : true,
+  "inputClass" : "main.FastReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

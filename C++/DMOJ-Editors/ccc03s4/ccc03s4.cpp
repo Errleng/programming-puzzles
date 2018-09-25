@@ -53,51 +53,6 @@ public:
   }
 };
 
-// class SuffixNode {
-// public:
-//   SuffixNode *children[26];
-//   SuffixNode() {
-//     up(i, 26) { children[i] = nullptr; }
-//   }
-//   ~SuffixNode() {
-//     up(i, 26) {
-//       if (children[i] != nullptr) {
-//         delete children[i];
-//       }
-//     }
-//   }
-//   void insert(string s) {
-//     if (s.length() > 0) {
-//       char c = s[0] - 'a';
-//       if (children[c] == nullptr) {
-//         children[c] = new SuffixNode();
-//         children[c]->insert(s.substr(1));
-//       }
-//     }
-//   }
-// };
-// class SuffixTrie {
-// public:
-//   SuffixNode *root;
-//   SuffixTrie(string s) {
-//     root = new SuffixNode();
-//     up(i, s.length()) { root->insert(s.substr(i)); }
-//   }
-//   ~SuffixTrie() { delete root; }
-//   int count_SuffixNodes(SuffixNode *node) {
-//     if (node == nullptr) {
-//       return 0;
-//     }
-//     int cnt = 1;
-//     up(i, 26) {
-//       if (node->children[i] != nullptr) {
-//         cnt += count_SuffixNodes(node->children[i]);
-//       }
-//     }
-//     return cnt;
-//   }
-// };
-
 int main() {
   int N;
   string str;

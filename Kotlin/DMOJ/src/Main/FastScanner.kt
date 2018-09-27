@@ -1,4 +1,4 @@
-package Main
+package main
 
 import java.io.DataInputStream
 import java.io.InputStream

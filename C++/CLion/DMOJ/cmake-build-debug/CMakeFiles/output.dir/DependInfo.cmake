@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pilot/GitRepos/challenges/C++/CLion/DMOJ/output/main.cpp" "/home/pilot/GitRepos/challenges/C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/output/main.cpp.o"
+  "D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/output/main.cpp" "D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/output/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

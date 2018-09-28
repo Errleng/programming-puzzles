@@ -280,7 +280,7 @@ paket-files/
 *.sln.iml
 
 # JetBrains Workspace
-workspace.xml
+# workspace.xml
 
 # CodeRush
 .cr/

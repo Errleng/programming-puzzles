@@ -15,7 +15,6 @@ public class ccc12s4 {
             int ans = -1;
             State start = new State(0);
 
-
             for (int i = 1; i <= N; ++i) {
                 start.coins[i].push(in.nextInt());
             }

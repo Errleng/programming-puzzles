@@ -3,14 +3,6 @@ package main;
 import java.util.*
 
 class ccc12s4 {
-    fun rebase(base: Int, exp: Int): Int {
-        var res = 1
-        for (i in 1..exp) {
-            res *= base
-        }
-        return res
-    }
-
     fun toID(coins: Array<Stack<Int>>): String {
         var res = ""
         var first = true
@@ -72,13 +64,6 @@ class ccc12s4 {
             var vis = HashSet<String>()
             while (q.isNotEmpty() && ans == -1) {
                 var cur = q.poll()
-                var possible = true
-                for (i in 0 until N) {
-                    if (top(cur.coins[i]) >= top(cur.coins[i + 1])) {
-                        possible = false
-                        break
-                    }
-                }
                 var count = 0
                 for (i in 1..N + 1) {
                     if (top(cur.coins[i]) > top(cur.coins[i - 1])) {
@@ -142,9 +127,6 @@ class ccc12s4 {
             dist = a
             coins = Array<Stack<Int>>(9) { Stack<Int>() }
         }
-//        fun set(a: Int, b: Int) {
-//            coins[a] = coins[a] or (1 shl b)
-//        }
     }
 }
 

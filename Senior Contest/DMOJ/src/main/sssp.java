@@ -2,12 +2,23 @@ package main;
 
 import main.FastReader;
 import java.io.PrintWriter;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
 public class sssp {
+
+    class Edge implements Comparable<Edge> {
+        int id, w;
+        Edge(int a, int b) {
+            id = a;
+            w = b;
+        }
+        public int compareTo(Edge o) {
+            return Integer.compare(w, o.w);
+        }
+    }
+
     public void solve(int testNumber, FastReader in, PrintWriter out) {
         int N = in.nextInt();
         int M = in.nextInt();
@@ -47,13 +58,3 @@ public class sssp {
     }
 }
 
-class Edge implements Comparable<Edge> {
-    int id, w;
-    Edge(int a, int b) {
-        id = a;
-        w = b;
-    }
-    public int compareTo(Edge o) {
-        return Integer.compare(o.w, w);
-    }
-}

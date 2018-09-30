@@ -3,9 +3,9 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="DMOJ" targetName="jhelper_example_project" />
-      <config projectName="DMOJ" targetName="testrunner" />
-      <config projectName="DMOJ" targetName="test" />
       <config projectName="DMOJ" targetName="output" />
+      <config projectName="DMOJ" targetName="test" />
+      <config projectName="DMOJ" targetName="testrunner" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -15,113 +15,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e173ed55-e541-424a-82e1-b5da979c74d7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/output.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/output.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/output.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/output.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/output.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/output.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/output.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/output.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/output.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/output.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DMOJ.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DMOJ.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/testrunner.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/testrunner.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/output/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/ccc12s4.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/ccc12s4.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testrunner/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/testrunner/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/CHelperReport.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/CheckerClass.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/TaskClass.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/TestCaseClass.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/TopCoderTaskClass.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/TopCoderTestCaseClass.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/chelper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/AVLTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/BIT.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/BIT2D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/Bebilith.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/BiEdge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/BigExp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/CCC05S5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/CCC05S5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/CCC09S4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/CCC09S4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/CCC16S5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/CCC16S5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/CCC18S5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/CCC18S5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/DSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/Edge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/Elem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/EnormousInputTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/EnormousInputTest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/FastScanner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/Graph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/SubmissionTemplate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/bts18p2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/bts18p2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/ccc12s4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/ccc12s4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/ccc15s3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/ccc15s3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/coci07c6p3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/coci07c6p3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/dmpg18s1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/dmpg18s1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/dmpg18s2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/dmpg18s2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/dmpg18s3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/dmpg18s3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/dmpg18s4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/dmpg18s4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/fibonacci2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/fibonacci2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/ioi01p1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/ioi01p1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/tsoc15c2p5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/Main/tsoc15c2p5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/output/Main.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main/EnormousInputTest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main/EnormousInputTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main/FastScanner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main/FastScanner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main/ccc12s4.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main/ccc12s4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main/aplusb.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/src/main/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/main/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/main/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/main/ccc12s4$State.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/main/ccc12s4$State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/main/ccc12s4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/main/ccc12s4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main/ccc12s4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main/ccc12s4.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Rust/DMOJ/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Rust/DMOJ/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Rust/DMOJ/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Rust/DMOJ/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/dp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/dp.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/dp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/exponentiation.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/exponentiation.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/exponentiation.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/fibonacci.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/fibonacci.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/fibonacci.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/riceballs.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/riceballs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/riceballs.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_algorithm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_algorithm.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_dynlib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_dynlib.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_macros.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_macros.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_math.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_math.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_os.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_os.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_ospaths.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_ospaths.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_parseutils.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_parseutils.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_sequtils.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_sequtils.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_strutils.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_strutils.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_system.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_system.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_times.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_times.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_winlean.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_winlean.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/tempCodeRunnerFile.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/tempCodeRunnerFile.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/tempCodeRunnerFile.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/CHelperReport.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/CHelperReport.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/out/production/DMOJ/main/Edge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/out/production/DMOJ/main/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/out/production/DMOJ/main/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/out/production/DMOJ/main/ccc12s4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/out/production/DMOJ/main/ccc12s4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/out/production/DMOJ/main/sssp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/out/production/DMOJ/main/sssp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/output/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/output/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/src/main/ccc12s4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/src/main/ccc12s4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/src/main/sssp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/src/main/sssp.java" afterDir="false" />
     </list>
     <ignored path="jhelper-example-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -149,7 +99,7 @@
     <session id="-1590371877">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.24" value="1" />
@@ -157,18 +107,19 @@
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.37" value="2" />
+          <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.51" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cpp" value="16" />
           <entry key="h" value="4" />
-          <entry key="template" value="5" />
+          <entry key="template" value="6" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -176,7 +127,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="1" />
           <entry key="ObjectiveC" value="20" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -200,23 +151,38 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testrunner/main.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#78#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tasks/dmopc14c2p5.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="80">
               <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tasks/ccc12s4.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="40">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/task.template">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -351,7 +317,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -369,10 +334,15 @@
               <item name="DMOJ" type="462c0819:PsiDirectoryNode" />
               <item name="testrunner" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DMOJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -507,16 +477,17 @@
       <workItem from="1537749027374" duration="792000" />
       <workItem from="1538013036176" duration="1630000" />
       <workItem from="1538016139034" duration="47000" />
+      <workItem from="1538231213910" duration="151000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31814000" />
+    <option name="totallyTimeSpent" value="31965000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11673774" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.117803834" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -582,13 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task.template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -658,16 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testrunner/main.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/dmopc14c2p5.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -682,10 +636,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/dmopc14c2p5.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testrunner/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/ccc12s4.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="40">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

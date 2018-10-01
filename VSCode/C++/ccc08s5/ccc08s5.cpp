@@ -13,9 +13,11 @@
 #define scan(x) do{while((x=getchar())<'0'); for(x-='0'; '0'<=(_=getchar()); x=(x<<3)+(x<<1)+_-'0');}while(0)
 char _;
 
+#define MAXP 31
+
 using namespace std;
 
-int N, A, B, C, D, memo[30][30][30][30];
+int N, A, B, C, D, memo[MAXP][MAXP][MAXP][MAXP];
 
 bool perfect(int a, int b, int c, int d) {
     if (memo[a][b][c][d] != -1)

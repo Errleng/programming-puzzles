@@ -18,28 +18,7 @@ char _;
 
 using namespace std;
 
-void print() {}
-
-template<typename T, typename... Types>
-void print(T var, Types... args) {
-    cout << var << " ";
-    print(args...);
-}
-
-void println() {
-    cout << endl;
-}
-
-template<typename T, typename... Types>
-void println(T var, Types... args) {
-    cout << var << endl;
-    print(args...);
-}
-
-int N, A, B, C, D, memo[MAXP][MAXP][MAXP][MAXP];
-struct Particles {
-    int A, B, C, D;
-};
+int N, memo[MAXP][MAXP][MAXP][MAXP];
 
 int reactions[5][4] = {{2, 1, 0, 2}, {1, 1, 1, 1}, {0, 0, 2, 1}, {0, 3, 0, 0}, {1, 0, 0, 1}};
 

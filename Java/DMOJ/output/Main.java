@@ -2,12 +2,11 @@ import java.io.OutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
-import java.io.PrintStream;
+import java.util.StringTokenizer;
 import java.io.IOException;
+import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.StringTokenizer;
-import java.io.BufferedReader;
 import java.io.InputStream;
 
 /**
@@ -20,48 +19,44 @@ public class Main {
         OutputStream outputStream = System.out;
         FastScanner in = new FastScanner(inputStream);
         PrintWriter out = new PrintWriter(outputStream);
-        dmpg18s4 solver = new dmpg18s4();
+        ccc15s3 solver = new ccc15s3();
         solver.solve(1, in, out);
         out.close();
     }
 
-    static class dmpg18s4 {
-        static ArrayList<Integer>[] adj;
-        static int[] dp;
-        static int[] arr;
-        static boolean[] parity;
-        static int N;
-
-        static int DFS(int d, int e, int prev) {
-            int ans = d;
-            for (int v : adj[e]) {
-                if (e != prev) {
-                    if (parity[e] != parity[v]) {
-                        ans = Math.max(ans, DFS(d + 1, v, e));
+    static class ccc15s3 {
+        public void solve(int testNumber, FastScanner in, PrintWriter out) {
+            int G = in.nextInt();
+            int P = in.nextInt();
+            ArrayList<Integer> remaining = new ArrayList<>();
+            for (int i = 0; i < G; i++) {
+                remaining.add(i);
+            }
+            for (int i = 0; i < P && remaining.size() > 0; i++) {
+                int g = in.nextInt() - 1;
+                int lo = 0;
+                int hi = remaining.size() - 1;
+                while (lo <= hi) {
+                    int mid = (lo + hi) / 2;
+                    if (g < remaining.get(mid)) {
+                        hi = mid - 1;
+                    } else if (g > remaining.get(mid)) {
+                        lo = mid + 1;
+                    } else {
+                        lo = mid + 1;
+                        break;
                     }
                 }
+                if (lo > 0)
+                    lo -= 1;
+                if (remaining.get(lo) <= g) {
+                    remaining.remove(lo);
+                } else {
+                    out.println(i);
+                    return;
+                }
             }
-            System.out.println("d = " + d);
-            return ans;
-        }
-
-        public void solve(int testNumber, FastScanner in, PrintWriter out) {
-            N = in.nextInt();
-            adj = new ArrayList[N];
-            arr = new int[N];
-            dp = new int[N];
-            parity = new boolean[N];
-            for (int i = 0; i < N; ++i) {
-                adj[i] = new ArrayList<>();
-                dp[i] = -1;
-                arr[i] = in.nextInt();
-                parity[i] = arr[i] % 2 == 0;
-            }
-            for (int i = 0; i < N - 1; ++i) {
-                adj[in.nextInt() - 1].add(in.nextInt() - 1);
-            }
-            int ans = DFS(0, arr[0], -1);
-            System.out.println(ans);
+            out.println(P);
         }
 
     }

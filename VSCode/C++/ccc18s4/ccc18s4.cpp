@@ -34,6 +34,21 @@ void println(T var, Types... args) {
     print(args...);
 }
 
+int N;
+
+int balance(int weight) {
+    if (weight == 1) {
+        return 1;
+    }
+    int res = 0;
+    srep(i, 2, weight + 1) {
+        res += balance(weight / i);
+    }
+    return res;
+}
+
 int main() {
+    scan(N);
+    printf("%d\n", balance(N));
     return 0;
 }

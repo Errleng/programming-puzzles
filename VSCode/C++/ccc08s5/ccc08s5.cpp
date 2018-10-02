@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <tuple>
 
 #define repn(i, j, k, step) for (int i=j ; i<k ; i+=step)
 #define rrepn(i, j, k, step) for (int i=j ; i>=k ; i-=step)
@@ -17,34 +18,62 @@ char _;
 
 using namespace std;
 
-int N, A, B, C, D, memo[MAXP][MAXP][MAXP][MAXP];
+void print() {}
 
-bool perfect(int a, int b, int c, int d) {
-    if (memo[a][b][c][d] != -1)
-        return memo[a][b][c][d];
+template<typename T, typename... Types>
+void print(T var, Types... args) {
+    cout << var << " ";
+    print(args...);
+}
+
+void println() {
+    cout << endl;
+}
+
+template<typename T, typename... Types>
+void println(T var, Types... args) {
+    cout << var << endl;
+    print(args...);
+}
+
+int N, A, B, C, D, memo[MAXP][MAXP][MAXP][MAXP];
+struct Particles {
+    int A, B, C, D;
+};
+
+int reactions[5][4] = {{2, 1, 0, 2}, {1, 1, 1, 1}, {0, 0, 2, 1}, {0, 3, 0, 0}, {1, 0, 0, 1}};
+
+bool perfect(int p[]) {
+    if (memo[p[0]][p[1]][p[2]][p[3]] != -1)
+        return memo[p[0]][p[1]][p[2]][p[3]];
     bool res = false;
-    if (res == false && a >= 2 && b >= 1 && d >= 2)
-        res = !perfect(a - 2, b - 1, c, d - 2);
-    if (res == false && a >= 1 && b >= 1 && c >= 1 && d >= 1)
-        res = !perfect(a - 1, b - 1, c - 1, d - 1);
-    if (res == false && c >= 2 && d >= 1)
-        res = !perfect(a, b, c - 2, d - 1);
-    if (res == false && b >= 3)
-        res = !perfect(a, b - 3, c, d);
-    if (res == false && a >= 1 && d >= 1)
-        res = !perfect(a - 1, b, c, d - 1);
-    return memo[a][b][c][d] = res;
+    bool canReact;
+    int newP[4];
+    for (int i = 0; i < 5 && !res; ++i) {
+        rep(j, 4) {
+            canReact = true;
+            newP[j] = p[j];
+            if (newP[j] >= reactions[i][j]) {
+                newP[j] -= reactions[i][j];
+            } else {
+                canReact = false;
+                break;
+            }
+        }
+        if (canReact) {
+            res = !perfect(newP);
+        }
+    }
+    return memo[p[0]][p[1]][p[2]][p[3]] = res;
 }
 
 int main() {
+    int particles[4];
     scan(N);
     mem(memo, -1);
     rep(_, N) {
-        scanf("%d", &A);
-        scanf("%d", &B);
-        scanf("%d", &C);
-        scanf("%d", &D);
-        printf("%s\n", perfect(A, B, C, D) ? "Patrick" : "Roland");
+        scanf("%d %d %d %d", &particles[0], &particles[1], &particles[2], &particles[3]);
+        printf("%s\n", perfect(particles) ? "Patrick" : "Roland");
     }
     return 0;
 }

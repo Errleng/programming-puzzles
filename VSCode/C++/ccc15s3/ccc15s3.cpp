@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <vector>
 
 #define repn(i, j, k, step) for (int i=j ; i<k ; i+=step)
 #define rrepn(i, j, k, step) for (int i=j ; i>=k ; i-=step)
@@ -30,10 +31,42 @@ void println() {
 
 template<typename T, typename... Types>
 void println(T var, Types... args) {
-    cout << var << endl;
-    print(args...);
+    cout << var << " ";
+    println(args...);
 }
 
 int main() {
+    int G, P, g, low, high, mid, gate;
+    scan(G);
+    scan(P);
+    vector<int> free;
+    srep(i, 1, G + 1) {
+        free.emplace_back(i);
+    }
+    rep(i, P) {
+        scan(g);
+        gate = -1;
+        low = 0;
+        high = free.size() - 1;
+        while (low <= high) {
+            mid = (low + high) / 2;
+            if (free[mid] > g) {
+                high = mid - 1;
+            } else if (free[mid] < g) {
+                gate = mid;
+                low = mid + 1;
+            } else {
+                gate = mid;
+                break;
+            }
+        }
+        if (gate != -1) {
+            free.erase(free.begin() + gate);
+        } else {
+            printf("%d\n", i);
+            return 0;
+        }
+    }
+    printf("%d\n", P);
     return 0;
 }

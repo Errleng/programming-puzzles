@@ -112,85 +112,112 @@ public:
   
     //     update_value_recur(0, len - 1, i, diff, 0); 
     // }
-    int sum_query(int r_s, int r_e) 
-    { 
+
+    int query(int r_s, int r_e, int err, int (*f)(int, int)) {
         if (r_s < 0 || r_e > len - 1 || r_s > r_e) { 
             return -1; 
         } 
-        return sum_query_recur(0, len - 1, r_s, r_e, 0); 
-    } 
+        return query_recur(0, len - 1, r_s, r_e, 0, err, f); 
+    }
 
-    int sum_query_recur(int s, int e, int r_s, int r_e, int curr) {
+    int query_recur(int s, int e, int r_s, int r_e, int curr, int err, int (*f)(int, int)) {
         if (r_s <= s && r_e >= e) 
             return seg[curr]; 
   
         if (e < r_s || s > r_e) 
-            return 0; 
+            return err; 
   
         int mid = get_mid(s, e); 
-        return sum_query_recur(s, mid, r_s, r_e, 2 * curr + 1) + sum_query_recur(mid + 1, e, r_s, r_e, 2 * curr + 2); 
+        return f(query_recur(s, mid, r_s, r_e, 2 * curr + 1, err, f), query_recur(mid + 1, e, r_s, r_e, 2 * curr + 2, err, f)); 
     }
+
+    int sum_query(int r_s, int r_e) 
+    { 
+        return query(r_s, r_e, 0, [](int a, int b) -> int {return a + b;});
+        // if (r_s < 0 || r_e > len - 1 || r_s > r_e) { 
+        //     return -1; 
+        // } 
+        // return sum_query_recur(0, len - 1, r_s, r_e, 0); 
+    } 
+
+    // int sum_query_recur(int s, int e, int r_s, int r_e, int curr) {
+    //     if (r_s <= s && r_e >= e) 
+    //         return seg[curr]; 
+  
+    //     if (e < r_s || s > r_e) 
+    //         return 0; 
+  
+    //     int mid = get_mid(s, e); 
+    //     return sum_query_recur(s, mid, r_s, r_e, 2 * curr + 1) + sum_query_recur(mid + 1, e, r_s, r_e, 2 * curr + 2); 
+    // }
 
     int RMQ(int r_s, int r_e) {
-        if (r_s < 0 || r_e > len - 1 || r_s > r_e)
-            return -1;
-        return RMQ_recur(0, len - 1, r_s, r_e, 0);
+        return query(r_s, r_e, INF, [](int a, int b) -> int {return min(a, b);});
+        // if (r_s < 0 || r_e > len - 1 || r_s > r_e)
+        //     return -1;
+        // return RMQ_recur(0, len - 1, r_s, r_e, 0);
     }
 
-    int RMQ_recur(int s, int e, int r_s, int r_e, int curr) {
-        if (r_s <= s && r_e >= e)
-            return seg[curr];
-        if (e < r_s || s > r_e)
-            return INF;
-        int mid = get_mid(s, e);
-        return min(RMQ_recur(s, mid, r_s, r_e, 2 * curr + 1), RMQ_recur(mid + 1, e, r_s, r_e, 2 * curr + 2));
-    }
+    // int RMQ_recur(int s, int e, int r_s, int r_e, int curr) {
+    //     if (r_s <= s && r_e >= e)
+    //         return seg[curr];
+    //     if (e < r_s || s > r_e)
+    //         return INF;
+    //     int mid = get_mid(s, e);
+    //     return min(RMQ_recur(s, mid, r_s, r_e, 2 * curr + 1), RMQ_recur(mid + 1, e, r_s, r_e, 2 * curr + 2));
+    // }
 
     int GCD(int r_s, int r_e) {
-        if (r_s < 0 || r_e > len - 1 || r_s > r_e)
-            return -1;
-        return GCD_recur(0, len - 1, r_s, r_e, 0);
+        return query(r_s, r_e, 0, __gcd);
+        // if (r_s < 0 || r_e > len - 1 || r_s > r_e)
+        //     return -1;
+        // return GCD_recur(0, len - 1, r_s, r_e, 0);
     }
 
-    int GCD_recur(int s, int e, int r_s, int r_e, int curr) {
+    // int GCD_recur(int s, int e, int r_s, int r_e, int curr) {
+    //     if (r_s <= s && r_e >= e)
+    //         return seg[curr];
+    //     if (e < r_s || s > r_e)
+    //         return INF;
+    //     int mid = get_mid(s, e);
+    //     return __gcd(GCD_recur(s, mid, r_s, r_e, 2 * curr + 1), GCD_recur(mid + 1, e, r_s, r_e, 2 * curr + 2));
+    // }
+
+    int cnt_query(int r_s, int r_e, int val) {
+        if (r_s < 0 || r_e > len - 1 || r_s > r_e)
+            return -1;
+        int cnt = 0;
+        cnt_query_recur(0, len - 1, r_s, r_e, 0, val, cnt);
+        return cnt;
+    }
+
+    int cnt_query_recur(int s, int e, int r_s, int r_e, int curr, int val, int& num) {
         if (r_s <= s && r_e >= e)
             return seg[curr];
         if (e < r_s || s > r_e)
             return INF;
         int mid = get_mid(s, e);
-        return __gcd(GCD_recur(s, mid, r_s, r_e, 2 * curr + 1), GCD_recur(mid + 1, e, r_s, r_e, 2 * curr + 2));
-    }
-
-    int CNT_EQ(int r_s, int r_e, int val) {
-        if (r_s < 0 || r_e > len - 1 || r_s > r_e)
-            return -1;
-        return CNT_EQ_recur(0, len - 1, r_s, r_e, 0, val);
-    }
-
-    int CNT_EQ_recur(int s, int e, int r_s, int r_e, int curr, int val) { // WIP
-        if (r_s <= s && r_e >= e) {
-            if (r_s == r_e) {
-                if (val == seg[curr])
-                    return 1;
-                else 
-                    return 0;
-            }
+        int a = cnt_query_recur(s, mid, r_s, r_e, 2 * curr + 1, val, num);
+        int b = cnt_query_recur(mid + 1, e, r_s, r_e, 2 * curr + 2, val, num);
+        if (a == val) {
+            num++;
         }
-        if (e < r_s || s > r_e)
-            return INF;
-        int mid = get_mid(s, e);
-        return CNT_EQ_recur(s, mid, r_s, r_e, 2 * curr + 1, val) + CNT_EQ_recur(mid + 1, e, r_s, r_e, 2 * curr + 2, val);
+        if (b == val) {
+            num++;
+        }
+        println(a, b);
+        return 0;
     }
 };
 
 int main() {
     int arr[] = {1, 3, 5, 7, 9, 11, 2, 3, 6, 9, 5};
-    SegmentTree *tree = new SegmentTree(arr, sizeof(arr)/sizeof(arr[0]));
-    println("Sum(1, 3) =", tree->sum_query(1, 3)); // 15
-    println("RMQ(1, 5) =", tree->RMQ(1, 5)); // 3
-    tree->update_value(1, 10);
-    println("Sum(1, 3) =", tree->sum_query(1, 3)); // 22
-    println("GCD(6, 10) =", tree->GCD(7, 9)); // 3
-    println("CNT EQ(1, 10, 5) =", tree->CNT_EQ(1, 10, 5)); // 2
+    SegmentTree tree(arr, sizeof(arr)/sizeof(arr[0]));
+    println("Sum(1, 3) =", tree.sum_query(1, 3)); // 15
+    println("RMQ(1, 5) =", tree.RMQ(1, 5)); // 3
+    tree.update_value(1, 10);
+    println("Sum(1, 3) =", tree.sum_query(1, 3)); // 22
+    println("GCD(6, 10) =", tree.GCD(7, 9)); // 3
+    println("EQ(1, 10) =", tree.cnt_query(1, sizeof(arr)/sizeof(arr[0]) - 1, 5)); // 2
     return 0;
 }

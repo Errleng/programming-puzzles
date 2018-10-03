@@ -19,33 +19,43 @@
 #define scan(x) do{while((x=getchar())<'0'); for(x-='0'; '0'<=(_=getchar()); x=(x<<3)+(x<<1)+_-'0');}while(0)
 char _;
 
-#define MAXN 18
 
 using namespace std;
 
-typedef pair<int, int> pii;
+#define MAXN 18
 
-int N, M, a, b, c, memo[MAXN], path[MAXN];
-vector<pii> adj[MAXN];
-int longest_path(int u) {
-    if (memo[u])
-        return memo[u];
-    int res = 0;
+bool get_bit(int in, int index) {
+    return in & (1 << index);
+}
+
+int N, M, dest, a, b, c, memo[MAXN][1 << MAXN];
+vector<pair<int, int>> adj[MAXN];
+
+int longest_path(int u, int bitmask) {
+    if (memo[u][bitmask] != -1)
+        return memo[u][bitmask];
+    else if (u == dest)
+        return memo[u][bitmask] = 0;
+    int res = -INF;
     foreach(v, adj[u]) {
-        res = max(res, longest_path(v.se) + v.fi);
+        if (!get_bit(bitmask, v.se)) {
+            res = max(res, v.fi + longest_path(v.se, bitmask | (1 << v.se)));
+        }
     }
-    return memo[u] = res;
+    return memo[u][bitmask] = res;
 }
 
 int main() {
     scan(N);
     scan(M);
+    dest = N - 1;
+    mem(memo, -1);
     rep(i, M) {
         scan(a);
         scan(b);
         scan(c);
         adj[a].pb({c, b});
     }
-    printf("%d\n", longest_path(0));
+    printf("%d\n", longest_path(0, 1));
     return 0;
 }

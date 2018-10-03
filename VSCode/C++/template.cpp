@@ -34,8 +34,8 @@ void println() {
 
 template<typename T, typename... Types>
 void println(T var, Types... args) {
-    cout << var << endl;
-    print(args...);
+    cout << var << " ";
+    println(args...);
 }
 
 int main() {

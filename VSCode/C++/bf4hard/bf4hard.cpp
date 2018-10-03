@@ -16,7 +16,7 @@ char _;
 
 using namespace std;
 
-void init_KMP(string text, int *table) {
+void KMP_init(string text, int *table) {
     int pos = 1, cnd = 0;
     table[0] = -1;
     while (pos < text.length()) {
@@ -37,7 +37,7 @@ void init_KMP(string text, int *table) {
     table[pos] = cnd;
 }
 
-int search_KMP(string text, string pattern, int *table) {
+int KMP_search(string text, string pattern, int *table) {
     int first_pos = -1;
     int j = 0, k = 0;
     while (j < text.length()) {
@@ -67,8 +67,8 @@ int main() {
     string pattern;
     int *table = new int[1000000]();
     cin >> text >> pattern;
-    init_KMP(pattern, table);
-    int ans_pos = search_KMP(text, pattern, table);
+    KMP_init(pattern, table);
+    int ans_pos = KMP_search(text, pattern, table);
     printf("%d\n", ans_pos);
     return 0;
 }

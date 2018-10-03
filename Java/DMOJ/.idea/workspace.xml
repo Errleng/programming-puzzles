@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61d20436-2156-4299-8311-33a277624a0b" name="Default" comment="jj">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHelperReport.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CHelperReport.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DMOJ/Main/ccc15s3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DMOJ/Main/ccc15s3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/output/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/ccc15s3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ccc15s3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/DMOJ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../VSCode/C++/ccc08s5/ccc08s5.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../VSCode/C++/ccc08s5/ccc08s5.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../VSCode/C++/template.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../VSCode/C++/template.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="61d20436-2156-4299-8311-33a277624a0b" name="Default" comment="jj" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +13,7 @@
     <session id="-1309301202">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="1" />
@@ -143,7 +134,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main/ccc15s3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
+            <state relative-caret-position="608">
               <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
             </state>
           </provider>
@@ -290,7 +281,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538441049560" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538441403108" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -558,17 +549,16 @@
       <workItem from="1537234004092" duration="11668000" />
       <workItem from="1537304589556" duration="10483000" />
       <workItem from="1537578113583" duration="195000" />
-      <workItem from="1538437251707" duration="4149000" />
+      <workItem from="1538437251707" duration="4399000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80979000" />
+    <option name="totallyTimeSpent" value="81229000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="43" width="1920" height="1037" extended-state="6" />
-    <editor active="true" />
+    <frame x="1920" y="21" width="1920" height="1059" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13205537" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -579,7 +569,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.33070865" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" weight="0.33070865" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -835,7 +825,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/ccc15s3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
+        <state relative-caret-position="608">
           <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
         </state>
       </provider>

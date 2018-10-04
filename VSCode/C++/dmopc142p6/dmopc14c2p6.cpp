@@ -97,16 +97,16 @@ public:
         update_value_recur(0, len - 1, i, diff, 0);
     }
 
-    void update_value_recur(int start, int se, int i, int diff, int curr)
+    void update_value_recur(int s, int e, int i, int diff, int curr)
     {
-        if (i < start || i > se)
+        if (i < s || i > e)
             return;
 
-        seg[curr] = seg[curr] + diff;
-        if (se != start) {
-            int mid = get_mid(start, se);
-            update_value_recur(start, mid, i, diff, 2 * curr + 1);
-            update_value_recur(mid + 1, se, i, diff, 2 * curr + 2);
+        seg[curr] += diff;
+        if (e != s) {
+            int mid = get_mid(s, e);
+            update_value_recur(s, mid, i, diff, 2 * curr + 1);
+            update_value_recur(mid + 1, e, i, diff, 2 * curr + 2);
         }
     }
 
@@ -136,27 +136,59 @@ public:
     int RMQ(int r_s, int r_e) {
         return query(r_s, r_e, INF, [](int a, int b) -> int {return min(a, b);});
     }
+};
 
-    int GCD(int r_s, int r_e) {
-        return query(r_s, r_e, 0, __gcd);
+#define MAXN 100000
+
+struct query {
+    int id, a, b, q;
+    query() {}
+    query(int a, int b, int c, int d) {
+        id = a, this->a = b, this->b = c, q = d;
     }
 };
 
+bool comp(const query& a, const query& b) {
+    return a.q > b.q;
+}
+
+int N, Q, a, b, q, ans[MAXN];
+pair<int, int> trees[MAXN];
+query qs[MAXN];
+
 int main() {
-    int arr[] = {1, 3, 5, 7, 9, 11, 2, 3, 6, 9, 5};
-    SegmentTree tree(arr, sizeof(arr)/sizeof(arr[0]));
-    println("Sum(1, 3) =", tree.sum_query(1, 3)); // 15
-    println("RMQ(1, 5) =", tree.RMQ(1, 5)); // 3
-    rep(i, tree.size) {
-        print(tree.seg[i]);
+    scan(N);
+    srep(i, 0, N) {
+        scan(a);
+        trees[i] = {a, i};
     }
-    println();
-    tree.update_value(1, 10);
-    rep(i, tree.size) {
-        print(tree.seg[i]);
+    sort(trees, trees + MAXN);
+    reverse(trees, trees + MAXN);
+
+    scan(Q);
+    rep(i, Q) {
+        scan(a);
+        scan(b);
+        scan(q);
+        qs[i] = query(i, a, b, q);
     }
-    println();
-    println("Sum(1, 3) =", tree.sum_query(1, 3)); // 22
-    println("GCD(6, 10) =", tree.GCD(7, 9)); // 3
+    sort(qs, qs + MAXN, comp);
+
+    int idx = 0;
+    SegmentTree tree(N);
+    rep(i, Q) {
+        srep(j, idx, N) {
+            if (qs[i].q <= trees[j].fi) {
+                ++idx;
+                tree.update_value(trees[j].se, trees[j].fi);
+            } else {
+                break;
+            }
+        }
+        ans[qs[i].id] = tree.sum_query(qs[i].a, qs[i].b);
+    }
+    rep(i, Q) {
+        printf("%d\n", ans[i]);
+    }
     return 0;
 }

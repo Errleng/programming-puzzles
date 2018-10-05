@@ -1,6 +1,8 @@
 #include <cstring>
 #include <iostream>
 
+#include "../Library/debug.h"
+
 #define repn(i, j, k, step) for (int i = j; i < k; i += step)
 #define rrepn(i, j, k, step) for (int i = j; i >= k; i -= step)
 #define rep(i, j) repn(i, 0, j, 1)
@@ -21,19 +23,5 @@ char _;
 // clang-format on
 
 using namespace std;
-
-void print() {}
-
-template <typename T, typename... Types> void print(T var, Types... args) {
-    cout << var << " ";
-    print(args...);
-}
-
-void println() { cout << endl; }
-
-template <typename T, typename... Types> void println(T var, Types... args) {
-    cout << var << " ";
-    println(args...);
-}
 
 int main() { return 0; }

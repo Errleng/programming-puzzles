@@ -10,7 +10,7 @@
 #define srep(i, j, k) repn(i, j, k, 1)
 #define rrep(i, j) rrepn(i, j, 0, 1)
 #define foreach(i, container) for (auto i : container)
-#define mem(a, b) memset((a), A(b), sizeof(a))
+#define mem(a, b) memset((a), (b), sizeof(a))
 
 #define fi first
 #define se second

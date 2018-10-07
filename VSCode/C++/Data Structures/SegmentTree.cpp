@@ -1,8 +1,7 @@
-#pragma once
-
-#include <cmath>
 #include <algorithm>
-#include <map>
+#include <cmath>
+#include <iostream>
+#include <set>
 
 using namespace std;
 #define fi first
@@ -14,7 +13,7 @@ using namespace std;
 typedef std::pair<int, int> pii;
 
 class SegmentTree {
-  public:
+public:
     int *seg;
     int *origin;
     int len;
@@ -56,7 +55,9 @@ class SegmentTree {
         return seg[curr];
     }
 
-    int get_mid(int start, int end) { return start + (end - start) / 2; }
+    int get_mid(int start, int end) {
+        return start + (end - start) / 2;
+    }
 
     void update_value(int i, int new_val) {
         if (i < 0 || i > len - 1) {
@@ -112,35 +113,7 @@ class SegmentTree {
     }
 
     int max_query(int r_s, int r_e) {
-        return query(r_s, r_e, INF,
+        return query(r_s, r_e, -INF,
                      [](int a, int b) -> int { return std::max(a, b); });
-    }
-
-    int max_q(int r_s, int r_e, map<int, int> valid) {
-        if (r_s < 0 || r_e > len - 1 || r_s > r_e) {
-            return -1;
-        }
-        return max_q_r(0, len - 1, r_s, r_e, 0, valid);
-    }
-
-    int max_q_r(int s, int e, int r_s, int r_e, int curr, map<int, int> valid[]) {
-        if (r_s <= s && r_e >= e) {
-            return seg[curr];
-        }
-
-        if (e < r_s || s > r_e) {
-            return -INF;
-        }
-
-        int mid = get_mid(s, e);
-        int a = max_q_r(s, mid, r_s, r_e, 2 * curr + 1, valid);
-        int b = max_q_r(mid + 1, e, r_s, r_e, 2 * curr + 2, valid);
-        maxTwo.fi = std::max(a, b);
-        if (valid[b]) {
-            maxTwo.se = std::max(maxTwo.se, b);
-        }
-        valid[a] = false;
-        valid[b] = false;
-        return maxTwo.fi;
     }
 };

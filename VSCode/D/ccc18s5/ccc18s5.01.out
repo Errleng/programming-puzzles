@@ -1,0 +1,3 @@
+These edges are the minimum required to connect all planets and cities 
+Edge(true, 3, 2, 7) Edge(true, 1, 2, 6) 
+41

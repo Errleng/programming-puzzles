@@ -1,43 +1,40 @@
 let N = parseInt(gets())
 
-var adj = new Array(N + 1)
+var adj = Array.from({ length: N + 1 }, () => [])
 var L = new Array(N + 1).fill(0)
 var R = new Array(N + 1).fill(0)
-var C = new Array(N + 1).fill(0)
 var D = new Array(N + 1).fill(0)
+var C = new Array(N + 1).fill(false)
 
-function distL(cur, prev) {
+function dFine(cur, prev) {
     adj[cur].forEach(v => {
         if (v != prev) {
-            let res = 1 + distL(v, cur)
-            if (res > L[cur]) {
-                C[cur] = v
+            dFine(v, cur)
+            let d = L[v] + 1
+            if (d > L[cur]) {
+                C[v] = true
                 R[cur] = L[cur]
-                L[cur] = res
-            } else if (res > R[cur]) {
-                R[cur] = res
+                L[cur] = d
+            } else if (d > R[cur]) {
+                R[cur] = d
             }
         }
     });
     return L[cur]
 }
 
-function distR(cur, prev) {
+function choose(cur, prev) {
     adj[cur].forEach(v => {
         if (v != prev) {
-            if (v == C[cur]) {
+            if (C[v]) {
                 D[v] = 1 + Math.max(D[cur], R[cur])
             } else {
                 D[v] = 1 + Math.max(D[cur], L[cur])
             }
-            distR(v, cur)
+            choose(v, cur)
         }
     });
-    D[cur] = Math.max(D[cur], L[cur]) + 1
-}
-
-for (let i = 0; i <= N; i++) {
-    adj[i] = []
+    D[cur] = 1 + Math.max(D[cur], L[cur])
 }
 
 for (let i = 0; i < N - 1; i++) {
@@ -46,8 +43,8 @@ for (let i = 0; i < N - 1; i++) {
     adj[b].push(a)
 }
 
-distL(1, -1)
-distR(1, -1)
+dFine(1, -1)
+choose(1, -1)
 
 for (let i = 1; i <= N; i++) {
     print(D[i])

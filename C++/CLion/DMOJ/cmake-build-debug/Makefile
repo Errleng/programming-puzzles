@@ -38,10 +38,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = D:\Applications\apps\CLion\ch-0\182.4323.58\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = D:\Applications\apps\CLion\ch-0\182.4892.24\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = D:\Applications\apps\CLion\ch-0\182.4323.58\bin\cmake\win\bin\cmake.exe -E remove -f
+RM = D:\Applications\apps\CLion\ch-0\182.4892.24\bin\cmake\win\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = D:\Documents\SourceTree\Challenges\C++\CLion\DMOJ\cmake-build
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	D:\Applications\apps\CLion\ch-0\182.4323.58\bin\cmake\win\bin\cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	D:\Applications\apps\CLion\ch-0\182.4892.24\bin\cmake\win\bin\cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -69,7 +69,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	D:\Applications\apps\CLion\ch-0\182.4323.58\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	D:\Applications\apps\CLion\ch-0\182.4892.24\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -445,6 +445,33 @@ tasks/dmopc14c2p6.cpp.s:
 	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/dmopc14c2p6.cpp.s
 .PHONY : tasks/dmopc14c2p6.cpp.s
 
+tasks/dmopc14c4p6.obj: tasks/dmopc14c4p6.cpp.obj
+
+.PHONY : tasks/dmopc14c4p6.obj
+
+# target to build an object file
+tasks/dmopc14c4p6.cpp.obj:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/dmopc14c4p6.cpp.obj
+.PHONY : tasks/dmopc14c4p6.cpp.obj
+
+tasks/dmopc14c4p6.i: tasks/dmopc14c4p6.cpp.i
+
+.PHONY : tasks/dmopc14c4p6.i
+
+# target to preprocess a source file
+tasks/dmopc14c4p6.cpp.i:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/dmopc14c4p6.cpp.i
+.PHONY : tasks/dmopc14c4p6.cpp.i
+
+tasks/dmopc14c4p6.s: tasks/dmopc14c4p6.cpp.s
+
+.PHONY : tasks/dmopc14c4p6.s
+
+# target to generate assembly for a file
+tasks/dmopc14c4p6.cpp.s:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/dmopc14c4p6.cpp.s
+.PHONY : tasks/dmopc14c4p6.cpp.s
+
 tasks/dmopc17c4p1.obj: tasks/dmopc17c4p1.cpp.obj
 
 .PHONY : tasks/dmopc17c4p1.obj
@@ -597,6 +624,9 @@ help:
 	@echo ... tasks/dmopc14c2p6.obj
 	@echo ... tasks/dmopc14c2p6.i
 	@echo ... tasks/dmopc14c2p6.s
+	@echo ... tasks/dmopc14c4p6.obj
+	@echo ... tasks/dmopc14c4p6.i
+	@echo ... tasks/dmopc14c4p6.s
 	@echo ... tasks/dmopc17c4p1.obj
 	@echo ... tasks/dmopc17c4p1.i
 	@echo ... tasks/dmopc17c4p1.s

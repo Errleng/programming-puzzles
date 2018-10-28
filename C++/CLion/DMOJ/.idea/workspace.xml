@@ -3,8 +3,8 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="DMOJ" targetName="jhelper_example_project" />
-      <config projectName="DMOJ" targetName="output" />
       <config projectName="DMOJ" targetName="test" />
+      <config projectName="DMOJ" targetName="output" />
       <config projectName="DMOJ" targetName="testrunner" />
     </generated>
   </component>
@@ -15,63 +15,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e173ed55-e541-424a-82e1-b5da979c74d7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main/aplusb.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/src/main/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/dmopc14c4p6.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/output.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/output.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/output.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/output.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testrunner.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DMOJ.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DMOJ.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/testrunner.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/testrunner.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/output/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task.template" beforeDir="false" afterPath="$PROJECT_DIR$/task.template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testrunner/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/testrunner/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java/DMOJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java/DMOJ/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java/DMOJ/CHelperReport.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java/DMOJ/CHelperReport.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java/DMOJ/out/production/DMOJ/Main/AVLTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java/DMOJ/out/production/DMOJ/Main/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java/DMOJ/output/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java/DMOJ/output/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/main/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/main/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/main/ccc12s4$State.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/main/ccc12s4$State.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/main/ccc12s4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/out/production/DMOJ/main/ccc12s4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main/ccc12s4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Kotlin/DMOJ/src/Main/ccc12s4.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/dp.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/dp.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/dp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/exponentiation.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/exponentiation.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/exponentiation.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/fibonacci.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/fibonacci.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/fibonacci.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/riceballs.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/riceballs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/riceballs.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_algorithm.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_algorithm.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_dynlib.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_dynlib.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_macros.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_macros.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_math.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_math.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_os.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_os.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_ospaths.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_ospaths.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_parseutils.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_parseutils.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_sequtils.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_sequtils.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_strutils.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_strutils.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_system.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_system.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_times.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_times.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_winlean.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/stdlib_winlean.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/tempCodeRunnerFile.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/tempCodeRunnerFile.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Nim/nimcache/tempCodeRunnerFile.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/CHelperReport.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/CHelperReport.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/out/production/DMOJ/main/Edge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/out/production/DMOJ/main/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/out/production/DMOJ/main/State.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/out/production/DMOJ/main/ccc12s4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/out/production/DMOJ/main/ccc12s4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/out/production/DMOJ/main/sssp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/out/production/DMOJ/main/sssp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/output/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/output/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/src/main/ccc12s4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/src/main/ccc12s4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/src/main/sssp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Senior Contest/DMOJ/src/main/sssp.java" afterDir="false" />
     </list>
     <ignored path="jhelper-example-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,7 +77,7 @@
     <session id="-1590371877">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.24" value="1" />
@@ -108,38 +86,42 @@
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.37" value="2" />
           <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.51" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="16" />
+          <entry key="cpp" value="20" />
           <entry key="h" value="4" />
-          <entry key="template" value="6" />
-          <entry key="txt" value="1" />
+          <entry key="template" value="9" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="1" />
-          <entry key="ObjectiveC" value="20" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="CMakeLists.txt" value="2" />
+          <entry key="ObjectiveC" value="24" />
+          <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="19830" />
-          <entry key="template" value="3" />
+          <entry key="cpp" value="20205" />
+          <entry key="template" value="6" />
+          <entry key="txt" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="19830" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="CMakeLists.txt" value="61" />
+          <entry key="ObjectiveC" value="20205" />
+          <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
     </session>
@@ -148,32 +130,15 @@
     <favorites_list name="jhelper-example-project" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testrunner/main.cpp">
+        <entry file="file://$PROJECT_DIR$/tasks/dmopc14c4p6.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="309">
+              <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
               <folding>
-                <element signature="e#0#78#0" expanded="true" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks/dmopc14c2p5.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks/ccc12s4.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -181,8 +146,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/task.template">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="360">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -190,17 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks/ccc03s4.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="180">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -281,10 +237,8 @@
         <option value="$PROJECT_DIR$/library/lib.hpp" />
         <option value="$PROJECT_DIR$/tasks/Task.cpp" />
         <option value="$PROJECT_DIR$/testrunner/main.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/run.template" />
         <option value="$PROJECT_DIR$/submission.template" />
-        <option value="$PROJECT_DIR$/task.template" />
         <option value="$PROJECT_DIR$/output/main.cpp" />
         <option value="$PROJECT_DIR$/tasks/CCC16S3.cpp" />
         <option value="$PROJECT_DIR$/tasks/ds1.cpp" />
@@ -294,6 +248,9 @@
         <option value="$PROJECT_DIR$/tasks/ccc03s4.cpp" />
         <option value="$PROJECT_DIR$/tasks/dmopc14c2p5.cpp" />
         <option value="$PROJECT_DIR$/tasks/ccc12s4.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/tasks/dmopc14c4p6.cpp" />
+        <option value="$PROJECT_DIR$/task.template" />
       </list>
     </option>
   </component>
@@ -310,6 +267,36 @@
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>GeneralObjective-C</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Objective-C</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>PropertiesObjective-C</id>
+          </State>
+          <State>
+            <id>RegExp</id>
+          </State>
+          <State>
+            <id>Rust</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -317,12 +304,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="DMOJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="DMOJ" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DMOJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMOJ" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DMOJ" type="b2602c69:ProjectViewProjectNode" />
@@ -342,7 +335,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,7 +343,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -365,7 +357,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Task.ccc12s4">
+  <component name="RunManager" selected="Task.dmopc14c4p6">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -445,6 +437,7 @@
       <item itemvalue="Task.dmopc17c4p1" />
       <item itemvalue="Task.dmopc14c2p5" />
       <item itemvalue="Task.ccc12s4" />
+      <item itemvalue="Task.dmopc14c4p6" />
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.test" />
       <item itemvalue="Application.output" />
@@ -478,16 +471,18 @@
       <workItem from="1538013036176" duration="1630000" />
       <workItem from="1538016139034" duration="47000" />
       <workItem from="1538231213910" duration="151000" />
+      <workItem from="1540598074312" duration="136000" />
+      <workItem from="1540598235540" duration="2368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31965000" />
+    <option name="totallyTimeSpent" value="34469000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.117803834" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.119936034" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -539,9 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output/main.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/Task.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -584,13 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/dmopc14c2p6.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="88" column="28" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Applications/MinGW-w64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tree.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -616,16 +601,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/tasks/ccc12s4.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="40">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testrunner/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -643,26 +634,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testrunner/main.cpp">
+    <entry file="file://$PROJECT_DIR$/tasks/dmopc14c2p6.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#78#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="528">
+          <caret line="88" column="28" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/ccc12s4.cpp">
+    <entry file="file://$PROJECT_DIR$/output/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        <state relative-caret-position="-2040" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/dmopc14c4p6.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task.template">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="360">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
         </state>
       </provider>
     </entry>

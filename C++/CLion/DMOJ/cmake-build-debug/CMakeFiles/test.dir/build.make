@@ -33,10 +33,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = D:\Applications\apps\CLion\ch-0\182.4323.58\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = D:\Applications\apps\CLion\ch-0\182.4892.24\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = D:\Applications\apps\CLion\ch-0\182.4323.58\bin\cmake\win\bin\cmake.exe -E remove -f
+RM = D:\Applications\apps\CLion\ch-0\182.4892.24\bin\cmake\win\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -186,9 +186,22 @@ CMakeFiles/test.dir/tasks/dmopc14c2p6.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tasks/dmopc14c2p6.cpp.s"
 	D:\Applications\MinGW-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\SourceTree\Challenges\C++\CLion\DMOJ\tasks\dmopc14c2p6.cpp -o CMakeFiles\test.dir\tasks\dmopc14c2p6.cpp.s
 
+CMakeFiles/test.dir/tasks/dmopc14c4p6.cpp.obj: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/tasks/dmopc14c4p6.cpp.obj: ../tasks/dmopc14c4p6.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documents\SourceTree\Challenges\C++\CLion\DMOJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/test.dir/tasks/dmopc14c4p6.cpp.obj"
+	D:\Applications\MinGW-w64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\test.dir\tasks\dmopc14c4p6.cpp.obj -c D:\Documents\SourceTree\Challenges\C++\CLion\DMOJ\tasks\dmopc14c4p6.cpp
+
+CMakeFiles/test.dir/tasks/dmopc14c4p6.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tasks/dmopc14c4p6.cpp.i"
+	D:\Applications\MinGW-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\SourceTree\Challenges\C++\CLion\DMOJ\tasks\dmopc14c4p6.cpp > CMakeFiles\test.dir\tasks\dmopc14c4p6.cpp.i
+
+CMakeFiles/test.dir/tasks/dmopc14c4p6.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tasks/dmopc14c4p6.cpp.s"
+	D:\Applications\MinGW-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\SourceTree\Challenges\C++\CLion\DMOJ\tasks\dmopc14c4p6.cpp -o CMakeFiles\test.dir\tasks\dmopc14c4p6.cpp.s
+
 CMakeFiles/test.dir/tasks/dmopc17c4p1.cpp.obj: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tasks/dmopc17c4p1.cpp.obj: ../tasks/dmopc17c4p1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documents\SourceTree\Challenges\C++\CLion\DMOJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/test.dir/tasks/dmopc17c4p1.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documents\SourceTree\Challenges\C++\CLion\DMOJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/test.dir/tasks/dmopc17c4p1.cpp.obj"
 	D:\Applications\MinGW-w64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\test.dir\tasks\dmopc17c4p1.cpp.obj -c D:\Documents\SourceTree\Challenges\C++\CLion\DMOJ\tasks\dmopc17c4p1.cpp
 
 CMakeFiles/test.dir/tasks/dmopc17c4p1.cpp.i: cmake_force
@@ -201,7 +214,7 @@ CMakeFiles/test.dir/tasks/dmopc17c4p1.cpp.s: cmake_force
 
 CMakeFiles/test.dir/tasks/ds1.cpp.obj: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tasks/ds1.cpp.obj: ../tasks/ds1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documents\SourceTree\Challenges\C++\CLion\DMOJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/test.dir/tasks/ds1.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documents\SourceTree\Challenges\C++\CLion\DMOJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/test.dir/tasks/ds1.cpp.obj"
 	D:\Applications\MinGW-w64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\test.dir\tasks\ds1.cpp.obj -c D:\Documents\SourceTree\Challenges\C++\CLion\DMOJ\tasks\ds1.cpp
 
 CMakeFiles/test.dir/tasks/ds1.cpp.i: cmake_force
@@ -214,7 +227,7 @@ CMakeFiles/test.dir/tasks/ds1.cpp.s: cmake_force
 
 CMakeFiles/test.dir/tasks/fibonacci2.cpp.obj: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tasks/fibonacci2.cpp.obj: ../tasks/fibonacci2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documents\SourceTree\Challenges\C++\CLion\DMOJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/test.dir/tasks/fibonacci2.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documents\SourceTree\Challenges\C++\CLion\DMOJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/test.dir/tasks/fibonacci2.cpp.obj"
 	D:\Applications\MinGW-w64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\test.dir\tasks\fibonacci2.cpp.obj -c D:\Documents\SourceTree\Challenges\C++\CLion\DMOJ\tasks\fibonacci2.cpp
 
 CMakeFiles/test.dir/tasks/fibonacci2.cpp.i: cmake_force
@@ -237,6 +250,7 @@ test_OBJECTS = \
 "CMakeFiles/test.dir/tasks/cco10p1.cpp.obj" \
 "CMakeFiles/test.dir/tasks/dmopc14c2p5.cpp.obj" \
 "CMakeFiles/test.dir/tasks/dmopc14c2p6.cpp.obj" \
+"CMakeFiles/test.dir/tasks/dmopc14c4p6.cpp.obj" \
 "CMakeFiles/test.dir/tasks/dmopc17c4p1.cpp.obj" \
 "CMakeFiles/test.dir/tasks/ds1.cpp.obj" \
 "CMakeFiles/test.dir/tasks/fibonacci2.cpp.obj"
@@ -254,6 +268,7 @@ test.exe: CMakeFiles/test.dir/tasks/cco00p1.cpp.obj
 test.exe: CMakeFiles/test.dir/tasks/cco10p1.cpp.obj
 test.exe: CMakeFiles/test.dir/tasks/dmopc14c2p5.cpp.obj
 test.exe: CMakeFiles/test.dir/tasks/dmopc14c2p6.cpp.obj
+test.exe: CMakeFiles/test.dir/tasks/dmopc14c4p6.cpp.obj
 test.exe: CMakeFiles/test.dir/tasks/dmopc17c4p1.cpp.obj
 test.exe: CMakeFiles/test.dir/tasks/ds1.cpp.obj
 test.exe: CMakeFiles/test.dir/tasks/fibonacci2.cpp.obj
@@ -261,7 +276,7 @@ test.exe: CMakeFiles/test.dir/build.make
 test.exe: CMakeFiles/test.dir/linklibs.rsp
 test.exe: CMakeFiles/test.dir/objects1.rsp
 test.exe: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Documents\SourceTree\Challenges\C++\CLion\DMOJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable test.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Documents\SourceTree\Challenges\C++\CLion\DMOJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable test.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\test.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

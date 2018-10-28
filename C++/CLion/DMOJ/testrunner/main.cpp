@@ -1,4 +1,4 @@
-#include "D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/ccc12s4.cpp"
+#include "D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/dmopc14c4p6.cpp"
 
 #include <iostream>
 #include <fstream>
@@ -29,7 +29,7 @@ bool check(std::string expected, std::string actual) {
 
 int main() {
     std::vector<jhelper::Test> tests = {
-        {"4\n4 1 3 2\n0\n", "18", true, true},{"1\n1\n2\n2 1\n2\n1 2\n3\n2 3 1\n3\n3 1 2\n0\n", "0\nIMPOSSIBLE\n0\n8\n16\n", true, true},{"3\n1 3 2\n3\n2 1 3\n4\n4 1 3 2\n4\n2 4 1 3\n0\n", "12\n4\n18\n12\n", true, true},{"4\n4 3 2 1\n5\n5 4 3 2 1\n5\n4 3 2 5 1\n5\n2 4 5 1 3\n0\n", "22\n32\n20\n16\n", true, true},{"5\n1 2 5 4 3\n5\n5 2 1 3 4\n6\n6 5 3 4 2 1\n6\n5 4 6 1 2 3\n6\n4 3 5 6 2 1\n0\n", "18\n22\n38\n28\n26\n", true, true},{"7\n2 1 3 4 5 7 6\n7\n2 1 3 4 7 5 6\n6\n4 6 3 1 5 2\n0\n", "16\n18\n28\n", true, true},
+        {"3\n2 1\n2 3", "3\n2\n3", true, true},
     };
     bool allOK = true;
     int testID = 0;
@@ -48,7 +48,7 @@ int main() {
             std::stringstream in(test.input);
             std::ostringstream out;
             std::clock_t start = std::clock();
-            ccc12s4 solver;
+            dmopc14c4p6 solver;
             solver.solve(in, out);
             std::clock_t finish = std::clock();
             double currentTime = double(finish - start) / CLOCKS_PER_SEC;

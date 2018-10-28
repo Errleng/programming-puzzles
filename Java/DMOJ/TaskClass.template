@@ -4,7 +4,7 @@ import %InputClassFQN%;
 import %OutputClassFQN%;
 
 public class %TaskClass% {
-    static void printv(int ...a) {
+    static void prv(int ...a) {
         boolean first = true;
         for (int i : a) {
             if (first) {
@@ -16,7 +16,7 @@ public class %TaskClass% {
         }
     }
 
-    static void printlnv(int ...a) {
+    static void prlnv(int ...a) {
         printv(a);
         System.out.println();
     }

@@ -1,0 +1,8 @@
+[package]
+name = "Rust"
+version = "0.1.0"
+authors = ["ELEVATE <dullbland@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+dmoj = "*"

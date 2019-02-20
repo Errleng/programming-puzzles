@@ -17,7 +17,7 @@ public class %TaskClass% {
     }
 
     static void prlnv(int ...a) {
-        printv(a);
+        prv(a);
         System.out.println();
     }
 

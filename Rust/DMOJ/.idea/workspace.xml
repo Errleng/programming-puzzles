@@ -10,73 +10,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c57a3c1-fd40-42ff-bf2f-a89a44d25ef0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Kotlin/DMOJ/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kotlin/DMOJ/src/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kotlin/DMOJ/src/Main/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/CHelperReport.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/CheckerClass.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/TaskClass.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/TestCaseClass.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/TopCoderTaskClass.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/TopCoderTestCaseClass.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/chelper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/AVLTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/BIT.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/BIT2D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/Bebilith.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/BiEdge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/BigExp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/CCC05S5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/CCC05S5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/CCC09S4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/CCC09S4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/CCC16S5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/CCC16S5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/CCC18S5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/CCC18S5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/DSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/Edge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/Elem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/EnormousInputTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/EnormousInputTest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/FastScanner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/Graph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/SubmissionTemplate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/bts18p2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/bts18p2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/ccc12s4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/ccc12s4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/ccc15s3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/ccc15s3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/coci07c6p3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/coci07c6p3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/dmpg18s1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/dmpg18s1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/dmpg18s2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/dmpg18s2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/dmpg18s3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/dmpg18s3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/dmpg18s4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/dmpg18s4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/fibonacci2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/fibonacci2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/ioi01p1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/ioi01p1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/tsoc15c2p5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/out/production/DMOJ/Main/tsoc15c2p5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/output/Main.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/src/Main/EnormousInputTest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/src/Main/EnormousInputTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/src/Main/FastScanner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/DMOJ/src/Main/FastScanner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/src/Main/ccc12s4.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/DMOJ/src/Main/ccc12s4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/src/Main/ccc12s4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/DMOJ/src/Main/ccc12s4.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/objects.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/stP1kAlM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/DMOJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/DMOJ/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/DMOJ/CHelperReport.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/DMOJ/CHelperReport.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/DMOJ/TaskClass.template" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/DMOJ/TaskClass.template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/DMOJ/out/production/DMOJ/Main/dmopc14c4p6.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/DMOJ/out/production/DMOJ/Main/dmopc14c4p6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/DMOJ/output/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/DMOJ/output/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python3/DMOJ/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python3/DMOJ/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Senior Contest/DMOJ/CHelperReport.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Senior Contest/DMOJ/CHelperReport.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Senior Contest/DMOJ/output/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Senior Contest/DMOJ/output/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/.rustc_info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VSCode/C++/template.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../VSCode/C++/template.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,60 +74,36 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="759015814">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="rs" value="2" />
-          <entry key="toml" value="1" />
-          <entry key="txt" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Rust" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="rs" value="95" />
-          <entry key="toml" value="39" />
-          <entry key="txt" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="44" />
-          <entry key="Rust" value="95" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            <state relative-caret-position="100">
+              <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/dmoj-0.1.5/src/io/stdin.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cargo.lock">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/input.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="20">
+              <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -145,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/output.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -154,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cargo.toml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="120">
+              <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -169,23 +135,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Cargo.toml" />
-        <option value="$PROJECT_DIR$/output.txt" />
-        <option value="$PROJECT_DIR$/input.txt" />
+        <option value="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/dmoj-0.1.5/src/io/stdin.rs" />
         <option value="$PROJECT_DIR$/src/main.rs" />
+        <option value="$PROJECT_DIR$/input.txt" />
+        <option value="$PROJECT_DIR$/output.txt" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2209" />
-    <option name="y" value="143" />
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="x" value="-1928" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -193,6 +154,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -214,9 +176,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -234,6 +199,7 @@
     <configuration name="Run Input" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run" />
+      <option name="allFeatures" value="false" />
       <option name="nocapture" value="true" />
       <option name="backtrace" value="SHORT" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -253,22 +219,33 @@
       <updated>1537750227223</updated>
       <workItem from="1537750228730" duration="327000" />
       <workItem from="1538012893350" duration="139000" />
+      <workItem from="1549920733575" duration="11000" />
+      <workItem from="1549926381452" duration="175000" />
+      <workItem from="1549926585914" duration="28000" />
+      <workItem from="1549926652927" duration="155000" />
+      <workItem from="1549926848761" duration="27000" />
+      <workItem from="1549926893643" duration="299000" />
+      <workItem from="1549927211287" duration="653000" />
+      <workItem from="1549974068569" duration="21000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="466000" />
+    <option name="totallyTimeSpent" value="1835000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27238807" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32765958" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -277,52 +254,58 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Cargo" order="3" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Maven" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/dmoj-0.1.5/src/io/stdin.rs">
+    <entry file="file://$PROJECT_DIR$/src/main.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        <state relative-caret-position="100">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cargo.toml">
+    <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/dmoj-0.1.5/src/io/stdin.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="520">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cargo.lock">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/input.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="20">
+          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/output.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.rs">
+    <entry file="file://$PROJECT_DIR$/Cargo.toml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        <state relative-caret-position="120">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
         </state>
       </provider>
     </entry>

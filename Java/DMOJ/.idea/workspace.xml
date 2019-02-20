@@ -2,42 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61d20436-2156-4299-8311-33a277624a0b" name="Default" comment="jj">
-      <change afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/tasks/dmopc14c4p6.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.1/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/output.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/test.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/CXX.includecache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/depend.internal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/DMOJ.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/DMOJ.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/objects.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/CMakeFiles/testrunner.dir/stP1kAlM" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/testrunner.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/cmake-build-debug/testrunner.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/output/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/output/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/task.template" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/task.template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/CLion/DMOJ/testrunner/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/CLion/DMOJ/testrunner/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHelperReport.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CHelperReport.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskClass.template" beforeDir="false" afterPath="$PROJECT_DIR$/TaskClass.template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DMOJ/Main/AVLTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DMOJ/Main/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DMOJ/Main/dmopc14c4p6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DMOJ/Main/dmopc14c4p6.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/output/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/DMOJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/DMOJ/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python3/DMOJ/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python3/DMOJ/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Rust/DMOJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Rust/DMOJ/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Rust/DMOJ/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Rust/DMOJ/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Rust/DMOJ/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Rust/DMOJ/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Rust/DMOJ/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Rust/DMOJ/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Rust/DMOJ/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Rust/DMOJ/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Rust/DMOJ/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Rust/DMOJ/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Rust/DMOJ/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Rust/DMOJ/target/.rustc_info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VSCode/C++/template.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../VSCode/C++/template.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,132 +67,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1309301202">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="10560" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="10560" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="4" />
-          <entry key="java" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="4" />
-          <entry key="JAVA" value="2" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="192312709">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="12" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.38" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.43" value="1" />
-          <entry key="project.open.time.45" value="2" />
-          <entry key="project.open.time.48" value="1" />
-          <entry key="project.open.time.56" value="1" />
-          <entry key="project.open.time.57" value="1" />
-          <entry key="project.open.time.68" value="1" />
-          <entry key="project.opened" value="13" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="SubmissionTemplate" value="1" />
-          <entry key="class" value="3" />
-          <entry key="java" value="24" />
-          <entry key="json" value="1" />
-          <entry key="template" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="24" />
-          <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="SubmissionTemplate" value="10" />
-          <entry key="java" value="30593" />
-          <entry key="template" value="390" />
-          <entry key="txt" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="30593" />
-          <entry key="PLAIN_TEXT" value="402" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="1090384261">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="2944" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="2944" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TaskClass.template">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -251,7 +148,6 @@
         <option value="$PROJECT_DIR$/src/Main/CCC09S4.java" />
         <option value="$PROJECT_DIR$/src/Main/fibonacci2.java" />
         <option value="$PROJECT_DIR$/src/Main/SubmissionTemplate.java" />
-        <option value="$PROJECT_DIR$/src/Main/SubmissionTemplate" />
         <option value="$PROJECT_DIR$/src/Main/tsoc15c2p5.java" />
         <option value="$PROJECT_DIR$/src/Main/bts18p2.java" />
         <option value="$PROJECT_DIR$/src/Main/coci07c6p3.java" />
@@ -263,20 +159,18 @@
         <option value="$PROJECT_DIR$/src/Main/ccc15s3.java" />
         <option value="$PROJECT_DIR$/src/Main/dmopc14c4p6.java" />
         <option value="$PROJECT_DIR$/TaskClass.template" />
+        <option value="$PROJECT_DIR$/src/Main/dmopc18c4p2.java" />
+        <option value="$PROJECT_DIR$/src/Main/SubmissionTemplate" />
+        <option value="$PROJECT_DIR$/src/Main/year2019p3.java" />
+        <option value="$PROJECT_DIR$/src/Main/cco17p1.java" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="531" />
-    <option name="y" value="133" />
-    <option name="width" value="880" />
-    <option name="height" value="811" />
+    <option name="x" value="519" />
+    <option name="y" value="117" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -284,25 +178,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="DMOJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="DMOJ" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DMOJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DMOJ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DMOJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DMOJ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -313,8 +196,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540597952780" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549987418161" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ChessBot/VersionJava/AutoChess" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -332,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Task.ccc15s3">
+  <component name="RunManager" selected="Task.cco17p1">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="DMOJ" />
@@ -347,6 +230,14 @@
       <taskConf>src/Main/CCC05S5.json</taskConf>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
@@ -389,12 +280,28 @@
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
       </method>
     </configuration>
     <configuration name="CCC16S5" type="Task" factoryName="Task">
       <taskConf>src/Main/CCC16S5.json</taskConf>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
@@ -441,11 +348,27 @@
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
       </method>
     </configuration>
     <configuration name="bts18p2" type="Task" factoryName="Task">
       <taskConf>src/Main/bts18p2.json</taskConf>
       <method v="2">
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
@@ -470,11 +393,35 @@
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+      </method>
+    </configuration>
+    <configuration name="cco17p1" type="Task" factoryName="Task">
+      <taskConf />
+      <method v="2">
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
       </method>
     </configuration>
     <configuration name="coci07c6p3" type="Task" factoryName="Task">
       <taskConf>src/Main/coci07c6p3.json</taskConf>
       <method v="2">
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
@@ -490,11 +437,39 @@
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+      </method>
+    </configuration>
+    <configuration name="dmopc18c4p2" type="Task" factoryName="Task">
+      <taskConf>src/Main/dmopc18c4p2.json</taskConf>
+      <method v="2">
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
       </method>
     </configuration>
     <configuration name="dmpg18s1" type="Task" factoryName="Task">
       <taskConf>src/Main/dmpg18s1.json</taskConf>
       <method v="2">
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
@@ -512,6 +487,14 @@
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
       </method>
     </configuration>
     <configuration name="dmpg18s3" type="Task" factoryName="Task">
@@ -523,11 +506,27 @@
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
       </method>
     </configuration>
     <configuration name="dmpg18s4" type="Task" factoryName="Task">
       <taskConf>src/Main/dmpg18s4.json</taskConf>
       <method v="2">
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
@@ -552,11 +551,27 @@
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
       </method>
     </configuration>
     <configuration name="ioi01p1" type="Task" factoryName="Task">
       <taskConf>src/Main/ioi01p1.json</taskConf>
       <method v="2">
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
@@ -576,9 +591,26 @@
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
         <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+      </method>
+    </configuration>
+    <configuration name="year2019p3" type="Task" factoryName="Task">
+      <taskConf />
+      <method v="2">
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Main" />
       <item itemvalue="Task.CCC18S5" />
       <item itemvalue="Task.CCC16S5" />
       <item itemvalue="Task.CCC05S5" />
@@ -594,7 +626,9 @@
       <item itemvalue="Task.dmpg18s3" />
       <item itemvalue="Task.dmpg18s4" />
       <item itemvalue="Task.dmopc14c4p6" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Task.dmopc18c4p2" />
+      <item itemvalue="Task.year2019p3" />
+      <item itemvalue="Task.cco17p1" />
     </list>
     <recent_temporary>
       <list>
@@ -635,19 +669,26 @@
       <workItem from="1538437251707" duration="4399000" />
       <workItem from="1540595389212" duration="2552000" />
       <workItem from="1540671023039" duration="1363000" />
-      <workItem from="1540699559845" duration="331000" />
+      <workItem from="1540699559845" duration="1153000" />
+      <workItem from="1540866631537" duration="110000" />
+      <workItem from="1546395349074" duration="1874000" />
+      <workItem from="1546398473640" duration="900000" />
+      <workItem from="1546399743474" duration="249000" />
+      <workItem from="1548476209145" duration="33000" />
+      <workItem from="1549986330784" duration="1163000" />
+      <workItem from="1550525954926" duration="20000" />
+      <workItem from="1550525997611" duration="135000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85475000" />
+    <option name="totallyTimeSpent" value="90781000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1652452" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15031983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -656,7 +697,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" weight="0.32978722" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -665,7 +706,8 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005325" side_tool="true" weight="0.3398844" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32777777" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32765958" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -676,6 +718,7 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="right" id="Maven" order="10" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.103125" />
@@ -715,9 +758,6 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.template" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointLogExpression">
       <expression>
@@ -752,13 +792,6 @@
     <entry file="jar://D:/Applications/Java/jdk1.8.0_171/src.zip!/java/util/Comparator.java" />
     <entry file="file://$PROJECT_DIR$/src/Main/S5.java" />
     <entry file="jar://D:/Applications/Java/jdk1.8.0_171/src.zip!/java/util/Scanner.java" />
-    <entry file="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/chelper.jar!/net/egork/chelper/tester/NewTester.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/CCC16S5.java" />
     <entry file="file://$PROJECT_DIR$/src/Main/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/Main/CCCTest.java" />
@@ -820,13 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/SubmissionTemplate">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/CCC18S5.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="809">
@@ -853,9 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -902,13 +925,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TaskClass.template">
+    <entry file="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/chelper.jar!/net/egork/chelper/tester/NewTester.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="200">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/SubmissionTemplate">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TaskClass.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/year2019p3.java" />
+    <entry file="file://$PROJECT_DIR$/src/Main/dmopc18c4p2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="33" column="34" selection-start-line="12" selection-end-line="33" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/cco17p1.java" />
   </component>
   <component name="masterDetails">
     <states>

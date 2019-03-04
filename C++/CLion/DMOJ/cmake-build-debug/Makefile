@@ -256,6 +256,33 @@ tasks/ccc06s5.cpp.s:
 	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ccc06s5.cpp.s
 .PHONY : tasks/ccc06s5.cpp.s
 
+tasks/ccc07s5.obj: tasks/ccc07s5.cpp.obj
+
+.PHONY : tasks/ccc07s5.obj
+
+# target to build an object file
+tasks/ccc07s5.cpp.obj:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ccc07s5.cpp.obj
+.PHONY : tasks/ccc07s5.cpp.obj
+
+tasks/ccc07s5.i: tasks/ccc07s5.cpp.i
+
+.PHONY : tasks/ccc07s5.i
+
+# target to preprocess a source file
+tasks/ccc07s5.cpp.i:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ccc07s5.cpp.i
+.PHONY : tasks/ccc07s5.cpp.i
+
+tasks/ccc07s5.s: tasks/ccc07s5.cpp.s
+
+.PHONY : tasks/ccc07s5.s
+
+# target to generate assembly for a file
+tasks/ccc07s5.cpp.s:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ccc07s5.cpp.s
+.PHONY : tasks/ccc07s5.cpp.s
+
 tasks/ccc12s4.obj: tasks/ccc12s4.cpp.obj
 
 .PHONY : tasks/ccc12s4.obj
@@ -363,6 +390,33 @@ tasks/cco00p1.s: tasks/cco00p1.cpp.s
 tasks/cco00p1.cpp.s:
 	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/cco00p1.cpp.s
 .PHONY : tasks/cco00p1.cpp.s
+
+tasks/cco07p3.obj: tasks/cco07p3.cpp.obj
+
+.PHONY : tasks/cco07p3.obj
+
+# target to build an object file
+tasks/cco07p3.cpp.obj:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/cco07p3.cpp.obj
+.PHONY : tasks/cco07p3.cpp.obj
+
+tasks/cco07p3.i: tasks/cco07p3.cpp.i
+
+.PHONY : tasks/cco07p3.i
+
+# target to preprocess a source file
+tasks/cco07p3.cpp.i:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/cco07p3.cpp.i
+.PHONY : tasks/cco07p3.cpp.i
+
+tasks/cco07p3.s: tasks/cco07p3.cpp.s
+
+.PHONY : tasks/cco07p3.s
+
+# target to generate assembly for a file
+tasks/cco07p3.cpp.s:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/cco07p3.cpp.s
+.PHONY : tasks/cco07p3.cpp.s
 
 tasks/cco10p1.obj: tasks/cco10p1.cpp.obj
 
@@ -603,6 +657,9 @@ help:
 	@echo ... tasks/ccc06s5.obj
 	@echo ... tasks/ccc06s5.i
 	@echo ... tasks/ccc06s5.s
+	@echo ... tasks/ccc07s5.obj
+	@echo ... tasks/ccc07s5.i
+	@echo ... tasks/ccc07s5.s
 	@echo ... tasks/ccc12s4.obj
 	@echo ... tasks/ccc12s4.i
 	@echo ... tasks/ccc12s4.s
@@ -615,6 +672,9 @@ help:
 	@echo ... tasks/cco00p1.obj
 	@echo ... tasks/cco00p1.i
 	@echo ... tasks/cco00p1.s
+	@echo ... tasks/cco07p3.obj
+	@echo ... tasks/cco07p3.i
+	@echo ... tasks/cco07p3.s
 	@echo ... tasks/cco10p1.obj
 	@echo ... tasks/cco10p1.i
 	@echo ... tasks/cco10p1.s

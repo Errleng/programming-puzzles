@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/library/lib.hpp
+iostream
+-
+
+D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/cco07p3.cpp
+../library/lib.hpp
+D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/library/lib.hpp
+iostream
+-
+cstring
+-
+
+D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/testrunner/main.cpp
+D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/cco07p3.cpp
+-
+iostream
+-
+fstream
+-
+sstream
+-
+string
+-
+vector
+-
+cctype
+-
+ctime
+-
+

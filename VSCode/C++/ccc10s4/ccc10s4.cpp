@@ -12,7 +12,8 @@ struct United {
     int size;
     vector<int> par;
 
-    United(int length) {
+    United(int length)
+    {
         size = length;
         par.resize(length);
         for (int i=0; i<length; ++i) {
@@ -20,14 +21,16 @@ struct United {
         }
     }
 
-    int find(int a) {
+    int find(int a)
+    {
         if (a != par[a]) {
             par[a] = find(par[a]);
         }
         return par[a];
     }
 
-    bool join(int a, int b) {
+    bool join(int a, int b)
+    {
         int aR = find(a), bR = find(b);
         if (aR != bR) {
             par[aR] = bR;
@@ -43,18 +46,21 @@ struct Edge {
     Edge() {}
     Edge(int a, int b, int c) : u(a), v(b), w(c) {}
 
-    string str() {
+    string str()
+    {
         return to_string(u) + " " + to_string(v) + " " + to_string(w);
     }
 };
-bool compareEdge(const Edge& left, const Edge& right) {
+bool compareEdge(const Edge& left, const Edge& right)
+{
     return left.w < right.w;
 }
 
 int M;
 map<piii, Edge> specified;
 
-int MSTW(vector<Edge> &edges) {
+int MSTW(vector<Edge> &edges)
+{
     sort(edges.begin(), edges.end(), compareEdge);
     United d(1001);
     int w = 0;
@@ -67,7 +73,8 @@ int MSTW(vector<Edge> &edges) {
     return w;
 }
 
-int main() {
+int main()
+{
     cin >> M;
 
     for (int i=1; i<=M; ++i) {

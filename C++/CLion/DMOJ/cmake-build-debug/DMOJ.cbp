@@ -179,6 +179,9 @@
 		<Unit filename="D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/ccc06s5.cpp">
 			<Option target="test"/>
 		</Unit>
+		<Unit filename="D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/ccc07s5.cpp">
+			<Option target="test"/>
+		</Unit>
 		<Unit filename="D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/ccc12s4.cpp">
 			<Option target="test"/>
 		</Unit>
@@ -189,6 +192,9 @@
 			<Option target="test"/>
 		</Unit>
 		<Unit filename="D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/cco00p1.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/cco07p3.cpp">
 			<Option target="test"/>
 		</Unit>
 		<Unit filename="D:/Documents/SourceTree/Challenges/C++/CLion/DMOJ/tasks/cco10p1.cpp">

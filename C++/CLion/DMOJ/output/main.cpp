@@ -50,80 +50,54 @@ void print2D(T(&arr)[R][C]) {
 }
 
 
-#include <bits/stdc++.h>
 
-#define repn(i, j, k, step) for (int i = j; i < k; i += step)
-#define rrepn(i, j, k, step) for (int i = j; i >= k; i -= step)
-#define rep(i, j) repn(i, 0, j, 1)
-#define srep(i, j, k) repn(i, j, k, 1)
-#define rrep(i, j) rrepn(i, j, 0, 1)
-#define foreach(i, container) for (auto i : container)
-#define mem(a, b) memset((a), (b), sizeof(a))
-
-#define fi first
-#define se second
-#define pb push_back
+#include <cstring>
 
 #define INF 0x3f3f3f3f
 
-#define scan(x) do{while((x=getchar())<'0'); for(x-='0'; '0'<=(_=getchar()); x=(x<<3)+(x<<1)+_-'0');}while(0)
-char _;
-
-#define MAXN 500000
-
 using namespace std;
 
-class dmopc14c4p6 {
+class cco07p3 {
 public:
-    vector<int> adj[MAXN];
-    int maxD, maxI, distFi[MAXN], distSe[MAXN];
+    void solve(std::istream &in, std::ostream &out) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(nullptr);
+        in.tie(nullptr);
 
-    void dfs(int u, int p, int d, int type) {
-        if (d > maxD) {
-            maxD = d;
-            maxI = u;
-        }
-        if (type == 1) {
-            distFi[u] = d;
-        } else if (type == 2) {
-            distSe[u] = d;
-        }
-        for (int e : adj[u]) {
-            if (e != p) {
-                dfs(e, u, d + 1, type);
+        int t, n, k, w, range;
+        in >> t;
+        for (int _ = 0; _ < t; ++_) {
+            in >> n >> k >> w;
+            range = n+w;
+
+            int scores[n+1];
+            memset(scores, 0, sizeof(scores));
+            int scoreSums[range+1];
+            memset(scoreSums, 0, sizeof(scoreSums));
+            int dp[k+1][n+1];
+            memset(dp, 0, sizeof(dp));
+
+            for (int i = 1; i <= n; ++i) {
+                in >> scores[i];
             }
-        }
-    }
 
-    void solve(std::istream& in, std::ostream& out) {
-        cin.sync_with_stdio(0);
-        cin.tie(0);
-        int N, a, b;
-        in >> N;
-        rep(i, N - 1) {
-            in >> a >> b;
-            --a;
-            --b;
-            adj[a].pb(b);
-            adj[b].pb(a);
-        }
+            for (int i = 1; i <= range; ++i) {
+                scoreSums[i] = scoreSums[i-1] + scores[i];
+            }
 
-        dfs(0, -1, 1, 0);
-        int fi = maxI;
-        maxD = 0;
-        dfs(fi, -1, 1, 1);
-        int se = maxI;
-        maxD = 0;
-        dfs(se, -1, 1, 2);
-        for (int i = 0; i < N; ++i) {
-            out << max(distFi[i], distSe[i]) << '\n';
+            for (int i = 1; i <= range; ++i) {
+                for (int j = 1; j <= range; ++j) {
+                    dp[i][j] = max(dp[i-1][j], dp[i][j-1]);
+                }
+            }
+            out << dp[k][n] << endl;
         }
     }
 };
 
 
 int main() {
-    dmopc14c4p6 solver;
+    cco07p3 solver;
     std::istream& in(std::cin);
     std::ostream& out(std::cout);
     solver.solve(in, out);
